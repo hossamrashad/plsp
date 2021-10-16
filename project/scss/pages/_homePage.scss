@@ -1238,7 +1238,7 @@
             width: 3px;
             background-color: $main-color;
           }
-          
+
           /* Extra large devices (large laptops and desktops, 1200px and up) */
           @media only screen and (min-width: 1566px) {
             content: "";
@@ -1494,10 +1494,19 @@
 
         /* Large devices (laptops/desktops, 992px and up) */
         @media only screen and (min-width: 992px) {
+          margin-left: -50px;
         }
 
         /* Extra large devices (large laptops and desktops, 1200px and up) */
         @media only screen and (min-width: 1200px) {
+          width: 140%;
+          margin-left: -100px;
+          position: relative;
+          display: flex;
+          padding-left: 20px;
+        }
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1566px) {
           width: 140%;
           margin-left: -120px;
           position: relative;
@@ -1526,6 +1535,13 @@
 
           /* Large devices (laptops/desktops, 992px and up) */
           @media only screen and (min-width: 992px) {
+            content: "";
+            position: absolute;
+            top: 2px;
+            right: 295px;
+            height: 83%;
+            width: 3px;
+            background-color: $main-color;
           }
 
           /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -1587,6 +1603,12 @@
 
               /* Large devices (laptops/desktops, 992px and up) */
               @media only screen and (min-width: 992px) {
+                position: absolute;
+                bottom: -30px;
+                right: 41px;
+                font-weight: bold;
+                font-size: 25px;
+                color: $main-color;
               }
 
               /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -1596,6 +1618,7 @@
                 left: -20px;
                 font-weight: bold;
                 font-size: 25px;
+                color: $main-color;
               }
             }
           }
@@ -1733,6 +1756,14 @@
         position: relative;
       }
       .border {
+        // &::after {
+        //   content: "";
+        //   position: absolute;
+        //   width: 80%;
+        //   height: 130%;
+        //   border: 10px solid #fff;
+        //   margin: 60px auto;
+        // }
         /* Extra small devices (phones, 600px and down) */
         @media only screen and (max-width: 601px) {
           border: 10px solid transparent !important;
@@ -1743,6 +1774,14 @@
           top: 50%;
           left: 10%;
           display: none;
+        //   &::after {
+        //   content: "";
+        //   position: absolute;
+        //   width: 80%;
+        //   height: 130%;
+        //   border: 10px solid transparent;
+        //   margin: 60px auto;
+        // }
         }
 
         /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -1779,7 +1818,6 @@
           position: relative;
           top: 50%;
           left: 10%;
-
           &::after {
             content: "";
             position: absolute;
@@ -1787,28 +1825,29 @@
             height: 130%;
             border: 10px solid transparent;
             margin: 60px auto;
-            display: inline-block;
           }
         }
 
         /* Extra large devices (large laptops and desktops, 1200px and up) */
         @media only screen and (min-width: 1200px) {
           border: 10px solid transparent !important;
-          background-color: $main-color;
+          background-color: $main-color !important;
           min-height: 100%;
           max-width: 80%;
           position: relative;
           top: 50%;
           left: 10%;
-        }
-        &::after {
+
+          .inner {
           content: "";
           position: absolute;
           width: 80%;
           height: 130%;
-          border: 10px solid #fff;
+          border: 10px solid #fff !important;
           margin: 60px auto;
         }
+        }
+        
       }
       .img-right {
         /* Extra small devices (phones, 600px and down) */
@@ -1861,6 +1900,7 @@
         /* Medium devices (landscape tablets, 768px and up) */
         @media only screen and (min-width: 768px) {
           float: right;
+          width: 200px;
         }
 
         /* Large devices (laptops/desktops, 992px and up) */
@@ -1888,22 +1928,18 @@
 .supporters-for-gov {
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
-    border: 5px solid #f00;
   }
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 601px) {
-    border: 5px solid rgb(47, 0, 255);
   }
 
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
-    border: 5px solid rgb(146, 211, 25);
   }
 
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
-    border: 5px solid rgb(0, 255, 115);
   }
 
   /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -1928,6 +1964,8 @@
 
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
+      height: calc(100% + 100px);
+
     }
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -2103,6 +2141,7 @@
 
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
+      height: calc(100% + 100px);
     }
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -2231,12 +2270,16 @@
 
       /* Large devices (laptops/desktops, 992px and up) */
       @media only screen and (min-width: 992px) {
-        @include positionCenter;
+        // @include positionCenter;
+        margin-top: 170px;
+        padding: 15px;
       }
 
       /* Extra large devices (large laptops and desktops, 1200px and up) */
       @media only screen and (min-width: 1200px) {
         @include positionCenter;
+        margin-top: 0;
+        
       }
       ul {
         /* Extra small devices (phones, 600px and down) */
@@ -2313,6 +2356,8 @@
 
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
+      height: calc(100% + 100px);
+
     }
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -2603,6 +2648,8 @@
 
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
+      height: calc(100% + 100px);
+
     }
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
