@@ -2571,6 +2571,7 @@
 
       /* Large devices (laptops/desktops, 992px and up) */
       @media only screen and (min-width: 992px) {
+        @include positionCenter;
       }
 
       /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -2778,12 +2779,15 @@
 
       /* Large devices (laptops/desktops, 992px and up) */
       @media only screen and (min-width: 992px) {
+        margin-top: 170px;
+
       }
 
       /* Extra large devices (large laptops and desktops, 1200px and up) */
       @media only screen and (min-width: 1200px) {
         width: 70%;
         margin-left: auto;
+        margin-top: 50px;
       }
     }
     .parent {
