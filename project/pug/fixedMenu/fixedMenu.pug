@@ -1,0 +1,57 @@
+//-  Options website
+div(class="fixed-menu-options-body")
+    i(class="fas fa-users-cog")
+    //- toggle color
+    h4(class="h3 text-center main-color") color
+    div(class="parent-toggle-color ")
+        input(type="checkbox" id="switch" name="theme")
+        label(for="switch") Toggle
+
+    //- toggle color
+    h4(class="h3 text-center main-color") Jquery Color
+    h4(class="h4 text-center main-color") Color
+    ul(class="parent-jquery-change-color")
+        li(data-color="blue")
+        li(data-color="orange")
+        li(data-color="green")
+        li(data-color="gray")
+
+    h4(class="h4 text-center main-color") Back
+    ul(class="parent-jquery-change-back")
+        li(data-back="blue")
+        li(data-back="orange")
+        li(data-back="green")
+        li(data-back="gray")
+
+
+    h4(class="h4 text-center main-color") Change Font
+    input( list='fontArOptions' class='fontArOptions' placeholder='set font Ar')
+    datalist(id="fontArOptions")
+        option(value="Cairo, sans-serif") 
+        option(value="DroidKufi-regular") 
+        option(value="Droid Arabic Kufi") 
+        option(value="Short Stack, cursive") 
+        option(value="Tajawal, sans-serif") 
+        option(value="Markazi Text, serif") 
+        option(value="El Messiri, sans-serif") 
+        option(value="Changa, sans-serif") 
+        option(value="Mirza, cursive") 
+        option(value="Lateef, cursive") 
+        option(value="Scheherazade, serif")
+    //- button(class='fontArBtnOptions') Show Font 
+
+    //-  color-switcher With local storage
+    ul(class="color-switcher")
+        li(data-color="blue")
+        li(data-color="red")
+        li(data-color="green")
+        li(data-color="gray")
+    div(class="clock" id="clock")
+
+
+    //- website Sections
+//- div(class="fixed-right fixed-website-sections")
+//-     i(class="fas fa-users-cog")
+//-     h3(class="h2") Hossam
+    
+    

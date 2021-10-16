@@ -1,0 +1,180 @@
+@import "../mixin/mixin";
+
+$font: 0;
+@for $i from $font through 200 {
+  .font-size-#{$i} {
+    font-size: 0px + $i;
+  }
+}
+// padding
+$padding: 0;
+@for $i from $padding through 200 {
+  .pt-#{$i} {
+    padding-top: 0px + $i;
+  }
+}
+@for $i from $padding through 200 {
+  .pb-#{$i} {
+    padding-bottom: 0px + $i;
+  }
+}
+@for $i from $padding through 200 {
+  .pl-#{$i} {
+    padding-left: 0px + $i;
+  }
+}
+@for $i from $padding through 200 {
+  .pr-#{$i} {
+    padding-right: 0px + $i;
+  }
+}
+@for $i from $padding through 200 {
+  .ptb-#{$i} {
+    padding-top: 0px + $i;
+    padding-bottom: 0px + $i;
+  }
+}
+@for $i from $padding through 200 {
+  .prl-#{$i} {
+    padding-right: 0px + $i;
+    padding-left: 0px + $i;
+  }
+}
+// margin
+$margin: 0;
+@for $i from $margin through 200 {
+  .mt-#{$i} {
+    margin-top: 0px + $i;
+  }
+}
+@for $i from $margin through 200 {
+  .mb-#{$i} {
+    margin-bottom: 0px + $i;
+  }
+}
+@for $i from $margin through 200 {
+  .ml-#{$i} {
+    margin-left: 0px + $i;
+  }
+}
+@for $i from $margin through 200 {
+  .mr-#{$i} {
+    margin-right: 0px + $i;
+  }
+}
+@for $i from $margin through 200 {
+  .mtb-#{$i} {
+    margin-top: 0px + $i;
+    margin-bottom: 0px + $i;
+  }
+}
+@for $i from $margin through 200 {
+  .mrl-#{$i} {
+    margin-right: 0px + $i;
+    margin-left: 0px + $i;
+  }
+}
+// width + height
+$width: 0;
+@for $i from $width through 2000 {
+  .width-#{$i} {
+    width: 0px + $i;
+  }
+}
+$height: 0;
+@for $i from $height through 2000 {
+  .height-#{$i} {
+    height: 0px + $i;
+  }
+}
+// line height
+$lineHeight: 0;
+@for $i from $lineHeight through 500 {
+  .lineHeight-#{$i} {
+    line-height: 0px + $i;
+  }
+}
+
+// box shadow
+
+//@mixin boxShadow($right, $button, $spread, $color) {
+//  -o-box-shadow: $right $button $spread $color;
+//  -ms-box-shadow: $right $button $spread $color;
+//  box-shadow: $right $button $spread $color;
+//}
+
+// $boxShadow: 0px;
+//@for $i from $boxShadow to 20 {
+//  .boxShadow-r-#{$i} {
+//    @include boxShadow(10px + $i, 0px, 10px, #000);
+//  }
+//}
+//@for $i from $boxShadow to 20 {
+// .boxShadow-l-#{$i} {
+//  @include boxShadow(-10px + $i, 0px, 10px, #000);
+//}
+//}
+//my grid
+
+$gridNumber: 12;
+
+@include media-b5(xs) {
+  @for $i from 1 through $gridNumber {
+    .grid-xs-#{$i} {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(calc(100% / #{$i}), 1fr));
+      gap: 0px 0px;
+      position: relative;
+    }
+  }
+}
+@include media-b5(sm) {
+  @for $i from 1 through $gridNumber {
+    .grid-sm-#{$i} {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(calc(100% / #{$i}), 1fr));
+      gap: 0px 0px;
+      position: relative;
+    }
+  }
+}
+@include media-b5(md) {
+  @for $i from 1 through $gridNumber {
+    .grid-md-#{$i} {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(calc(100% / #{$i}), 1fr));
+      gap: 0px 0px;
+      position: relative;
+    }
+  }
+}
+@include media-b5(lg) {
+  @for $i from 1 through $gridNumber {
+    .grid-lg-#{$i} {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(calc(100% / #{$i}), 1fr));
+      gap: 0px 0px;
+      position: relative;
+    }
+  }
+}
+@include media-b5(xlg) {
+  @for $i from 1 through $gridNumber {
+    .grid-xlg-#{$i} {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(calc(100% / #{$i}), 1fr));
+      gap: 0px 0px;
+      position: relative;
+    }
+  }
+}
+@include media-b5(xxlg) {
+  @for $i from 1 through $gridNumber {
+    .grid-xxlg-#{$i} {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(calc(100% / #{$i}), 1fr));
+      gap: 0px 0px;
+      position: relative;
+    }
+  }
+}

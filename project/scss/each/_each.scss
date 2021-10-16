@@ -1,0 +1,31 @@
+// Start Each
+$socialList: facebooks twitters youtubes instagrams;
+
+@each $social in $socialList {
+  .#{$social} {
+    background: url("../images/#{$social}.png");
+  }
+}
+
+// Multiple assignments
+@each $social, $color in (facebooks, blue), (twitters, #3498db) {
+  .#{$social} {
+    background: url("../images/#{$social}.png");
+    color: $color;
+  }
+}
+
+$map: (
+  h1: bold,
+  h2: bold,
+  h3: bold,
+  h4: bold,
+  h5: bold,
+  h6: bold,
+);
+
+@each $key, $val in $map {
+  .#{$key} {
+    font-weight: $val;
+  }
+}

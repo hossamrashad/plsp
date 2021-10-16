@@ -1,0 +1,136 @@
+.opacity0 {
+    @include opacity(0);
+}
+
+.mt-main {
+    margin-top: $main-margin;
+}
+
+.mb-main {
+    margin-bottom: $main-margin;
+}
+
+.ml-main {
+    margin-left: $main-margin;
+}
+
+.mr-main {
+    margin-right: $main-margin;
+}
+
+.pt-main {
+    padding-top: $main-padding;
+}
+
+.pb-main {
+    padding-bottom: $main-padding;
+}
+
+.pl-main {
+    padding-left: $main-padding;
+}
+
+.pr-main {
+    padding-right: $main-padding;
+}
+
+.pt-text {
+    padding-top: $main-padding-text;
+}
+
+.pb-text {
+    padding-bottom: $main-padding-text;
+}
+
+.pl-text {
+    padding-left: $main-padding-text;
+}
+
+.pr-text {
+    padding-right: $main-padding-text;
+}
+
+//  height
+.height100vh {
+    height: 100vh;
+}
+
+.height50vh {
+    height: calc(100vh / 2);
+}
+
+// Start hoverZoomLink
+.css-hover-zoom-scale {
+    overflow: hidden;
+    img {
+        @include transitionAll(transform, 0.5s, ease-in-out);
+        @include hover {
+            @include scale(1.3, 1.3);
+        }
+    }
+}
+
+.center-position {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include translate(-50%, -50%);
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+.main-back {
+    background-color: var(--main-color);
+}
+
+.second-color {
+    color: var(--second-color);
+}
+
+.second-back {
+    background-color: var(--second-color);
+}
+
+.third-color {
+    color: var(--third-color);
+}
+
+.third-back {
+    background-color: var(--third-color);
+}
+
+.color-fff {
+    color: map-get($colors, fff);
+}
+
+.back-fff {
+    background-color: map-get($colors, fff);
+}
+
+.color-999 {
+    color: map-get($colors, 999);
+}
+
+.back-999 {
+    background-color: map-get($colors, 999);
+}
+
+.border-main {
+    border: 1px solid var(--main-color);
+}
+
+.border-second {
+    border: 1px solid var(--second-color);
+}
+
+.border-third {
+    border: 1px solid var(--third-color);
+}

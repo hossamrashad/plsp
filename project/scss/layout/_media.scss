@@ -1,0 +1,78 @@
+// @media(max-width:767px){};   xs   || mobile
+// @media(min-width:768px){};   sm
+// @media(max-width:991 px){};  md
+// @media(min-width:992px){};   md
+// @media(min-width:1200px){};  lg
+
+body {
+  @include xs-media {
+    //color: #f00;
+    // background-color: aqua;
+    &::before {
+      content: "xs = 0px To 767px";
+      position: fixed;
+      bottom: 0px;
+      left: 00px;
+      width: fit-content;
+      color: #fff;
+      background-color: #333;
+      text-align: center;
+      text-transform: capitalize;
+      border: 2px solid#fafafa;
+      z-index: 2000;
+    }
+  }
+
+  @include sm-media {
+    //color: rgb(47, 0, 255);
+    // background-color: rgb(47, 0, 255);
+    &::before {
+      content: "Sm = 768px To 991px";
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      width: fit-content;
+      color: #fff;
+      background-color: #333;
+      text-align: center;
+      text-transform: capitalize;
+      border: 2px solid#fafafa;
+      z-index: 2000;
+    }
+  }
+  @include md-media {
+    //color: rgb(0, 255, 149);
+    // background-color: rgb(0, 255, 149);
+    &::before {
+      content: "Md = 992px To 1199px";
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      width: fit-content;
+      color: #fff;
+      background-color: #333;
+      text-align: center;
+      text-transform: capitalize;
+      border: 2px solid#fafafa;
+      z-index: 2000;
+    }
+  }
+  @include lg-media {
+    //color: rgb(251, 255, 0);
+    // background-color: rgb(251, 255, 0);
+    &::before {
+      content: "lg = 1200px to Top";
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      width: fit-content;
+      color: #fff;
+      background-color: #333;
+      text-align: center;
+      text-transform: capitalize;
+      border: 2px solid#fafafa;
+      z-index: 2000;
+
+    }
+  }
+}

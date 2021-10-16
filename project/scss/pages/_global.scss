@@ -1,0 +1,82 @@
+// global for all pages
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html.transition,
+html.transition *,
+html.transition *::before,
+html.transition *::after {
+    transition: all 750ms !important;
+    -webkit-transition: all 750ms !important;
+    -moz-transition: all 750ms !important;
+    -ms-transition: all 750ms !important;
+    -o-transition: all 750ms !important;
+    transition-delay: 0 !important;
+}
+
+body {
+    font: {
+        family: $font-cairo;
+        size: $font-page;
+    }
+    min-height: 3000px;
+}
+
+p,
+div,
+a,
+li {
+    font-size: 1.5rem;
+}
+
+
+/* for selection */
+
+::-moz-selection {
+    color: #fff;
+    background-color: $main-color;
+}
+
+::selection {
+    color: #fff;
+    background-color: $main-color;
+}
+
+ul,
+ol {
+    // global ul + li style
+    @include reset-list;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    @include hover {
+        text-decoration: none;
+        outline: none;
+        color: inherit;
+    }
+    &:focus {
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.vuejs {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    display: block;
+    text-transform: capitalize;
+}

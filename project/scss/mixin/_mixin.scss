@@ -1,0 +1,619 @@
+/*
+
+= ********** Border Radius ***********
+
+* @include borderRadius(5px);
+* 
+* @include borderRadiusposition(5px, 5px, 5px, 5px);
+* 
+* @include bordercolor(#e8ae1a, #76cd9c, #a60b55, #333);
+* 
+* @include borderStyle(solid, dashed, double, none);
+* 
+= ************ transition ****************
+* 
+* @include transitionAll(all, 0.5s, linear);
+* 
+* @include transitions();
+* 
+* @include transitionTime(0.5s);
+* 
+* @include transition(0.5s);
+* 
+* @include transitionProperty(all);
+* 
+= ************ scale *************
+* 
+* @include scale(1.5, 1.5);
+* 
+* @include scaleX(1.5);
+* 
+* @include scaleY(1.5);
+* 
+= ************ rotate ***************
+* 
+* @include rotate(10deg);
+*
+* @include rotateY(10deg);
+*
+* @include rotateX(10deg);
+*
+* @include rotateZ(10deg);
+* 
+= *************** translate **************
+*
+* @include translate(10px, 10px);
+*
+* @include translateX(10px);
+*
+* @include translateY(10px);
+*
+* @include translateZ(10px);
+* 
+= *********** skew *********
+*
+* @include skew(0deg, 0deg);
+*
+* @include skewX(0deg);
+*
+* @include skewY(0deg);
+* 
+= *************** matrix ***********
+*
+* @include matrix( 1, 0, 0, 1, 0, 0 );
+* 
+* * $translateX, $translateY, $scaleX, $skewY, $skewX ,$scaleY
+* 
+= ******** Box shadow **************
+*
+* @include boxShadow(-1px, 0px, 10px, #000);
+* 
+= ************ hover ************
+* 
+* @include hover {};
+* 
+=  ************** ul *****************
+* 
+* @include reset-list;
+* 
+*  *** li ***
+* 
+* @include horizontal-list;
+* 
+= ************ media ************
+* 
+* @include xs-media{}
+* 
+* @include sm-media{}
+* 
+* @include sm-md-media{}
+* 
+* @include md-media{}
+* 
+* @include md-lg-media{}
+*
+* @include lg-media{}
+* 
+* @include mq(1500px, 1900px) {}
+*
+= ************* overlay ************
+* 
+* @include overlay;
+* 
+* 
+= ********** prefix ******************
+* 
+* @include prefix(box-shadow, 10px 10px 10px #ccc, webkit moz o ms);
+* 
+= ************ opacity ****************
+* 
+* @include opacity(0.5);
+* 
+* 
+= ************ flex center *********
+* 
+* @include flexCenter;
+*  
+=  ************ position Center ******************
+*  
+*  @include positionCenter;
+*  
+*  
+= *********** clear fix  for float ************* 
+*  
+*  @include clearfix;
+*  
+*  
+*  
+*/
+
+// borderRadius
+// @include borderRadius(5px);
+@mixin borderRadius($number) {
+  border-radius: $number;
+  -webkit-border-radius: $number;
+  -moz-border-radius: $number;
+  -ms-border-radius: $number;
+  -o-border-radius: $number;
+}
+
+// @include borderRadiusposition(5px, 5px, 5px, 5px);
+@mixin borderRadiusposition(
+  $top-left,
+  $top-right,
+  $bottom-left,
+  $bottom-right
+) {
+  border-top-left-radius: $top-left;
+  -webkit-border-top-left-radius: $top-left;
+  -moz-border-top-left-radius: $top-left;
+  -o-border-top-left-radius: $top-left;
+  -ms-border-top-left-radius: $top-left;
+  border-top-right-radius: $top-right;
+  -webkit-border-top-right-radius: $top-right;
+  -moz-border-top-right-radius: $top-left;
+  -o-border-top-right-radius: $top-left;
+  -ms-border-top-right-radius: $top-right;
+  border-bottom-left-radius: $bottom-left;
+  -webkit-border-bottom-left-radius: $bottom-left;
+  -moz-border-bottom-left-radius: $bottom-left;
+  -o-border-bottom-left-radius: $bottom-left;
+  -ms-border-bottom-left-radius: $bottom-left;
+  border-bottom-right-radius: $bottom-right;
+  -webkit-border-bottom-right-radius: $bottom-right;
+  -moz-border-bottom-right-radius: $bottom-right;
+  -o-border-bottom-right-radius: $bottom-right;
+  -ms-border-bottom-right-radius: $bottom-right;
+}
+
+// @include bordercolor(#e8ae1a, #76cd9c, #a60b55, #333);
+@mixin bordercolor($color-top, $color-right, $color-bottom, $color-left) {
+  border-top-color: $color-top;
+  border-right-color: $color-right;
+  border-bottom-color: $color-bottom;
+  border-left-color: $color-left;
+}
+
+// @include borderStyle(solid, dashed, double, none);
+@mixin borderStyle($style-top, $style-right, $style-bottom, $style-left) {
+  border-top-style: $style-top;
+  border-right-style: $style-right;
+  border-bottom-style: $style-bottom;
+  border-left-style: $style-left;
+}
+
+// transition
+// @include transitionAll(all, 0.5s, linear);
+@mixin transitionAll($property, $number, $event) {
+  transition: $property $number $event;
+  -webkit-transition: $property $number $event;
+  -moz-transition: $property $number $event;
+  -ms-transition: $property $number $event;
+  -o-transition: $property $number $event;
+}
+
+// @include transitionTime(0.5s);
+@mixin transitionTime($time) {
+  transition: all $time linear;
+  -webkit-transition: all $time linear;
+  -moz-transition: all $time linear;
+  -ms-transition: all $time linear;
+  -o-transition: all $time linear;
+}
+
+// @include transition(0.5s);
+@mixin transition($number) {
+  transition: all $number ease-in-out;
+  -webkit-transition: all $number ease-in-out;
+  -moz-transition: all $number ease-in-out;
+  -ms-transition: all $number ease-in-out;
+  -o-transition: all $number ease-in-out;
+}
+
+// @include transitionProperty(all);
+@mixin transitionProperty($property) {
+  transition: $property 0.5s linear;
+  -webkit-transition: $property 0.5s linear;
+  -moz-transition: $property 0.5s linear;
+  -ms-transition: $property 0.5s linear;
+  -o-transition: $property 0.5s linear;
+}
+
+// @include transitions();
+@mixin transitions($property, $number, $event) {
+  transition: $property $number $event;
+  -webkit-transition: $property $number $event;
+  -moz-transition: $property $number $event;
+  -ms-transition: $property $number $event;
+  -o-transition: $property $number $event;
+}
+
+// scale
+// @include scale(1.5, 1.5);
+@mixin scale($width, $height) {
+  transform: scale($width, $height);
+  -webkit-transform: scale($width, $height);
+  -moz-transform: scale($width, $height);
+  -ms-transform: scale($width, $height);
+  -o-transform: scale($width, $height);
+}
+
+// @include scaleX(1.5);
+@mixin scaleX($width) {
+  transform: scaleX($width);
+  -webkit-transform: scaleX($width);
+  -moz-transform: scaleX($width);
+  -ms-transform: scaleX($width);
+  -o-transform: scaleX($width);
+}
+
+// @include scaleY(1.5);
+@mixin scaleY($height) {
+  transform: scaleY($height);
+  -webkit-transform: scaleY($height);
+  -moz-transform: scaleY($height);
+  -ms-transform: scaleY($height);
+  -o-transform: scaleY($height);
+}
+
+// rotate
+// @include rotate(10deg);
+@mixin rotate($number) {
+  transform: rotate($number);
+  -webkit-transform: rotate($number);
+  -moz-transform: rotate($number);
+  -ms-transform: rotate($number);
+  -o-transform: rotate($number);
+}
+
+// @include rotateY(10deg);
+@mixin rotateY($number) {
+  transform: rotateY($number);
+  -webkit-transform: rotateY($number);
+  -moz-transform: rotateY($number);
+  -ms-transform: rotateY($number);
+  -o-transform: rotateY($number);
+}
+
+// @include rotateX(10deg);
+@mixin rotateX($number) {
+  transform: rotateX($number);
+  -webkit-transform: rotateX($number);
+  -moz-transform: rotateX($number);
+  -ms-transform: rotateX($number);
+  -o-transform: rotateX($number);
+}
+
+// @include rotateZ(10deg);
+@mixin rotateZ($number) {
+  transform: rotateZ($number);
+  -webkit-transform: rotateZ($number);
+  -moz-transform: rotateZ($number);
+  -ms-transform: rotateZ($number);
+  -o-transform: rotateZ($number);
+}
+
+// translate
+// @include translate(10px, 10px);
+@mixin translate($width, $height) {
+  transform: translate($width, $height);
+  -webkit-transform: translate($width, $height);
+  -moz-transform: translate($width, $height);
+  -ms-transform: translate($width, $height);
+  -o-transform: translate($width, $height);
+}
+
+// @include translateX(10px);
+@mixin translateX($width) {
+  transform: translateX($width);
+  -webkit-transform: translateX($width);
+  -moz-transform: translateX($width);
+  -ms-transform: translateX($width);
+  -o-transform: translateX($width);
+}
+
+// @include translateY(10px);
+@mixin translateY($height) {
+  transform: translateY($height);
+  -webkit-transform: translateY($height);
+  -moz-transform: translateY($height);
+  -ms-transform: translateY($height);
+  -o-transform: translateY($height);
+}
+
+// @include translateZ(10px);
+@mixin translateZ($height) {
+  transform: translateZ($height);
+  -webkit-transform: translateZ($height);
+  -moz-transform: translateZ($height);
+  -ms-transform: translateZ($height);
+  -o-transform: translateZ($height);
+}
+
+// skew
+// @include skew(0deg, 0deg);
+@mixin skew($width, $height) {
+  transform: skew($width, $height);
+  -webkit-transform: skew($width, $height);
+  -moz-transform: skew($width, $height);
+  -ms-transform: skew($width, $height);
+  -o-transform: skew($width, $height);
+}
+
+// @include skewX(0deg);
+@mixin skewX($width) {
+  transform: skewX($width);
+  -webkit-transform: skewX($width);
+  -moz-transform: skewX($width);
+  -ms-transform: skewX($width);
+  -o-transform: skewX($width);
+}
+
+// @include skewY(0deg, 0deg);
+@mixin skewY($height) {
+  transform: skewY($height);
+  -webkit-transform: skewY($height);
+  -moz-transform: skewY($height);
+  -ms-transform: skewY($height);
+  -o-transform: skewY($height);
+}
+
+// $translateX, $translateY, $scaleX, $skewY, $skewX ,$scaleY
+// @include matrix( 1, 0, 0, 1, 0, 0 );
+@mixin matrix($translateX, $translateY, $scaleX, $skewY, $skewX, $scaleY) {
+  transform: matrix($translateX, $translateY, $scaleX, $skewY, $skewX, $scaleY);
+  -webkit-transform: matrix(
+    $translateX,
+    $translateY,
+    $scaleX,
+    $skewY,
+    $skewX,
+    $scaleY
+  );
+  -moz-transform: matrix(
+    $translateX,
+    $translateY,
+    $scaleX,
+    $skewY,
+    $skewX,
+    $scaleY
+  );
+  -ms-transform: matrix(
+    $translateX,
+    $translateY,
+    $scaleX,
+    $skewY,
+    $skewX,
+    $scaleY
+  );
+  -o-transform: matrix(
+    $translateX,
+    $translateY,
+    $scaleX,
+    $skewY,
+    $skewX,
+    $scaleY
+  );
+}
+
+//  box-shadow: horizontal     |  vertical     |  blur | spread | color | inset
+//  box-shadow: right + left   |  top + button |  blur | spread | color | inset
+//  @include boxShadow(-1px, 0px, 10px, #000);
+@mixin boxShadow($right, $button, $spread, $color) {
+  -o-box-shadow: $right $button $spread $color;
+  -ms-box-shadow: $right $button $spread $color;
+  box-shadow: $right $button $spread $color;
+}
+
+// hover
+// @include hover {}
+@mixin hover {
+  &:not([disabled]):hover {
+    @content;
+  }
+}
+
+// ul
+// @include horizontal-list;
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin horizontal-list {
+  @include reset-list;
+  li {
+    display: inline-block;
+    margin: {
+      left: -2px;
+      right: 2em;
+    }
+  }
+}
+
+// media
+// @media(max-width:767px){};   xs   || mobile
+// @media(min-width:768px){};   sm
+// @media(max-width:991 px){};  md
+// @media(min-width:992px){};   md
+// @media(min-width:1200px){};  lg
+// @include xs-media{}
+@mixin xs-media {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+// @include xs-sm-media{}
+@mixin xs-sm-media {
+  @media (min-width: 250px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+// @include sm-media{}
+@mixin sm-media {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+// @include sm-md-media{}
+@mixin sm-md-media {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin md-media {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin md-lg-media {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin lg-media {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+// @include mq(767px) {}
+// @include mq(1500px, 1900px) {}
+@mixin mq($arg...) {
+  @if length($arg) ==1 {
+    @media screen and (max-width: nth($arg, 1)) {
+      @content;
+    }
+  }
+  @if length($arg) ==2 {
+    @media screen and (max-width: nth($arg, 1)) and (max-width: nth($arg, 2)) {
+      @content;
+    }
+  }
+}
+
+// media b5
+@mixin media-b5($point) {
+  // 576 to Upper
+  @if $point==xs {
+    @media (min-width: 250px) {
+      @content;
+    }
+  }
+  // 576 to Upper
+  @if $point==sm {
+    @media (min-width: 576px) {
+      @content;
+    }
+  }
+  // 768 to Upper
+  @if $point==md {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  // 998 to Upper
+  @if $point==lg {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+  // 1200 to Upper
+  @if $point==xlg {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+  // 1367 to Upper
+  @if $point==xxlg {
+    @media (min-width: 1566px) {
+      @content;
+    }
+  }
+}
+
+// overlay
+// @include overlay;
+@mixin overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// prefix
+// @include prefix(box-shadow, 10px 10px 10px #ccc, webkit moz o ms);
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+  #{$property}: $value;
+}
+
+// opacity
+//  @include opacity(0.5);
+@mixin opacity($value) {
+  zoom: 1;
+  $opacity-ie: $value * 100;
+  filter: alpha(opacity=$opacity-ie);
+  -webkit-filter: alpha(opacity=$opacity-ie);
+  opacity: $value;
+}
+
+// element center
+// @include flexCenter;
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// @include positionCenter;
+@mixin positionCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include translate(-50%, -50%);
+}
+
+// clearfix
+// clear float
+// @include clearfix;
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+
+// animation
+// @include KeyFrame(animation-name)
+@mixin KeyFrame($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+
+// @include grid(1);
+@mixin grid($i) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(100% / #{$i}), 1fr));
+  gap: 0px 0px;
+}

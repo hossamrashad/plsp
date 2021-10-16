@@ -1,0 +1,69 @@
+@import "../mixin/mixin";
+// color
+$main-color: #f47c58;
+$second-color: #ffe5dd;
+$third-color: #ffe5dd1a;
+$color-3498db: #3498db;
+$text-color: #9c9c9c;
+$color-fff: #fff;
+$color-000: #000;
+$color-333: #333;
+$color-f1f1f1: #f1f1f1;
+// color: map-get($colors, 1);
+$colors: ( fff: #ffffff, 2: #e4fbff, 3: #ecf0f1, 4: #f4f9f9, eee: #eeeeee, ccc: #cccccc, 7: #95a5a6, 969: #969696, 9: #737373, 10: #766a65, 11: #9e9d89, 999: #999999, 13: #666666, 14: #caf7e3, 21: #0099e5, 22: #0984e3, 23: #2980b9, 24: #0652dd, 25: #0066a1, 046582: #046582, 27: #4a47a3, 28: #34495e, 3498db: #3498db, 41: #34bf49, 42: #00a98f, 43: #12cbc4, 44: #1abc9c, 45: #2c9f45, 46: #289672, 29bb89: #29bb89, 48: #1e6f5c, 49: #009688, 080: #008800, ed4c67: #ed4c67, 62: #f14668, 63: #be0027, c00: #cc0000, 65: #ff4c4c, 66: #e74c3c, 67: #6b011f, 68: #6b011f, 69: #4f1302, 70: #432d0f, 71: #f39189, 72: #bb8082, 73: #e91e63, f00: #ff0000, 81: #e67e22, 82: #f1c40f, 83: #f39c12, 84: #6d4f25, 85: #e4e932, 200: #629aa9, 201: #545963, 202: #709fb0, 203: #6c5ce7, 204: #7868e6, 205: #3c415c, 206: #301b3f, 000: #000000, 333: #333333, );
+$facebook-color: #1877f2;
+$twitter-color-1: #1da1f2;
+$twitter-color-2: #14171a;
+$twitter-color-3: #657786;
+$twitter-color-4: #aab8c2;
+$twitter-color-5: #e1e8ed;
+$twitter-color-6: #f5f8fa;
+$youtube-color-1: #ff0000;
+$youtube-color-2: #282828;
+$linkedin-color-1: #0077b5;
+$linkedin-color-2: #000000;
+$linkedin-color-3: #313335;
+$linkedin-color-4: #86888a;
+$linkedin-color-5: #313335;
+$linkedin-color-6: #00a0dc;
+$linkedin-color-7: #8d6cab;
+$linkedin-color-8: #dd5143;
+$linkedin-color-9: #e68523;
+$instagram-color-1: #e1306c;
+$instagram-color-2: #c13584;
+$instagram-color-3: #fd1d1d;
+$instagram-color-4: #833ab4;
+$instagram-color-5: #5851db;
+$instagram-color-6: #405de6;
+$instagram-color-7: #ffdc80;
+$instagram-color-8: #fcaf45;
+$instagram-color-9: #f77737;
+$instagram-color-10: #f56040;
+$pinterest-color: #e60023;
+// Html Theme
+html {
+    --back: #fcfcfc;
+    --back-panel: #ebebeb;
+    --color-headings: #3498db;
+    --color-text: #333;
+    --btn-bg: #363636;
+    --btn-color: #fcfcfc;
+    --btn-before: #3498db;
+    --btn-after: #3498db;
+}
+
+// root
+// background: var(--color-3498db);
+:root {
+    --color-3498db: #3498db;
+    --color-fff: #ffffff;
+    --color-000: #0000000;
+    --color-333: #333333;
+    --color-f00: #ff0000;
+    --color-080: #008800;
+    --btn-scroll-to-top: #3f51b5;
+    --btn-scroll-to-top-border: #0328f8;
+    --btn-normal-back: #333;
+    --btn-normal-color: #fafafa;
+    --btn-normal-border: #1877f2;
+}

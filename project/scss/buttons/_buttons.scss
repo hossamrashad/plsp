@@ -1,0 +1,2275 @@
+// css-element-with-border
+
+/*
+<!-- Start element with border -->     
+<div class="css-element-with-border">       
+<div class="inner">hossam</div>     
+</div>     
+<!-- End element with border -->
+*/
+
+.css-element-with-border {
+    position: relative;
+    .inner {
+        background-color: map-get($colors, 21);
+        text-align: center;
+        color: map-get($colors, fff);
+        margin: 40px auto;
+        @include borderRadius(15px);
+        width: 300px;
+        padding: 10px 15px;
+        &:before {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: map-get($colors, 333);
+            position: absolute;
+            left: 0;
+            top: 50%;
+            z-index: -1;
+        }
+    }
+}
+
+
+/*
+ <!-- Start social one -->
+          <div class="social-one">
+            <div class="social-main social-center">
+              <div class="social-box">
+                <div class="social-icon-box social-center">
+                  <i class="fab fa-instagram fa-2x fa-fw"></i>
+                </div>
+                <div class="social-inner-box social-center">
+                  <p>instagram</p>
+                </div>
+              </div>
+              <div class="social-box">
+                <div class="social-icon-box social-center ib-t">
+                  <i class="fab fa-twitter fa-2x fa-fw"></i>
+                </div>
+                <div class="social-inner-box social-center"><p>twitter</p></div>
+              </div>
+              <div class="social-box">
+                <div class="social-icon-box social-center ib-f">
+                  <i class="fab fa-facebook fa-2x fa-fw"></i>
+                </div>
+                <div class="social-inner-box social-center">
+                  <p>facebook</p>
+                </div>
+              </div>
+              <div class="social-box">
+                <div class="social-icon-box social-center ib-w">
+                  <i class="fab fa-whatsapp fa-2x fa-fw"></i>
+                </div>
+                <div class="social-inner-box social-center">
+                  <p>whatsapp</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End social one-->
+*/
+
+// social media
+.social-one {
+    margin-top: 50px;
+    .social-center {
+        height: 100%;
+        width: 100%;
+        @include flexCenter;
+    }
+    .social-main {
+        // height: 110px;
+        // width: 100%;
+        >div {
+            // @include grid-right(4, 2%);
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
+            gap: 0px 0px;
+        }
+    }
+    .social-box {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        // margin: 0px 20px;
+    }
+    .social-icon-box,
+    .social-inner-box {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #c13584;
+        color: #fff;
+        @include borderRadius(10px);
+        cursor: pointer;
+        @include transition(0.5s);
+    }
+    .ib-t {
+        background: #1da1f2;
+    }
+    .ib-f {
+        background: #3498db;
+    }
+    .ib-w {
+        background: #25d366;
+    }
+    .social-box:hover .social-icon-box {
+        transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -o-transform: translateY(-30px);
+    }
+    .social-inner-box {
+        background: #fffeff;
+        align-items: flex-end;
+        justify-content: center;
+        z-index: -1;
+        color: rgb(41, 41, 41);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.082);
+        p {
+            font-family: $font-cairo;
+            font-size: 1em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+// scroll to top
+// scroll-to-top-1
+
+/*
+<!-- Start scroll to top -->
+<a href="#" class="scroll-to-top" id="scroll-to-top-1">
+ <i class="fa fa-chevron-up fa-2x fa-fw"></i>
+</a>
+<!-- End scroll to top -->
+*/
+
+#scroll-to-top-1 {
+    background-color: var(--btn-scroll-to-top);
+    color: #fff;
+    display: block;
+    padding: 3px 7px 3px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    z-index: 900000;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 2px solid var(--btn-scroll-to-top-border);
+    @include borderRadius(5px);
+    // @include transitions(all 0.5s linear);
+    overflow: hidden;
+    @include hover {
+        color: #fff;
+    }
+    i {
+        animation-name: up-and-down;
+        animation-duration: 0.7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 0.3s;
+    }
+    @keyframes up-and-down {
+        // from {
+        //     //opacity: 0.2;
+        //     transform: translateY(40px);
+        // }
+        // to {
+        //     opacity: 0.2;
+        //     transform: translateY(-40px);
+        // }
+        0% {
+            transform: translateY(0px);
+        }
+        10% {
+            transform: translateY(20px);
+        }
+        30% {
+            transform: translateY(30px);
+        }
+        50% {
+            transform: translateY(40px);
+        }
+        80% {
+            opacity: 0;
+            transform: translateY(-20px);
+            -webkit-transform: translateY(-20px);
+            -moz-transform: translateY(-20px);
+            -ms-transform: translateY(-20px);
+            -o-transform: translateY(-20px);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(-40px);
+        }
+    }
+}
+
+// scroll-to-top-2
+
+/*
+<!-- Start scroll to top -->     
+<a href="#" class="scroll-to-top" id="scroll-to-top-2">       
+<i class="fa fa-chevron-circle-up fa-2x fa-fw"></i>
+</a>     
+<!-- End scroll to top -->
+*/
+
+#scroll-to-top-2 {
+    background-color: #2b3c4d;
+    color: #fff;
+    display: block;
+    padding: 5px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    z-index: 900000;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    @include borderRadius(10px);
+    border: 2px solid map-get($colors, 9);
+    @include hover {
+        color: #fff;
+    }
+}
+
+// scroll-to-top-3
+
+/*
+<!-- Start scroll to top -->
+<a href="#" class="scroll-to-top" id="scroll-to-top-3">
+  <i class="fa fa-hand-pointer-o fa-fw fa-2x"></i>
+</a>
+<!-- End scroll to top -->
+*/
+
+#scroll-to-top-3 {
+    background-color: #007bff;
+    color: #fff;
+    display: block;
+    padding: 5px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    z-index: 900000;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    @include borderRadius(10px);
+    border: 2px solid map-get($colors, 9);
+    @include hover {
+        color: #fff;
+    }
+}
+
+.scroll-to-top-animate-1 {
+    position: fixed;
+    display: block;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #f1f1f1;
+    display: none;
+    cursor: pointer;
+    // top: 50%;
+    // left: 50%;
+    // width: 400px;
+    // height: 400px;
+    background-color: #3b93ff;
+    // border: 20px solid #f1f1f1;
+    overflow: hidden;
+    @include borderRadius(50%);
+    @include translate(-50%, -50%);
+    @include boxShadow(inset 0px, 0px, 25px, #000);
+    animation: animateScene 5s linear infinite;
+    -webkit-animation: animateScene 5s linear infinite;
+    z-index: 1000000;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+    .fa-rocket {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+        -moz-transform: translate(-50%, -50%) rotate(-45deg);
+        -ms-transform: translate(-50%, -50%) rotate(-45deg);
+        -o-transform: translate(-50%, -50%) rotate(-45deg);
+        color: #fff;
+        // font-size: 10em;
+        font-size: 1em;
+        @include boxShadow(-5px, 7.5px, 5px, rgba(0, 0, 0, 0.3));
+        animation: animateRocket 1s linear infinite;
+        -webkit-animation: animateRocket 1s linear infinite;
+    }
+    .cloud {
+        position: absolute;
+        color: #ccc;
+        animation: animateCloud 1s linear infinite;
+        -webkit-animation: animateCloud 1s linear infinite;
+    }
+    .cloud1 {
+        left: 10%;
+        font-size: .5em;
+    }
+    .cloud2 {
+        left: 45%;
+        font-size: .5em;
+        z-index: -1;
+        animation-delay: -0.8;
+    }
+    .cloud3 {
+        right: 20%;
+        font-size: .5em;
+        animation-delay: -0.4;
+    }
+}
+
+@keyframes animateScene {
+    0% {
+        background-color: #39a6ff;
+    }
+    50% {
+        background-color: #072380;
+    }
+    100% {
+        background-color: #0088f7;
+    }
+}
+
+@keyframes animateRocket {
+    0% {
+        transform: translate(-50%, -50%) rotate(-45deg) translate(0.0);
+        -webkit-transform: translate(-50%, -50%) rotate(-45deg) translate(0.0);
+        -moz-transform: translate(-50%, -50%) rotate(-45deg) translate(0.0);
+        -ms-transform: translate(-50%, -50%) rotate(-45deg) translate(0.0);
+        -o-transform: translate(-50%, -50%) rotate(-45deg) translate(0.0);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(-45deg) translate(-5px, 5px);
+        -webkit-transform: translate(-50%, -50%) rotate(-45deg) translate(-5px, 5px);
+        -moz-transform: translate(-50%, -50%) rotate(-45deg) translate(-5px, 5px);
+        -ms-transform: translate(-50%, -50%) rotate(-45deg) translate(-5px, 5px);
+        -o-transform: translate(-50%, -50%) rotate(-45deg) translate(-5px, 5px);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(-45deg) translate(0.0);
+        -webkit-transform: translate(-50%, -50%) rotate(-45deg) translate(0.0);
+        -moz-transform: translate(-50%, -50%) rotate(-45deg) translate(0.0);
+        -ms-transform: translate(-50%, -50%) rotate(-45deg) translate(0.0);
+        -o-transform: translate(-50%, -50%) rotate(-45deg) translate(0.0);
+    }
+}
+
+@keyframes animateCloud {
+    0% {
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(1000%);
+        -webkit-transform: translateY(1000%);
+        -moz-transform: translateY(1000%);
+        -ms-transform: translateY(1000%);
+        -o-transform: translateY(1000%);
+    }
+}
+
+// css-before-after-width-height
+
+/*
+class="css-before-after-width-height "
+*/
+
+.css-before-after-width-height {
+    position: relative;
+    @include transition(0.5s);
+    z-index: 8;
+    &::before {
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 0;
+        top: 0;
+        content: "";
+        background: rgb(95, 95, 95);
+        transition: all 0.5s ease-out 0s;
+        -webkit-transition: all 0.5s ease-out 0s;
+        -moz-transition: all 0.5s ease-out 0s;
+        -ms-transition: all 0.5s ease-out 0s;
+        -o-transition: all 0.5s ease-out 0s;
+        z-index: -9;
+        opacity: 0;
+    }
+    &::after {
+        position: absolute;
+        width: 0;
+        height: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        background: rgba(104, 104, 104, 0.671);
+        transition: all 0.5s ease-out 0s;
+        -webkit-transition: all 0.5s ease-out 0s;
+        -moz-transition: all 0.5s ease-out 0s;
+        -ms-transition: all 0.5s ease-out 0s;
+        -o-transition: all 0.5s ease-out 0s;
+        z-index: -9;
+        opacity: 0;
+    }
+    &:hover::after,
+    &:hover::before {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+// css-parent-backward
+
+/*
+class="css-parent-backward"
+ class="css-backward-show"
+ class="css-backward-hide"
+*/
+
+.css-parent-backward {
+    position: relative;
+    overflow: hidden;
+    @include transition(0.5s);
+    .css-backward-show {
+        transform: translateY(0%);
+        position: relative;
+        overflow: hidden;
+        @include transition(0.5s);
+    }
+    .css-backward-hide {
+        transform: translateY(-100%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include transition(0.5s);
+    }
+    &:hover .css-backward-show {
+        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -o-transform: translateY(100%);
+    }
+    &:hover .css-backward-hide {
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+    }
+}
+
+// menu-plus
+
+/*
+<!-- Start menu-plus -->
+    <div class="menu-Plus">
+      <button class="plus" onclick="openMenu()">+</button>
+      <ul>
+        <li>menu</li>
+        <li>about</li>
+        <li>contact</li>
+      </ul>
+    </div>
+    <!-- End menu-plus -->
+*/
+
+.menu-Plus {
+    background-color: #eee;
+    padding: 10px;
+    width: 150px;
+    -webkit-clip-path: circle(20px at 120px 30px);
+    clip-path: circle(20px at 120px 30px);
+    @include transition(0.5s);
+    //
+    .plus {
+        font-size: $font-page + 14;
+        background-color: #eee;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        @include borderRadius(50%);
+    }
+    ul {
+        li {
+            margin-bottom: 10px;
+        }
+    }
+    &.open {
+        -webkit-clip-path: circle(20px at 30px 30px);
+        clip-path: circle(200px at 20px 20px);
+    }
+}
+
+// clip path
+
+/*
+<div class="css-clip-path-1">
+ <a href="">
+   <img
+   src="https://placeimg.com/200/200/arch"
+   alt=""
+   class="img-fluid img-thumbnail"
+ />
+ <img
+   src="https://placeimg.com/200/200/nature"
+   alt=""
+   class="img-fluid img-thumbnail"
+ />
+ <img
+   src="https://placeimg.com/200/200/people"
+   alt=""
+                class="img-fluid img-thumbnail"
+ />
+ <img
+     src="https://placeimg.com/200/200/tech"
+     alt=""
+     class="img-fluid img-thumbnail"
+   />
+ </a> 
+</div>
+*/
+
+.css-clip-path-1 {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.6);
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            transition: 1s;
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            -ms-transition: 1s;
+            -o-transition: 1s;
+            background-size: cover;
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+                -webkit-clip-path: circle(0 at 0% 100%);
+                clip-path: circle(0 at 0% 100%);
+            }
+        }
+    }
+    &:hover img:nth-child(2),
+    &:hover img:nth-child(3),
+    &:hover img:nth-child(4) {
+        -webkit-clip-path: circle(150% at 0% 100%);
+        clip-path: circle(150% at 0% 100%);
+    }
+    &:hover img:nth-child(2) {
+        transition-delay: 0;
+        transition-duration: 2s;
+    }
+    &:hover img:nth-child(3) {
+        transition-delay: 1s;
+        transition-duration: 2s;
+    }
+    &:hover img:nth-child(4) {
+        transition-delay: 2s;
+        transition-duration: 2s;
+    }
+}
+
+
+/*
+<div class="parent-face-back-rotate-x">
+      <div class="button-text">
+        <span class="btn-face single-text">see more</span>
+        <a href="#" class="btn-back single-text">click here</a>
+      </div>
+    </div>
+*/
+
+// rotate-x
+.parent-face-back-rotate-x {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    perspective: 600px;
+    &:not(:last-child) {
+        margin-right: 15px;
+    }
+    .button-text {
+        width: 100%;
+        height: 100%;
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        position: absolute;
+        transform-style: preserve-3d;
+        @include transition(0.5s);
+        .single-text {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        &:hover {
+            transform: rotateX(180deg);
+            -webkit-transform: rotateX(180deg);
+            -moz-transform: rotateX(180deg);
+            -ms-transform: rotateX(180deg);
+            -o-transform: rotateX(180deg);
+        }
+        .btn-face {
+            margin: 0;
+            color: #fff;
+            background-color: tomato;
+        }
+        .btn-back {
+            color: #fff;
+            background-color: #1abc9c;
+            text-decoration: none;
+            transform: rotateX(180deg);
+            -webkit-transform: rotateX(180deg);
+            -moz-transform: rotateX(180deg);
+            -ms-transform: rotateX(180deg);
+            -o-transform: rotateX(180deg);
+        }
+    }
+}
+
+
+/*
+<div class="parent-face-back-rotate-y">
+      <div class="button-text">
+        <span class="btn-face single-text">see more</span>
+        <a href="#" class="btn-back single-text">click here</a>
+      </div>
+    </div>
+*/
+
+// rotate-y
+.parent-face-back-rotate-y {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    perspective: 600px;
+    &:not(:last-child) {
+        margin-right: 15px;
+    }
+    .button-text {
+        width: 100%;
+        height: 100%;
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        position: absolute;
+        transform-style: preserve-3d;
+        @include transition(0.5s);
+        .single-text {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        &:hover {
+            transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
+        }
+        .btn-face {
+            margin: 0;
+            color: #fff;
+            background-color: tomato;
+        }
+        .btn-back {
+            color: #fff;
+            background-color: #1abc9c;
+            text-decoration: none;
+            transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
+        }
+    }
+}
+
+
+/*
+<div class="parent-view">
+      <div class="view-area">
+        <div class="play">
+          <i class="fa fa-play"></i>
+        </div>
+      </div>
+    </div>
+*/
+
+// view
+.parent-view {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    .view-area {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        .play {
+            width: 80px;
+            height: 80px;
+            background: #ffcd44;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+            line-height: 80px;
+            -webkit-animation-name: shadow;
+            animation-name: shadow;
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+            // animation: animate 2s linear infinite;
+            // -webkit-animation: animate 2s linear infinite;
+            @include borderRadius(50%);
+            @-webkit-keyframes shadow {
+                0% {
+                    box-shadow: 0 0 0 0 rgba(255, 206, 67, 0.7);
+                    background-color: #007bff;
+                }
+                40% {
+                    box-shadow: 0 0 0 50px rgba(255, 206, 67, 0);
+                }
+                80% {
+                    box-shadow: 0 0 0 50px rgba(255, 206, 67, 0);
+                }
+                100% {
+                    box-shadow: 0 0 0 0 rgba(255, 206, 67, 0);
+                }
+            }
+            @keyframes shadow {
+                0% {
+                    box-shadow: 0 0 0 0 rgba(255, 206, 67, 0.7);
+                }
+                40% {
+                    box-shadow: 0 0 0 50px rgba(255, 206, 67, 0);
+                }
+                80% {
+                    box-shadow: 0 0 0 50px rgba(255, 206, 67, 0);
+                }
+                100% {
+                    box-shadow: 0 0 0 0 rgba(255, 206, 67, 0);
+                }
+            }
+        }
+    }
+}
+
+
+/*
+<div class="css-parent-text-shadow-1">
+      <h2 class="h1">hossam rashad</h2>
+    </div>
+*/
+
+// parent-shadow-1
+.css-parent-text-shadow-1 {
+    background: #ddd;
+    padding: 10px;
+    h2 {
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        @include transition(0.5s);
+        @include hover {
+            text-shadow: -1px -1px 1px #333, 0 1px 0 #333, 0 2px 0 #333, 0 2px 0 #333, 0 3px 0 #333, 0 4px 0 #333, 0 5px 0 #333, 0 6px 0 #333, 0 7px 0 #333, 0 8px 0 #333, 0 9px 0 #333, 0 10px 0 #333, 0 11px 0 #333, 0 12px 0 #333, 0 13px 0 #333, 0 14px 0 #333, 0 15px 0 #333, 10px 25px 35px rgba(0, 0, 0, 0);
+        }
+    }
+}
+
+//parent-btn-open
+
+/*
+<!-- Start parent-btn-open -->
+    <div class="parent-btn-open">
+      <div class="button-text">
+        <span class="single-text">See More</span>
+        <a href="#" class="single-text">Click Here</a>
+      </div>
+    </div>
+    <!-- End parent-btn-open -->
+*/
+
+.parent-btn-open {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    perspective: 600px;
+    //
+    &:not(:last-child) {
+        margin-right: 15px;
+    }
+    .button-text {
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        //
+        span {
+            margin: 0;
+            color: map-get($colors, fff);
+            background-color: map-get($colors, 3498db);
+            transform-origin: 50% 0;
+            transition: transform 0.4s ease;
+            -webkit-transition: transform 0.4s ease;
+            -moz-transition: transform 0.4s ease;
+            -ms-transition: transform 0.4s ease;
+            -o-transition: transform 0.4s ease;
+        }
+        a {
+            color: map-get($colors, fff);
+            background-color: map-get($colors, 333);
+            text-decoration: none;
+            z-index: -5;
+        }
+        .single-text {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            @include borderRadius(10px);
+        }
+        &:hover span {
+            transform: rotateX(90deg);
+            -webkit-transform: rotateX(90deg);
+            -moz-transform: rotateX(90deg);
+            -ms-transform: rotateX(90deg);
+            -o-transform: rotateX(90deg);
+            transform-origin: 50% 0;
+            transition: transform 0.4s ease;
+            -webkit-transition: transform 0.4s ease;
+            -moz-transition: transform 0.4s ease;
+            -ms-transition: transform 0.4s ease;
+            -o-transition: transform 0.4s ease;
+        }
+    }
+}
+
+// social-box 2
+
+/*
+<!-- Start social-box-2 -->
+    <div class="css-parent-social-box-2">
+      <a href="#" class="box-facebook">
+        facebook
+        <i class="fa fa-facebook fa-fw"></i>
+      </a>
+      <a href="#" class="box-whatsapp"
+        >whatsapp
+        <i class="fa fa-whatsapp fa-fw"></i>
+      </a>
+
+      <a href="#" class="box-youtube"
+        >youtube
+        <i class="fa fa-youtube fa-fw"></i>
+      </a>
+      <a href="#" class="box-google"
+        >google
+        <i class="fa fa-google fa-fw"></i>
+      </a>
+      <a href="#" class="box-dribbble"
+        >dribbble
+        <i class="fa fa-dribbble fa-fw"></i>
+      </a>
+      <a href="#" class="box-linkedin"
+        >linkedin
+        <i class="fa fa-linkedin fa-fw"></i>
+      </a>
+      <a href="#" class="box-pinterest"
+        >pinterest
+        <i class="fa fa-pinterest fa-fw"></i>
+      </a>
+      <a href="#" class="box-github"
+        >github
+        <i class="fa fa-github fa-fw"></i>
+      </a>
+    </div>
+    <!-- End social-box-2 -->
+*/
+
+.css-parent-social-box-2 {
+    a {
+        position: fixed;
+        right: -110px;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+        padding: 15px;
+        width: 150px;
+        text-decoration: none;
+        text-align: left;
+        font-size: $font-sm;
+        color: map-get($colors, fff);
+        margin-top: 15%;
+        text-transform: capitalize;
+        z-index: 1000;
+        @include borderRadius(5px);
+        &:hover {
+            right: 0px;
+        }
+    }
+    .box-facebook {
+        top: 10px;
+        background-color: map-get($colors, 3498db);
+    }
+    .box-whatsapp {
+        top: 80px;
+        background-color: map-get($colors, 29bb89);
+    }
+    .box-youtube {
+        top: 150px;
+        background-color: map-get($colors, c00);
+    }
+    .box-google {
+        top: 220px;
+        background-color: map-get($colors, 3498db);
+    }
+    .box-dribbble {
+        top: 290px;
+        background-color: map-get($colors, ed4c67);
+    }
+    .box-linkedin {
+        top: 360px;
+        background-color: map-get($colors, 046582);
+    }
+    .box-pinterest {
+        top: 430px;
+        background-color: map-get($colors, 999);
+    }
+    .box-github {
+        top: 500px;
+        background-color: map-get($colors, 333);
+    }
+}
+
+
+/*
+//- Start Mouse Icon
+div(class="css-parent-mouse-icon")
+    div(class="mouse-icon")
+        div(class="wheel")
+//- End Mouse Icon
+
+*/
+
+.css-parent-mouse-icon {
+    position: relative;
+    .mouse-icon {
+        position: absolute;
+        left: 50%;
+        bottom: 25px;
+        border: 1px solid map-get($colors, 3498db);
+        height: 50px;
+        width: 30px;
+        margin-left: -17px;
+        display: block;
+        z-index: 10;
+        @include borderRadius(16px);
+        .wheel {
+            position: relative;
+            @include borderRadius(10px);
+            background-color: map-get($colors, 333);
+            width: 4px;
+            height: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            -webkit-animation-name: drop;
+            animation-name: drop;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+            -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-play-state: running;
+            animation-play-state: running;
+        }
+        @-webkit-keyframes drop {
+            0% {
+                top: 5px;
+                opacity: 0;
+            }
+            30% {
+                top: 10px;
+                opacity: 1;
+            }
+            100% {
+                top: 25px;
+                opacity: 0;
+            }
+        }
+        @keyframes drop {
+            0% {
+                top: 5px;
+                opacity: 0;
+            }
+            30% {
+                top: 10px;
+                opacity: 1;
+            }
+            100% {
+                top: 25px;
+                opacity: 0;
+            }
+        }
+    }
+}
+
+// parent-btn-ching-color-hover
+
+/*
+<div class="css-parent-ching-color-left">
+      <a href="#" class=""> <span>Contact Us</span> </a>
+    </div>
+*/
+
+.css-parent-ching-color-left {
+    position: relative;
+    a {
+        position: absolute;
+        font-size: $font-sm + 5;
+        text-decoration: none;
+        text-transform: capitalize;
+        background-color: map-get($colors, fff);
+        border: 1px solid map-get($colors, 3498db);
+        padding: 10px 15px;
+        overflow: hidden;
+        transform: translate(0%, 0%);
+        @include translate(0%, 0%);
+        @include borderRadius(5px);
+        width: fit-content;
+        &::before {
+            content: "";
+            position: absolute;
+            @include transition(0.3s);
+            height: 100%;
+            background: map-get($colors, 3498db);
+            width: 100%;
+            top: 0;
+            left: -100%;
+        }
+        &:hover::before {
+            left: 0;
+            z-index: -1;
+        }
+        span {
+            color: map-get($colors, 3498db);
+            @include transition(0.3s);
+            z-index: 1;
+        }
+        &:hover span {
+            color: map-get($colors, fff);
+        }
+    }
+}
+
+.css-parent-ching-color-right {
+    position: relative;
+    a {
+        position: absolute;
+        font-size: $font-sm + 5;
+        text-decoration: none;
+        text-transform: capitalize;
+        background-color: map-get($colors, fff);
+        border: 1px solid map-get($colors, 3498db);
+        padding: 10px 15px;
+        overflow: hidden;
+        transform: translate(0%, 0%);
+        -webkit-transform: translate(0%, 0%);
+        -moz-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+        -o-transform: translate(0%, 0%);
+        @include borderRadius(5px);
+        &::before {
+            content: "";
+            position: absolute;
+            @include transition(0.3s);
+            height: 100%;
+            background: map-get($colors, 3498db);
+            width: 100%;
+            top: 0;
+            right: -100%;
+        }
+        &:hover::before {
+            right: 0;
+            z-index: -1;
+        }
+        span {
+            color: map-get($colors, 3498db);
+            @include transition(0.3s);
+            z-index: 1;
+        }
+        &:hover span {
+            color: map-get($colors, fff);
+        }
+    }
+}
+
+.css-parent-ching-color-top {
+    position: relative;
+    a {
+        position: absolute;
+        font-size: $font-sm + 5;
+        text-decoration: none;
+        text-transform: capitalize;
+        background-color: map-get($colors, fff);
+        border: 1px solid map-get($colors, 3498db);
+        padding: 10px 15px;
+        overflow: hidden;
+        transform: translate(0%, 0%);
+        -webkit-transform: translate(0%, 0%);
+        -moz-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+        -o-transform: translate(0%, 0%);
+        @include borderRadius(5px);
+        &::before {
+            content: "";
+            position: absolute;
+            @include transition(0.3s);
+            height: 100%;
+            background: map-get($colors, 3498db);
+            width: 100%;
+            left: 0;
+            top: -100%;
+        }
+        &:hover::before {
+            top: 0;
+            z-index: -1;
+        }
+        span {
+            color: map-get($colors, 3498db);
+            @include transition(0.3s);
+            z-index: 1;
+        }
+        &:hover span {
+            color: map-get($colors, fff);
+        }
+    }
+}
+
+.css-parent-ching-color-bottom {
+    position: relative;
+    a {
+        position: absolute;
+        font-size: $font-sm + 5;
+        text-decoration: none;
+        text-transform: capitalize;
+        background-color: map-get($colors, fff);
+        border: 1px solid map-get($colors, 3498db);
+        padding: 10px 15px;
+        overflow: hidden;
+        transform: translate(0%, 0%);
+        -webkit-transform: translate(0%, 0%);
+        -moz-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+        -o-transform: translate(0%, 0%);
+        @include borderRadius(5px);
+        &::before {
+            content: "";
+            position: absolute;
+            @include transition(0.3s);
+            height: 100%;
+            background: map-get($colors, 3498db);
+            width: 100%;
+            right: 0;
+            bottom: -100%;
+        }
+        &:hover::before {
+            bottom: 0;
+            z-index: -1;
+        }
+        span {
+            color: map-get($colors, 3498db);
+            @include transition(0.3s);
+            z-index: 1;
+        }
+        &:hover span {
+            color: map-get($colors, fff);
+        }
+    }
+}
+
+// css-parent-btn-flip-2
+
+/*
+<!-- Start btn-flip -->
+<div class="css-parent-btn-flip-2">
+  <a href="#" title="Login" class="link"></a>
+</div>
+<!-- End btn-flip -->
+*/
+
+.css-parent-btn-flip-2 {
+    position: relative;
+    .link {
+        font-size: $font-sm;
+        font-family: poppins;
+        text-decoration: none;
+        text-transform: uppercase;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+        &::before {
+            content: attr(title);
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 5px 30px;
+            background: #fff;
+            color: tomato;
+            border: 1px solid tomato;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+            transform: translateX(-100%) rotateY(90deg);
+            -webkit-transform: translateX(-100%) rotateY(90deg);
+            -moz-transform: translateX(-100%) rotateY(90deg);
+            -ms-transform: translateX(-100%) rotateY(90deg);
+            -o-transform: translateX(-100%) rotateY(90deg);
+            transform-origin: right;
+        }
+        &::after {
+            content: attr(title);
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 5px 30px;
+            background: tomato;
+            color: #fff;
+            border: 1px solid tomato;
+            transition: 0.4s;
+            -webkit-transition: 0.4s;
+            -moz-transition: 0.4s;
+            -ms-transition: 0.4s;
+            -o-transition: 0.4s;
+            transform: translateX(0) rotateY(0deg);
+            -webkit-transform: translateX(0) rotateY(0deg);
+            -moz-transform: translateX(0) rotateY(0deg);
+            -ms-transform: translateX(0) rotateY(0deg);
+            -o-transform: translateX(0) rotateY(0deg);
+            transform-origin: left;
+        }
+        &:hover::before {
+            transform: translateX(0) rotateY(0deg);
+            -webkit-transform: translateX(0) rotateY(0deg);
+            -moz-transform: translateX(0) rotateY(0deg);
+            -ms-transform: translateX(0) rotateY(0deg);
+            -o-transform: translateX(0) rotateY(0deg);
+        }
+        &:hover::after {
+            transform: translateX(100%) rotateY(90deg);
+            -webkit-transform: translateX(100%) rotateY(90deg);
+            -moz-transform: translateX(100%) rotateY(90deg);
+            -ms-transform: translateX(100%) rotateY(90deg);
+            -o-transform: translateX(100%) rotateY(90deg);
+        }
+    }
+}
+
+// css-parent-text-back-img
+
+/*
+<!-- Start text-back-img -->
+<div class="css-parent-text-back-img">
+  <h2 class="h1">Hossam</h2>
+</div>
+<!-- End text-back-img -->
+*/
+
+.css-parent-text-back-img {
+    width: 100%;
+    @include flexCenter;
+    .h1 {
+        font-size: 5vw;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-family: poppins;
+        margin: 0;
+        background-image: url(https://placeimg.com/200/200/arch);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
+
+// css-overlay-top
+
+/*
+<!-- Start overlay-top -->
+          <div class="css-overlay-top">
+            <div class="side-text">
+              <h2 class="h1">hossam rashad</h2>
+            </div>
+            <div class="side-img">
+              <img
+                src="images/440x440/image-1.jpg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </div>
+          </div>
+          <!-- End overlay-top -->
+*/
+
+.css-overlay-top {
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .h1 {
+        margin: 0;
+        padding: 0;
+        line-height: 250px;
+        font-size: 2vw;
+        font-family: poppins;
+        text-transform: uppercase;
+    }
+    .side-text,
+    .side-img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        perspective: 600px;
+        transform-style: preserve-3d;
+        transition: 0.5s ease-in-out;
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -ms-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
+    .side-text {
+        background-color: #007bff;
+        color: #fff;
+        transform: rotateX(90deg);
+        -webkit-transform: rotateX(90deg);
+        -moz-transform: rotateX(90deg);
+        -ms-transform: rotateX(90deg);
+        -o-transform: rotateX(90deg);
+        transform-origin: bottom center;
+    }
+    .side-img {
+        background-color: #fff;
+        color: #007bff;
+        transform-origin: top center;
+        transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        -ms-transform: rotateX(0deg);
+        -o-transform: rotateX(0deg);
+    }
+    &:hover .side-text {
+        transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        -ms-transform: rotateX(0deg);
+        -o-transform: rotateX(0deg);
+    }
+    &:hover .side-img {
+        transform: rotateX(120deg);
+        -webkit-transform: rotateX(120deg);
+        -moz-transform: rotateX(120deg);
+        -ms-transform: rotateX(120deg);
+        -o-transform: rotateX(120deg);
+    }
+}
+
+// css-parent-btn-back-color-move
+
+/*
+<!-- Start back-color-move -->
+          <div class="css-parent-btn-back-color-move">
+            <a href="#" class="link">learn more</a>
+          </div>
+          <!-- End back-color-move -->
+*/
+
+.css-parent-btn-back-color-move {
+    position: relative;
+    .link {
+        position: absolute;
+        text-transform: capitalize;
+        color: map-get($colors, 3498db);
+        background-color: transparent;
+        border: 2px solid map-get($colors, 3498db);
+        cursor: pointer;
+        transition: all 0.5s cubic-bezier(0.6, 0, 0.7, 1);
+        -webkit-transition: all 0.5s cubic-bezier(0.6, 0, 0.7, 1);
+        -moz-transition: all 0.5s cubic-bezier(0.6, 0, 0.7, 1);
+        -ms-transition: all 0.5s cubic-bezier(0.6, 0, 0.7, 1);
+        -o-transition: all 0.5s cubic-bezier(0.6, 0, 0.7, 1);
+        line-height: 50px;
+        padding: 0px 15px;
+        display: block;
+        width: 135px;
+        height: 50px;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+        &:hover {
+            color: #fff;
+        }
+        &::before {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 0;
+            background-color: map-get($colors, 3498db);
+            transition: all 0.5s cubic-bezier(0.6, 0, 0.7, 1);
+            -webkit-transition: all 0.5s cubic-bezier(0.6, 0, 0.7, 1);
+            -moz-transition: all 0.5s cubic-bezier(0.6, 0, 0.7, 1);
+            -ms-transition: all 0.5s cubic-bezier(0.6, 0, 0.7, 1);
+            -o-transition: all 0.5s cubic-bezier(0.6, 0, 0.7, 1);
+        }
+        &:hover::before {
+            left: 0;
+            right: auto;
+            width: 100%;
+        }
+    }
+}
+
+// css-parent-btn-back-face-1
+
+/*
+<!-- Start back-face-1 -->
+<div class="css-parent-btn-back-face-1">
+  <a href="#" class="link">
+    <div class="side-face">learn more</div>
+    <div class="side-back">learn more</div>
+  </a>
+</div>
+<!-- End back-face-1 -->
+*/
+
+.css-parent-btn-back-face-1 {
+    position: relative;
+    .link {
+        position: absolute;
+        width: 160px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        color: map-get($colors, 3498db);
+        text-decoration: none;
+        letter-spacing: 1px;
+        border: 2px solid map-get($colors, 3498db);
+        font-size: $font-sm;
+        @include transition(0.5s);
+        overflow: hidden;
+        @include borderRadius(5px);
+        //
+        .side-face {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include scale(1, 1);
+            @include transition(0.5s);
+        }
+        .side-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include scale(3, 3);
+            @include transition(0.5s);
+            color: map-get($colors, fff);
+            background-color: map-get($colors, 3498db);
+            @include opacity(0);
+        }
+        &:hover .side-face {
+            @include scale(0, 0);
+        }
+        &:hover .side-back {
+            @include scale(1, 1);
+            @include opacity(1);
+        }
+    }
+}
+
+
+/*
+<!-- Start back-face-2 -->
+            <div class="css-parent-btn-back-face-2">
+              <div class="side-face">
+                <p><a href="#" class="link"> learn more</a></p>
+              </div>
+              <div class="side-back">
+                <p><a href="#" class="link"> learn more</a></p>
+              </div>
+            </div>
+            <!-- End back-face-2 -->
+*/
+
+// css-parent-btn-back-face-2
+.css-parent-btn-back-face-2 {
+    width: 150px;
+    height: 60px;
+    margin-top: 30px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    .side-face {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: map-get($colors, 333);
+        @include borderRadius(5px);
+        p {
+            font-size: $font-sm + 2;
+            text-align: center;
+            line-height: 60px;
+            letter-spacing: 0.1em;
+            .link {
+                text-decoration: none;
+                color: map-get($colors, fff);
+            }
+        }
+    }
+    .side-back {
+        position: absolute;
+        width: 150px;
+        height: 60px;
+        top: -60px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: map-get($colors, 3498db);
+        @include transition(0.5s);
+        p {
+            font-size: $font-sm + 2;
+            text-align: center;
+            line-height: 60px;
+            letter-spacing: 0.1em;
+            .link {
+                text-decoration: none;
+                color: map-get($colors, fff);
+            }
+        }
+    }
+    &:hover .side-back {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        @include transition(0.5s);
+        top: 0;
+    }
+}
+
+
+/*
+<!-- start translateY -->
+                <div class="parent-social">
+                  <div class="child-social">
+                    <div class="button">find us</div>
+                    <a href="#"><i class="fa fa-facebook fa-2x fa-fw"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-2x fa-fw"></i></a>
+                    <a href="#"><i class="fa fa-google fa-2x fa-fw"></i></a>
+                    <a href="#"><i class="fa fa-linkedin fa-2x fa-fw"></i></a>
+                  </div>
+                </div>
+                <!-- end translateY -->
+
+*/
+
+// btn-social - translateY
+.parent-social-three {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // div
+    .child-social {
+        width: 230px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border: 2px solid $main-color;
+        overflow: hidden;
+        @include borderRadius(5px);
+        //
+        .button {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            background-color: $main-color;
+            @include borderRadius(5px);
+            font-size: 1.5em;
+            font-family: cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            @include transitionAll(all, 0.5s, linear);
+            color: $color-fff;
+        }
+        &:hover>.button {
+            @include translateY(120%);
+        }
+        &:hover>a {
+            // top: 10px;
+            @include translateY(90%);
+        }
+        a {
+            cursor: pointer;
+            position: absolute;
+            @include borderRadius(50%);
+            color: $color-fff;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 12px;
+            // facebook
+            &:nth-child(2) {
+                top: -35px;
+                left: 0px;
+                background-color: #3b5998;
+                @include transitionAll(all, 0.3s, linear);
+                transition-delay: 0.1s;
+                padding: 10px;
+                text-align: center;
+                &:hover {
+                    color: #3b5998;
+                    background-color: #fff;
+                    @include boxShadow(-1px, 0px, 10px, #3b5998);
+                }
+            }
+            // twitter
+            &:nth-child(3) {
+                top: -35px;
+                left: 60px;
+                background-color: #1da1f2;
+                @include transitionAll(all, 0.3s, linear);
+                transition-delay: 0.2s;
+                &:hover {
+                    color: #1da1f2;
+                    background-color: #fff;
+                    @include boxShadow(-1px, 0px, 10px, #1da1f2);
+                }
+            }
+            // google
+            &:nth-child(4) {
+                top: -35px;
+                right: 57px;
+                @include transitionAll(all, 0.3s, linear);
+                transition-delay: 0.3s;
+                background-color: #4285f4;
+                &:hover {
+                    color: #4285f4;
+                    background-color: #fff;
+                    @include boxShadow(-1px, 0px, 10px, #4285f4);
+                }
+            }
+            // linkedin
+            &:nth-child(5) {
+                top: -35px;
+                right: 0px;
+                @include transitionAll(all, 0.3s, linear);
+                transition-delay: 0.4s;
+                background-color: #caccce;
+                &:hover {
+                    color: #caccce;
+                    background-color: #fff;
+                    @include boxShadow(-1px, 0px, 10px, #caccce);
+                }
+            }
+        }
+    }
+}
+
+//
+.button-hover-four-back-up {
+    position: relative;
+    .parent-btn {
+        min-width: 200px;
+        height: 60px;
+        position: absolute;
+        @include positionCenter;
+        overflow: hidden;
+        .btn-child {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: 2px solid $main-color;
+            outline: auto;
+            text-align: center;
+            a {
+                @include transitionAll(all, 0.4s, linear);
+                cursor: pointer;
+                color: $main-color;
+                font-size: 1.4rem;
+                line-height: 60px;
+            }
+        }
+        .bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 25%;
+            height: 100%;
+            background-color: $main-color;
+            z-index: -1;
+            @include translateY(100%);
+            @include transitionAll(all, 0.4s, linear);
+            &:nth-child(3) {
+                left: 50px;
+                transition-delay: 0.1s;
+            }
+            &:nth-child(4) {
+                left: 100px;
+                transition-delay: 0.2s;
+            }
+            &:nth-child(5) {
+                left: 150px;
+                transition-delay: 0.3s;
+            }
+        }
+        &:hover .bg {
+            @include translateY(0);
+        }
+        &:hover .btn-child a {
+            color: $color-fff;
+        }
+    }
+}
+
+
+/*
+
+<div class="social-four">
+              <div class="icon facebook">
+                <div class="social-name">facebook</div>
+                <span class="span-facebook"
+                  ><a
+                    href="https://www.facebook.com/XpassionAgency"
+                    target="_blank"
+                    class="fab fa-facebook"
+                  ></a
+                ></span>
+              </div>
+              <div class="icon twitter">
+                <div class="social-name">twitter</div>
+                <span class="span-twitter"
+                  ><a
+                    href="https://twitter.com/XpassionAgencey"
+                    target="_blank"
+                    class="fab fa-twitter"
+                  ></a
+                ></span>
+              </div>
+              <div class="icon youtube">
+                <div class="social-name">youtube</div>
+                <span class="span-youtube"
+                  ><a
+                    href="https://www.youtube.com/channel/UCriZwZ_VTKuFwBSHPDO97cA?view_as=subscriber"
+                    target="_blank"
+                    class="fab fa-youtube"
+                  ></a
+                ></span>
+              </div>
+              <div class="icon linkedin">
+                <div class="social-name">linkedin</div>
+                <span class="span-linkedin"
+                  ><a
+                    href="https://www.linkedin.com/company/xpassion-agencey/"
+                    target="_blank"
+                    class="fab fa-linkedin"
+                  ></a
+                ></span>
+              </div>
+              <div class="icon instagram">
+                <div class="social-name">instagram</div>
+                <span class="span-instagram"
+                  ><a
+                    href="https://www.instagram.com/agenceyxpassion/"
+                    target="_blank"
+                    class="fab fa-instagram"
+                  ></a
+                ></span>
+              </div>
+              <div class="icon pinterest">
+                <div class="social-name">pinterest</div>
+                <span class="span-pinterest"
+                  ><a
+                    href="https://www.pinterest.com/consualtingmarketingwebdevelop/_saved/"
+                    target="_blank"
+                    class="fab fa-pinterest"
+                  ></a
+                ></span>
+              </div>
+            </div>
+*/
+
+// social-four
+.social-four {
+    // display: inline-flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16%, 1fr));
+    gap: 0px 0px;
+    @include sm-md-media {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
+        gap: 70px 10px;
+    }
+    @include md-lg-media {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
+        gap: 70px 10px;
+    }
+    .social-name {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        background-color: $color-fff;
+        color: $color-fff;
+        padding: 10px 18px;
+        font-size: 20px;
+        font-weight: 500;
+        @include borderRadius(25px);
+        opacity: 0;
+        pointer-events: none;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -webkit-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -moz-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -ms-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -o-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        &::before {
+            position: absolute;
+            content: "";
+            height: 15px;
+            width: 15px;
+            background-color: $color-fff;
+            left: 50%;
+            bottom: -6px;
+            transform: translateX(-50%) rotate(45deg);
+            -webkit-transform: translateX(-50%) rotate(45deg);
+            -moz-transform: translateX(-50%) rotate(45deg);
+            -ms-transform: translateX(-50%) rotate(45deg);
+            -o-transform: translateX(-50%) rotate(45deg);
+            transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            -webkit-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            -moz-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            -ms-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            -o-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+    }
+    .icon {
+        margin: 0 20px;
+        text-align: center;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+        transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -webkit-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -moz-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -ms-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -o-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        span {
+            display: block;
+            height: 60px;
+            width: 60px;
+            @include borderRadius(50%);
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            -webkit-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            -moz-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            -ms-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            -o-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            color: $color-fff;
+            a {
+                line-height: 60px;
+                font-size: 25px;
+                color: $color-fff;
+            }
+        }
+        .span-facebook {
+            background-color: $facebook-color;
+        }
+        .span-twitter {
+            background-color: $twitter-color-1;
+        }
+        .span-youtube {
+            background-color: $youtube-color-1;
+        }
+        .span-linkedin {
+            background-color: $linkedin-color-1;
+        }
+        .span-instagram {
+            background-color: $instagram-color-1;
+        }
+        .span-pinterest {
+            background-color: $pinterest-color;
+        }
+        @include hover {
+            .social-name {
+                top: -70px;
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+    }
+    .facebook:hover span,
+    .facebook:hover .social-name,
+    .facebook:hover .social-name::before {
+        background: $facebook-color;
+    }
+    .twitter:hover span,
+    .twitter:hover .social-name,
+    .twitter:hover .social-name::before {
+        background: $twitter-color-1;
+    }
+    .youtube:hover span,
+    .youtube:hover .social-name,
+    .youtube:hover .social-name::before {
+        background: $youtube-color-1;
+    }
+    .linkedin:hover span,
+    .linkedin:hover .social-name,
+    .linkedin:hover .social-name::before {
+        background: $linkedin-color-1;
+    }
+    .instagram:hover span,
+    .instagram:hover .social-name,
+    .instagram:hover .social-name::before {
+        background: $instagram-color-1;
+    }
+    .pinterest:hover span,
+    .pinterest:hover .social-name,
+    .pinterest:hover .social-name::before {
+        background: $pinterest-color;
+    }
+}
+
+//
+//
+//
+//
+//
+// btn one
+.css-btn-hover-one {
+    position: relative;
+    display: inline-flex;
+    padding: 10px 30px;
+    background: var(--btn-bg);
+    color: var(--btn-color);
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    overflow: hidden;
+    &:before {
+        content: "";
+        position: absolute;
+        top: var(--y);
+        left: var(--x);
+        width: 0;
+        height: 0;
+        background: #2196f3;
+        @include borderRadius(50%);
+        @include translate(-50%, -50%);
+        transition: width 0.5s, height 0.5s;
+        -webkit-transition: width 0.5s, height 0.5s;
+        -moz-transition: width 0.5s, height 0.5s;
+        -ms-transition: width 0.5s, height 0.5s;
+        -o-transition: width 0.5s, height 0.5s;
+    }
+    &:hover::before {
+        width: 300px;
+        height: 300px;
+    }
+    span {
+        position: relative;
+        z-index: 1;
+    }
+    &:hover {
+        color: #fff !important;
+    }
+}
+
+// btn tow
+.css-btn-hover-tow {
+    position: relative;
+    width: 160px;
+    height: 50px;
+    background: var(--btn-bg);
+    color: var(--btn-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: var(--btn-before);
+        transition-delay: 0.2s;
+        @include transitionAll(all, 0.2s, ease-in-out);
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 4px;
+        height: 100%;
+        background: var(--btn-before);
+        transition-delay: 0.2s;
+        @include transitionAll(all, 0.2s, ease-in-out);
+    }
+    &:hover::before,
+    &:hover:after {
+        width: 50%;
+        transition-delay: 0s;
+    }
+    span {
+        position: absolute;
+        color: var(--btn-color);
+        z-index: 1;
+        text-transform: capitalize;
+        @include transitionAll(all, 0.2s, linear);
+        &:nth-child(1) {
+            transition-delay: 0.2s;
+        }
+        &:nth-child(2) {
+            color: var(--btn-color);
+            @include scale(3, 3);
+            @include opacity(0);
+            transition-delay: 0s;
+        }
+    }
+    &:hover span:nth-child(1) {
+        @include scale(0, 0);
+        transition-delay: 0s;
+    }
+    &:hover span:nth-child(2) {
+        @include scale(1, 1);
+        transition-delay: 0s;
+        @include opacity(1);
+        z-index: 10;
+        transition-delay: 0.2s;
+    }
+}
+
+.btn-display-none {
+    display: none;
+}
+
+// Start Jquery Button Effect Example
+.btn-show-popup {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid var(--btn-normal-border);
+    background-color: var(--btn-normal-back);
+    color: var(--btn-normal-color);
+    @include borderRadius(5px);
+    @include transitionAll(all, 0.5s, linear);
+    @include hover {
+        border: 1px solid var(--btn-normal-back);
+        background-color: var(--btn-normal-color);
+        color: $main-color;
+        @include borderRadius(2px);
+    }
+}
+
+.buttons-effect {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    margin: 0px;
+    // border: 1px solid var(--btn-normal-border);
+    color: var(--btn-normal-color);
+    min-width: 150px;
+    width: fit-content;
+    padding: 10px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    @include borderRadius(5px);
+    @include transitionAll(all, 0.5s, linear);
+}
+
+.buttons-effect span:first-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    background-color: rgb(148, 23, 23);
+    z-index: 1;
+}
+
+.buttons-effect span:last-child {
+    position: relative;
+    z-index: 2;
+    text-transform: capitalize;
+}
+
+.buttons-effect.jq-back-to-left {
+    background-color: var(--btn-normal-back);
+}
+
+.buttons-effect.jq-back-to-left span:first-child {
+    background-color: #333;
+    width: 0;
+    height: 100%;
+}
+
+.buttons-effect.jq-back-to-top {
+    background-color: var(--btn-normal-border);
+}
+
+.buttons-effect.jq-back-to-top span:first-child {
+    background-color: #333;
+    width: 100%;
+    height: 0;
+}
+
+.jq-border-to-left,
+.jq-border-to-top {
+    @include borderRadius(0);
+    background-color: rgb(133, 133, 133);
+    color: var(--btn-normal-color);
+    overflow: visible;
+}
+
+.jq-border-to-left span:first-child {
+    background-color: #007bff;
+    width: 0;
+    height: 3px;
+    top: auto;
+    bottom: 1px;
+}
+
+.jq-border-to-top span:first-child {
+    background-color: #007bff;
+    width: 3px;
+    height: 0;
+    top: 0;
+}
+
+.buttons-effect.jq-bounce {
+    background-color: #25d366;
+    // margin-top: 5px;
+    position: relative;
+}
+
+// End Jquery Button Effect Example

@@ -1,0 +1,937 @@
+@import "../mixin/mixin";
+.jq-window-height {
+    text-decoration: none;
+}
+
+
+/*
+<!-- Start show-hide-box -->
+<div class="jq-show-hide-box">
+  <img src="images/440x440/image-1.jpg" alt="" class="img-fluid" />
+  <div class="img-text">
+    <h3 class="h2">rovan</h3>
+    <p class="lead">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+      laborum facilis quam beatae, ipsum sunt animi quasi dolore
+      blanditiis similique voluptatibus eligendi, cupiditate dicta
+      mollitia necessitatibus .
+    </p>
+  </div>
+</div>
+<!-- End show-hide-box -->
+*/
+
+.jq-show-hide-box {
+    text-decoration: none;
+    width: 100%;
+    img {
+        width: 100%;
+        height: 250px;
+    }
+    .img-text {
+        height: 225px;
+    }
+}
+
+.jq-magnific-image {
+    text-decoration: none;
+}
+
+.jq-magnific-gallery {
+    text-decoration: none;
+}
+
+.jq-magnific-video {
+    text-decoration: none;
+}
+
+// form validateMini
+.error-text {
+    color: red;
+}
+
+.valid-error {
+    border: 1px solid red;
+}
+
+.valid-pass {
+    border: 1px solid green;
+}
+
+// gmaps
+
+/*
+<!-- Start map -->
+    <div class="jq-map"></div>
+    <!-- End map -->
+*/
+
+.jq-map {
+    width: 100%;
+    min-height: 400px;
+}
+
+//
+.jq-backmove {
+    text-decoration: none;
+}
+
+// backgroundvideo
+.jq-backgroundvideo {
+    text-decoration: none;
+}
+
+// countTo
+.jq-countTo {
+    font: {
+        size: $font-page + 10;
+        weight: bold;
+        family: Arial, Helvetica, sans-serif;
+    }
+    color: #999;
+    display: block;
+}
+
+
+/*
+<div class="jq-snake">
+  <img src="images/440x440/image-1.jpg" alt="" />
+    <div class="overlay">
+      <div class="disc">
+      Quisquam, enim. Et, minus iste repellendus expedita fugit unde
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      voluptatem odio commodi, itaque omnis?
+      debitis rerum assumenda ipsa laborum explicabo, optio eaque
+      </div>
+      </div>
+            </div>
+*/
+
+.jq-snake {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        border: 5px solid #fff;
+        text-align: center;
+        .disc {
+            position: absolute;
+            color: #fff;
+            width: 100%;
+            top: 50%;
+            @include translateY(-50%);
+        }
+    }
+}
+
+// mixitup
+
+/*
+<!-- Start mixitup -->
+    <section class="mixitup">
+      <div class="container">
+        <div class="parent-mixitup">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="controls">
+                <button class="btn mixitup-btn-style active" data-filter="*">
+                  all
+                </button>
+                <button class="btn mixitup-btn-style" data-filter=".photo">
+                  photo
+                </button>
+                <button class="btn mixitup-btn-style" data-filter=".ui">
+                  ui
+                </button>
+                <button class="btn mixitup-btn-style" data-filter=".paint">
+                  painting
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row portfolio-item">
+            <div class="col-md-4 col-sm-6 mix single-item photo ui">
+              <div class="img-erea">
+                <img
+                  src="images/440x440/image-1.jpg"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="img-disc">
+                <h3 class="h2">rovan hossam</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur, voluptatum enim? Deserunt hic maiores id
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mix single-item photo paint">
+              <div class="img-erea">
+                <img
+                  src="images/440x440/image-8.jpg"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="img-disc">
+                <h3 class="h2">rovan hossam</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur, voluptatum enim? Deserunt hic maiores id
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mix single-item ui paint">
+              <div class="img-erea">
+                <img
+                  src="images/440x440/image-2.jpg"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="img-disc">
+                <h3 class="h2">rovan hossam</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur, voluptatum enim? Deserunt hic maiores id
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mix single-item photo ui">
+              <div class="img-erea">
+                <img
+                  src="images/440x440/image-3.jpg"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="img-disc">
+                <h3 class="h2">rovan hossam</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur, voluptatum enim? Deserunt hic maiores id
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mix single-item photo paint">
+              <div class="img-erea">
+                <img
+                  src="images/440x440/image-4.jpg"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="img-disc">
+                <h3 class="h2">rovan hossam</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur, voluptatum enim? Deserunt hic maiores id
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mix single-item photo paint">
+              <div class="img-erea">
+                <img
+                  src="images/440x440/image-5.jpg"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="img-disc">
+                <h3 class="h2">rovan hossam</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur, voluptatum enim? Deserunt hic maiores id
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End mixitup -->
+*/
+
+.mixitup {
+    padding: 60px 0px;
+    background-color: #f1f1f1;
+    h3.h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+    .parent-mixitup {
+        img {
+            width: 100%;
+        }
+        // controls button
+        div.controls {
+            text-align: center;
+            margin-bottom: 60px;
+            // button
+            button:focus {
+                outline: none;
+            }
+            button.mixitup-btn-style {
+                background: $main-color;
+                border: 1px solid $main-color;
+                color: $color-fff;
+                font-size: $font-page;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding: 10px 30px;
+                margin-bottom: 5px;
+                cursor: pointer;
+                @include transitionAll(all, 0.5s, linear);
+                @include borderRadius(5px);
+            }
+            button:hover,
+            button.mixitup-control-active {
+                background: $color-fff;
+                border: 1px solid $main-color;
+                color: $main-color;
+            }
+        }
+        // div parent item
+        div.portfolio-item {
+            div.single-item {
+                margin-bottom: 30px;
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+                //
+                div.img-erea {
+                    img {
+                        width: 100%;
+                    }
+                }
+                div.img-disc {
+                    @include overlay;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    @include transitionAll(all, 0.3s, linear);
+                    cursor: pointer;
+                    @include scaleY(0);
+                    transform-origin: center center;
+                    opacity: 0;
+                    visibility: hidden;
+                    color: $color-fff;
+                    h3.h2 {
+                        color: $main-color;
+                        text-transform: uppercase;
+                        font-size: $font-page + 4;
+                        margin: 10px;
+                    }
+                    p.lead {
+                        color: $color-fff;
+                        font-size: $font-page;
+                        padding: 0px 25px;
+                    }
+                }
+                &:hover .img-disc {
+                    @include scaleY(1);
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
+// test helpers js
+.numberChildbody {
+    position: fixed;
+    bottom: 70px;
+    left: 10px;
+    height: 50px;
+    color: #fff;
+    background-color: #333;
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    border: 2px solid #fafafa;
+}
+
+// start Owl style
+// for wol dir ltr
+.owl-stage-outer {
+    direction: ltr !important;
+}
+
+.owl-carousel {
+    // style xs media
+    @include xs-media {
+        display: inline-block;
+        .owl-prev,
+        .owl-next {
+            span {
+                font-size: 20px;
+                padding: 1px 18px;
+                background-color: #1abc9c;
+                color: #fff;
+                border: 2px solid #198754;
+                @include borderRadius(7px);
+            }
+        }
+    }
+    // style sm media
+    @include sm-media {
+        display: inline-block;
+        .owl-prev,
+        .owl-next {
+            span {
+                font-size: 30px;
+                padding: 1px 18px;
+                background-color: #1abc9c;
+                color: #fff;
+                border: 2px solid #198754;
+                @include borderRadius(7px);
+            }
+        }
+        // Button owl-prev
+        .owl-prev {
+            // span
+            span {
+                position: absolute;
+                right: 0%;
+                top: 50%;
+            }
+        }
+        // Button owl-next
+        .owl-next {
+            // span
+            span {
+                position: absolute;
+                left: 0%;
+                top: 50%;
+            }
+        }
+    }
+    // style media md
+    .owl-nav.disabled {
+        display: inline-block;
+        .owl-prev,
+        .owl-next {
+            span {
+                font-size: 30px;
+                padding: 1px 18px;
+                background-color: #1abc9c;
+                color: #fff;
+                border: 2px solid #198754;
+                @include borderRadius(7px);
+            }
+        }
+        // Button owl-prev
+        .owl-prev {
+            // span
+            span {
+                position: absolute;
+                right: 0%;
+                top: 50%;
+            }
+        }
+        // Button owl-next
+        .owl-next {
+            // span
+            span {
+                position: absolute;
+                left: 0%;
+                top: 50%;
+            }
+        }
+    }
+}
+
+// fitText
+.jq-fittext {
+    text-align: center;
+}
+
+// jq-nivo-slider
+.jq-nivo-slider {
+    position: relative;
+    .slider-wrapper {
+        .slider-active {
+            // height: 100vh;
+            img {}
+        }
+        .slider-content {
+            display: none;
+        }
+        .nivo-caption {
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
+        }
+        .slider-disc {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        .slider-bg {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 50px;
+            h2 {
+                font-size: 40px;
+                text-transform: uppercase;
+            }
+            p {
+                font-size: 19px;
+                color: #ddd;
+            }
+        }
+        // <<==  ==>>
+        .nivo-directionNav a {
+            font-size: 15px;
+            color: #fff;
+            background: #333;
+            width: 30px;
+            height: 100px;
+            line-height: 100px;
+            margin-top: -50px;
+            text-align: center;
+            @include transitionAll(all, 0.4s, linear);
+            left: -50px;
+            opacity: 0.5;
+            &:hover {
+                background-color: #fff;
+                color: #333;
+                opacity: 1;
+            }
+        }
+        // nivo-controlNav
+        .nivo-controlNav {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            z-index: 9999999999;
+            @include transitionAll(all, 0.4s, linear);
+            a {
+                width: 25px;
+                height: 7px;
+                margin: 0px 5px;
+                background: #fff;
+                display: inline-block;
+                text-indent: -99999px;
+                @include transitionAll(all, 0.4s, linear);
+            }
+            a.nivo-control:hover,
+            a.nivo-control.active {
+                background-color: #333;
+            }
+        }
+    }
+    &:hover .nivo-directionNav a {
+        opacity: 1;
+        left: 0;
+    }
+    &:hover .nivo-directionNav .nivo-nextNav {
+        right: 0;
+        left: auto;
+    }
+}
+
+// Start Jquery Examples
+// Class to Ul To Smooth Scroll To Element
+.jq-scroll-to-element {
+    text-decoration: none;
+}
+
+.navbar li a.active {
+    color: #1abc9c;
+    // font-size: 25px;
+    border-bottom: 3px solid #f00;
+}
+
+.block {
+    min-height: 100vh;
+}
+
+// popup
+
+/*
+<!-- Start popup -->
+span(class="btn-show-popup"  data-popup=".show-parent-popup") popup
+div(class='popup show-parent-popup')
+    div(class='inner')
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit
+        i(class="fas fa-window-close close")
+    <!-- End popup -->
+*/
+
+// Start Popup
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    //
+    .inner {
+        position: fixed;
+        background-color: $color-fff;
+        width: 50%;
+        overflow: auto;
+        height: 50%;
+        padding: 45px;
+        @include positionCenter;
+        @include borderRadius(5px);
+        .close {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            padding: 0px 6px;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            width: 40px;
+            line-height: 30px;
+            font-size: 25px;
+            @include borderRadius(3px);
+        }
+    }
+}
+
+// End Popup
+// Start Toggle Products Description
+.toggle-products-description {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+    gap: 0px 10px;
+    .product {
+        border: 1px solid #333;
+        background-color: #fff;
+        padding: 10px;
+        i {
+            display: block;
+            padding: 10px;
+            background-color: #eee;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .lead {
+            padding: 10px;
+            display: none;
+        }
+    }
+}
+
+// End Toggle Products Description
+// Start Product View
+.view-options {
+    display: flex;
+    justify-content: center;
+    .icon-disc-word {
+        position: relative;
+        color: $main-color;
+        &::before {
+            content: attr(data-text);
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -50%;
+            z-index: 1;
+            padding: 5px 10px;
+            font-size: 16px;
+            font-weight: 500;
+            opacity: 0;
+            min-width: 100px;
+            pointer-events: none;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            -webkit-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            -moz-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            -ms-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            -o-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            @include borderRadius(5px);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            z-index: 1;
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            -webkit-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            -moz-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            -ms-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            -o-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            border-style: solid;
+            border-width: 10px;
+            border-color: $main-color transparent transparent transparent;
+        }
+        &:hover::before {
+            background-color: $main-color;
+            color: white;
+            @include transition(0.5s);
+            top: -50px;
+            opacity: 1;
+            pointer-events: auto;
+        }
+        &:hover::after {
+            color: white;
+            @include transition(0.5s);
+            top: -17px;
+            opacity: 1;
+        }
+        i {
+            margin: 10px;
+            cursor: pointer;
+        }
+        i.active {
+            color: #1abc9c;
+        }
+    }
+}
+
+// Grid
+.products.products-grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+    gap: 0px 10px;
+    .product {
+        background-color: #fff;
+        padding: 10px;
+        position: relative;
+        img {
+            height: 140px;
+            width: 100%;
+        }
+        i {
+            display: block;
+            padding: 10px;
+            background-color: rgb(128, 91, 91);
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .lead {
+            padding: 10px;
+            display: none;
+        }
+        img+p {
+            display: none !important;
+        }
+    }
+}
+
+// List
+.products.products-list-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    gap: 0px 10px;
+    .product {
+        background-color: #fff;
+        padding: 10px;
+        height: 200px;
+        margin: 10px 0;
+        position: relative;
+        display: flex;
+        div:first-child {
+            order: 1;
+            padding-left: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: 100%;
+        }
+        i+.lead {
+            display: none;
+        }
+        i {
+            display: none;
+        }
+        .lead {
+            padding: 10px 0;
+            // display: block;
+        }
+    }
+}
+
+// End Product View
+// Start Error Massage
+.error-massage {
+    padding: 10px;
+    background-color: rgba(231, 76, 60, .7);
+    color: #fff;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    position: fixed;
+    top: 80px;
+    right: -50%;
+}
+
+// End Error Massage
+// Start Form Hide Placeholder
+.our-form {
+    form {
+        .input-group {
+            position: relative;
+            .valid {
+                .valid {
+                    i.fa-check {
+                        color: #1abc9c;
+                        display: none;
+                    }
+                }
+                .unValid {
+                    i.fa-times {
+                        color: #d24b4b;
+                        display: none;
+                    }
+                }
+            }
+            input,
+            textarea {
+                margin-bottom: 10px;
+            }
+            // Input Add Tag
+            .add-tag {
+                // display: block;
+            }
+            // Div Output Tag
+            .tags {
+                // display: block;
+                span {
+                    padding: 5px 10px;
+                    background-color: #dedede;
+                    color: #6f6f6f;
+                    display: inline-block;
+                    margin: 10px 10px 10px 0;
+                    @include borderRadius(5px);
+                    i {
+                        margin-right: 5px;
+                        color: #969696;
+                        cursor: pointer;
+                        @include hover {
+                            color: #333
+                        }
+                        ;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// End Form Hide Placeholder
+// trimmed-text
+.trimmed-text {
+    margin: auto;
+    width: 90%;
+    p {
+        background-color: #ddd;
+        padding: 10px;
+    }
+}
+
+// Same Height
+.same-height {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(29%, 1fr));
+    gap: 0px 10px;
+    div {
+        padding: 10px;
+        color: #fff;
+        background-color: #333;
+    }
+}
+
+// jq-cards
+.jq-cards {
+    position: relative;
+    min-height: 300px;
+    z-index: 1;
+    .card {
+        width: 150px;
+        height: 150px;
+        border: 2px solid #1abc9c;
+        cursor: pointer;
+        @include borderRadius(5px);
+        @include positionCenter;
+    }
+    .card-one {
+        background-color: #198754;
+    }
+    .card-tow {
+        background-color: #6f6f6f;
+    }
+    .card-three {
+        background-color: #d24b4b;
+    }
+    .card-four {
+        background-color: #3498db;
+    }
+    .card-five {
+        background-color: #7fdb34;
+    }
+    .card-sex {
+        background-color: #34b4db;
+    }
+}
+
+// blink-warning
+.blink-warning {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: fit-content;
+    color: #cc0d0d;
+    border: 2px solid #10abd4;
+    text-align: center;
+}
+
+// todo-list
+.todo-list {
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid #efefef;
+    h3 {
+        margin: 0;
+        padding: 15px;
+        border-bottom: 2px solid #969696;
+        background-color: #efefef;
+    }
+    // Ul
+    .tasks {
+        position: relative;
+        li.li-task {
+            padding: 10px;
+            border-bottom: 2px dashed #ccc;
+            color: #484848;
+            cursor: pointer;
+            position: relative;
+            @include borderRadius(5px);
+        }
+    }
+    // Form
+    .add-task {
+        .task-input {}
+    }
+}
+
+// End Jquery Examples

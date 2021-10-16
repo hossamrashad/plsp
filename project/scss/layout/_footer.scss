@@ -1,0 +1,44 @@
+
+.copyright {
+    margin:  0px;
+    padding: 20px 0px;
+    background-color: #161719;
+    color: map-get($colors, fff);
+    text-align: center;
+    .lead,
+    .link {
+      display: inline-block;
+    }
+    .link {
+      margin-right: 20px;
+      a {
+        text-decoration: none;
+        color: map-get($colors, 3498db);
+        font-size: 20px;
+        font-weight: bolder;
+        > div {
+          display: inline-block;
+        }
+        .css-parent-text-shadow-15-5 {
+          display: inline-block;
+          background: rgb(173, 173, 173);
+          padding: 10px;
+          @include borderRadius(5px);
+          h4 {
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            @include transition(0.5s);
+            &:hover {
+              text-shadow: -1px -1px 1px #333, 0 1px 0 #333, 0 2px 0 #333,
+                0 2px 0 #333, 0 3px 0 #333, 0 4px 0 #333, 0 5px 0 #333,
+                0 6px 0 #333, 0 7px 0 #333, 0 8px 0 #333, 0 9px 0 #333,
+                0 10px 0 #333, 0 11px 0 #333, 0 12px 0 #333, 0 13px 0 #333,
+                0 14px 0 #333, 0 15px 0 #333, 10px 25px 35px rgba(0, 0, 0, 0);
+            }
+          }
+        }
+      }
+    }
+  }

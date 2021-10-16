@@ -1,0 +1,9 @@
+// global
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  @include prefix(box-sizing, border-box, webkit moz o ms);
+}

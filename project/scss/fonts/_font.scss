@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&family=Changa:wght@200;300;400;500;600;700;800&family=El+Messiri:wght@400;500;600;700&family=Lateef&family=Markazi+Text:wght@400;500;600;700&family=Mirza:wght@400;500;600;700&family=Scheherazade:wght@400;700&family=Short+Stack&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+// @import "./font/font-ar";
+// web safe fonts
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+// Ar Font Family
+// Font Name || Cairo
+$font-cairo: "Cairo",
+sans-serif;
+$cairo-Font: "Cairo",
+sans-serif;
+$font-ar-0: "DroidKufi-regular";
+$font-ar-1: "Droid Arabic Kufi";
+$font-ar-2: "Short Stack",
+cursive;
+$font-ar-3: "Tajawal",
+sans-serif;
+$font-ar-4: "Markazi Text",
+serif;
+$font-ar-5: "El Messiri",
+sans-serif;
+$font-ar-6: "Changa",
+sans-serif;
+$font-ar-7: "Mirza",
+cursive;
+$font-ar-8: "Lateef",
+cursive;
+$font-ar-9: "Scheherazade",
+serif;
+$font-droid: "Droid Arabic Kufi";
+$droid-font: "Droid Arabic Kufi";
+// EN Font Family
+// Font Name || Tahoma
+$font-en-1: "Tahoma, Arial";
+$font-Tahoma: "Tahoma, Arial";
+$Tahoma-font: "Tahoma, Arial";
+// best web safe fonts for html and css
+$font-safe-1: "Arial, sans-serif";
+// Font Name || Times
+$font-safe-2: "Times";
+$font-safe-3: "Times New Roman",
+serif;
+$font-safe-4: "Courier New",
+Courier,
+monospace;
+// Font Name || Courier
+$font-safe-5: "Courier Prime",
+monospace;
+// Font Name || Verdana
+$font-safe-6: "Verdana, Geneva, sans-serif";
+// Font Name || Georgia
+$font-safe-7: " Georgia, serif";
+// Font Name || Cormorant
+$font-safe-7: "Cormorant Garamond",
+serif;
+// Font Name || Garamond
+$font-safe-8: "EB Garamond",
+serif;
+// Font Name || Tahoma
+$font-safe-10: "Tahoma";
+// Font Name || Arial
+$font-safe-11: "Arial, Helvetica, sans-serif";
+// Font Name || Trebuchet MS
+$font-safe-12: "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif";
+// Font Name || Impact
+$font-safe-13: "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif";
+// Font Size
+$font-lg: 40px;
+$font-md: 30px;
+$font-sm: 20px;
+$font-page: 16px;
+$page-font: 16px;

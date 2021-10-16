@@ -1,0 +1,56 @@
+include variables/variables.pug
+include mixin/mixin.pug
+doctype 
+html(lang="ar" dir="rtl" data-theme="light") 
+    //- html(lang="en") 
+    //- html(lang='ar' dir="rtl") 
+
+    head 
+        //- start head  
+        include head/head.pug
+
+        block pageTitle
+            title HomePage
+
+    //- end head
+
+    body 
+        //- start body
+        nav.nav.fixed-top
+            li.nav-item
+                a.nav-link.active(href='#') Item 1
+            li.nav-item
+                a.nav-link.disabled(href='#', tabindex='-1', aria-disabled='true') Item 2
+
+
+        //- btn one
+        div(class="container")
+            div(class="row")
+                div(class="col-sm-6")
+                    p(class="lead") Hossam
+                div(class="col-sm-6")
+                    p(class="lead") Rashad
+                    <i class="fab fa-accessible-icon"></i>
+
+
+        //- Start Btn
+        include button/button.pug
+        //- End Btn
+
+        .Element-Parent 
+            //- a(href="javascript:history.go(1)" class="btnTest") go back now
+
+        //- +btnTow('read')
+
+
+
+        //- Start Global
+        include global/global.pug
+        //- End Global
+        div(class='' id="Element")
+
+        include script/script.pug
+        script(src="../js/tools.js") 
+        script(src="../js/tools-test.js") 
+        script(src="http://localhost:35729/livereload.js")
+        //- end body

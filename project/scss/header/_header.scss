@@ -1,0 +1,298 @@
+// // @import "../mixin/";
+// // Header
+// // navbar bootstrap
+// nav.navbar {
+//     @include transitionAll(all, 0.5s, ease);
+//     // a like logo
+//     .navbar-brand {}
+//     // button dropdown menu for mobail phone
+//     .navbar-toggler {
+//         // span = img
+//         .navbar-toggler-icon {}
+//     }
+//     // div = container for ul
+//     div.collapse.navbar-collapse {
+//         // ul link
+//         ul.navbar-nav {
+//             @include xs-media {
+//                 // if you went to li start left in rtl
+//                 // align-items: flex-start;
+//                 // if you went to li start left in rtl
+//                 // align-items: flex-end;
+//             }
+//             // li
+//             li.nav-item {
+//                 // a
+//                 a.nav-link {
+//                     font-weight: bold;
+//                     font-size: 1.5rem;
+//                     border-bottom: 2px solid transparent;
+//                     transition: all 0.5s linear;
+//                     // Hover
+//                     &:hover {
+//                         font-size: 1.5rem;
+//                         color: var(--min-color);
+//                         border-bottom: 2px solid #3498db;
+//                     }
+//                 }
+//                 // a active
+//                 a.nav-link.active {}
+//             }
+//             // li dropdown
+//             li.nav-item.dropdown {
+//                 // a link name
+//                 a.nav-link.dropdown-toggle {}
+//                 // div dropdown
+//                 ul.dropdown-menu {
+//                     li {
+//                         // a item
+//                         a.dropdown-item {}
+//                     }
+//                 }
+//             }
+//         }
+//         // form
+//         form.d-flex {
+//             input.form-control.me-2 {}
+//             button.btn.btn-outline-success {}
+//         }
+//     }
+// }
+
+// // nav new style
+
+// /*
+// <div
+//         class="collapse navbar-collapse css-menu-hover-1"
+//         id="navbarSupportedContent"
+//       >
+//         <ul class="navbar-nav mr-auto">
+//           <li class="nav-item active">
+//             <a class="nav-link" href="#"
+//               >Home <span class="sr-only">(current)</span></a
+//             >
+//           </li>
+//           <li class="nav-item">
+//             <a class="nav-link" href="#"><span title="hossam">hossam</span></a>
+//           </li>
+//           <li class="nav-item">
+//             <a class="nav-link" href="#"><span title="rashad">rashad</span></a>
+//           </li>
+//           <li class="nav-item">
+//             <a class="nav-link" href="#"><span title="ahmed">ahmed</span></a>
+//           </li>
+//           <li class="nav-item">
+//             <a class="nav-link" href="#"><span title="aboud">aboud</span></a>
+//           </li>
+//           <li class="nav-item">
+//             <a class="nav-link" href="#"><span title="aboud">aboud</span></a>
+//           </li>
+//           <li class="nav-item">
+//             <a class="nav-link" href="#"><span title="hegazy">hegazy</span></a>
+//           </li>
+//         </ul>
+//       </div>
+// */
+
+// .css-menu-hover-1 {
+//     ul {
+//         li {
+//             transform-style: preserve-3d;
+//             display: inline-block;
+//             a {
+//                 position: relative;
+//                 display: block;
+//                 color: #fff;
+//                 // font-size: 18px;
+//                 font-family: poppins;
+//                 text-transform: uppercase;
+//                 text-decoration: none;
+//                 // font-weight: bold;
+//                 // background-color: #1abc9c;
+//                 span {
+//                     display: block;
+//                     // padding: 15px 30px;
+//                     width: 100%;
+//                     height: 100%;
+//                     &::before {
+//                         content: attr(title);
+//                         position: absolute;
+//                         top: 0;
+//                         left: 0;
+//                         background-color: tomato;
+//                         color: #fff;
+//                         padding: 10px 0px;
+//                         transform-style: preserve-3d;
+//                         @include transition(0.4s);
+//                         transform: rotateX(90deg) translateY(150px);
+//                         -webkit-transform: rotateX(90deg) translateY(150px);
+//                         -moz-transform: rotateX(90deg) translateY(150px);
+//                         -ms-transform: rotateX(90deg) translateY(150px);
+//                         -o-transform: rotateX(90deg) translateY(150px);
+//                         transform-origin: bottom;
+//                         width: 100%;
+//                         height: 100%;
+//                         @include xs-media {
+//                             width: 18%;
+//                             direction: rtl;
+//                             right: 0;
+//                             text-align: center;
+//                         }
+//                         @include sm-media {
+//                             width: 15%;
+//                             direction: rtl;
+//                             right: 0;
+//                             text-align: center;
+//                         }
+//                         @include md-media {
+//                             width: 100%;
+//                             text-align: center;
+//                         }
+//                     }
+//                     &:hover::before {
+//                         transform: rotateX(0deg) translateY(0px);
+//                         -webkit-transform: rotateX(0deg) translateY(0px);
+//                         -moz-transform: rotateX(0deg) translateY(0px);
+//                         -ms-transform: rotateX(0deg) translateY(0px);
+//                         -o-transform: rotateX(0deg) translateY(0px);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// // navbar change color
+// nav.navbar.css-nav-change-color {
+//     background-color: $main-color !important;
+//     @include boxShadow(-1px, 0px, 10px, #000);
+//     @include transitionAll(all, 0.5s, ease);
+//     // a like logo
+//     .navbar-brand {
+//         color: #fff !important;
+//     }
+//     // button dropdown menu for mobail phone
+//     .navbar-toggler {
+//         // span = img
+//         .navbar-toggler-icon {}
+//     }
+//     // div = container for ul
+//     div.collapse.navbar-collapse {
+//         // ul link
+//         ul.navbar-nav {
+//             @include xs-media {
+//                 // if you went to li start left in rtl
+//                 // align-items: flex-start;
+//                 // if you went to li start left in rtl
+//                 // align-items: flex-end;
+//             }
+//             // li
+//             li.nav-item {
+//                 // a
+//                 a.nav-link {
+//                     color: #fff !important;
+//                 }
+//                 // a active
+//                 a.nav-link.active {}
+//             }
+//             // li dropdown
+//             li.nav-item.dropdown {
+//                 // a link name
+//                 a.nav-link.dropdown-toggle {}
+//                 // div dropdown
+//                 ul.dropdown-menu {
+//                     li {
+//                         // a item
+//                         a.dropdown-item {}
+//                     }
+//                 }
+//             }
+//         }
+//         // form
+//         form.d-flex {
+//             input.form-control.me-2 {}
+//             button.btn.btn-outline-success {}
+//         }
+//     }
+// }
+
+// // Start Slider Gallery
+// .slider {
+//     width: 100%;
+//     margin: auto;
+//     padding: 3px;
+//     background-color: #fff;
+//     img {
+//         max-width: 100%;
+//         border: 1px solid #ccc;
+//     }
+//     .master-img {
+//         min-height: 70vh;
+//         max-height: 80vh;
+//         width: 100%;
+//         display: block;
+//         // overflow: hidden;
+//         background-image: url(../images/pharmacy/2.jpg);
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         // margin-bottom: 20px;
+//         position: relative;
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         span {
+//             padding: 10px;
+//             margin: 0 10px;
+//             width: 50px;
+//             height: 50px;
+//             z-index: 2;
+//             cursor: pointer;
+//             border: 2px solid #333;
+//             @include borderRadius(50%);
+//             background-size: cover;
+//             background-repeat: no-repeat;
+//         }
+//         span.left {}
+//         span.right {}
+//     }
+//     .thumbnails {
+//         display: grid;
+//         // grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+//         // gap: 0px 0px;
+//         height: 200px;
+//         img {
+//             cursor: pointer;
+//             border: 3px solid #ccc;
+//             height: 200px;
+//             width: 100%;
+//             @include transitionTime( 0.5s);
+//             @include opacity(0.7);
+//         }
+//         img:last-child {
+//             margin-right: 0 !important;
+//         }
+//         img.active {
+//             border: 3px solid #333;
+//             @include opacity(1);
+//         }
+//     }
+// }
+
+// // End Slider Gallery
+
+.header {
+  width: 100%;
+//   height: 100vh;
+  display: block;
+  overflow: hidden;
+
+  //   background-image: url(../images/header/header.png);
+  //   background-position: center;
+  //   background-size: cover;
+  // background-repeat: no-repeat;
+
+  img {
+    width: 100%;
+    max-height: 100%;
+  }
+}

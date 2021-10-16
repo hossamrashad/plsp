@@ -1,0 +1,63 @@
+//                  Hiding elements         //
+
+// Hidden on all	            .d-none
+// Hidden only on xs	        .d-none .d-sm-block
+// Hidden only on sm        	.d-sm-none .d-md-block
+// Hidden only on md        	.d-md-none .d-lg-block
+// Hidden only on lg	        .d-lg-none .d-xl-block
+// Hidden only on xl	        .d-xl-none
+
+// Visible on all	            .d-block
+// Visible only on xs	        .d-block .d-sm-none
+// Visible only on sm       	.d-none .d-sm-block .d-md-none
+// Visible only on md	        .d-none .d-md-block .d-lg-none
+// Visible only on lg	        .d-none .d-lg-block .d-xl-none
+// Visible only on xl	        .d-none .d-xl-block
+
+// display
+// d-inline
+// d-inline-block
+// d-block
+
+// Images
+// .img-fluid
+// rounded
+// rounded-circle
+
+// push & pull
+// push-4  = = = = =  order-2
+// pull-8  = = = = =  order-1
+
+// text
+// text-md-center
+// text-md-left
+// text-md-right
+
+// float
+// float-{sm,md,lg,xl}-{left,right,none}
+// float-left and float-right
+// float-none
+
+// flex                               ||
+// justify-content: center!important; || .justify-content-center
+
+.hide-xs {
+  @include xs-sm-media {
+    display: none !important;
+  }
+}
+.hide-sm {
+  @include sm-md-media {
+    display: none !important;
+  }
+}
+.hide-md {
+  @include md-lg-media {
+    display: none !important;
+  }
+}
+.hide-lg {
+  @include lg-media {
+    display: none !important;
+  }
+}

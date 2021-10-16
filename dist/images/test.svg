@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2920" height="1080" viewBox="0 0 2920 1080">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.484" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#04abff"/>
+      <stop offset="1" stop-color="#4d5ca8"/>
+    </radialGradient>
+    <clipPath id="clip-Web_1920_1">
+      <rect width="2920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
+    <rect width="2920" height="1080" fill="url(#radial-gradient)"/>
+    <g id="Group_23" data-name="Group 23" transform="translate(-37)">
+      <g id="Browsers" transform="translate(64 767)">
+        <g id="Rectangle_6" data-name="Rectangle 6" fill="none" stroke="#fff" stroke-width="3">
+          <rect width="683" height="200" rx="25" stroke="none"/>
+          <rect x="1.5" y="1.5" width="680" height="197" rx="23.5" fill="none"/>
+        </g>
+        <g id="Rectangle_7" data-name="Rectangle 7" fill="none" stroke="#fff" stroke-width="2">
+          <path d="M25,0H658a25,25,0,0,1,25,25V60a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V25A25,25,0,0,1,25,0Z" stroke="none"/>
+          <path d="M25,1H658a24,24,0,0,1,24,24V58a1,1,0,0,1-1,1H2a1,1,0,0,1-1-1V25A24,24,0,0,1,25,1Z" fill="none"/>
+        </g>
+        <text id="Browsers-2" data-name="Browsers" transform="translate(289 41)" fill="#fff" stroke="#fff" stroke-width="1" font-size="25" font-family="SegoeUI-Light, Segoe UI" font-weight="300"><tspan x="0" y="0">Browsers</tspan></text>
+      </g>
+    </g>
+    <g id="Group_22" data-name="Group 22" transform="translate(-37)">
+      <g id="Browsers-3" data-name="Browsers" transform="translate(64 527)">
+        <g id="Rectangle_6-2" data-name="Rectangle 6" fill="none" stroke="#fff" stroke-width="3">
+          <rect width="319" height="200" rx="25" stroke="none"/>
+          <rect x="1.5" y="1.5" width="316" height="197" rx="23.5" fill="none"/>
+        </g>
+        <g id="Rectangle_7-2" data-name="Rectangle 7" fill="none" stroke="#fff" stroke-width="2">
+          <path d="M25,0H294a25,25,0,0,1,25,25V60a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V25A25,25,0,0,1,25,0Z" stroke="none"/>
+          <path d="M25,1H294a24,24,0,0,1,24,24V58a1,1,0,0,1-1,1H2a1,1,0,0,1-1-1V25A24,24,0,0,1,25,1Z" fill="none"/>
+        </g>
+        <text id="Not_Important" data-name="Not Important" transform="translate(84.659 40)" fill="#fff" stroke="#fff" stroke-width="1" font-size="25" font-family="SegoeUI-Light, Segoe UI" font-weight="300"><tspan x="0" y="0">Not Important</tspan></text>
+      </g>
+    </g>
+    <g id="Group_26" data-name="Group 26" transform="translate(312)">
+      <g id="Browsers-4" data-name="Browsers" transform="translate(64 527)">
+        <g id="Rectangle_6-3" data-name="Rectangle 6" fill="none" stroke="#fff" stroke-width="3">
+          <rect width="319" height="200" rx="25" stroke="none"/>
+          <rect x="1.5" y="1.5" width="316" height="197" rx="23.5" fill="none"/>
+        </g>
+        <g id="Rectangle_7-3" data-name="Rectangle 7" fill="none" stroke="#fff" stroke-width="2">
+          <path d="M25,0H294a25,25,0,0,1,25,25V60a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V25A25,25,0,0,1,25,0Z" stroke="none"/>
+          <path d="M25,1H294a24,24,0,0,1,24,24V58a1,1,0,0,1-1,1H2a1,1,0,0,1-1-1V25A24,24,0,0,1,25,1Z" fill="none"/>
+        </g>
+        <text id="scss" transform="translate(139.5 40.5)" fill="#fff" stroke="#fff" stroke-width="1" font-size="25" font-family="SegoeUI-Light, Segoe UI" font-weight="300"><tspan x="0" y="0">scss</tspan></text>
+      </g>
+    </g>
+    <g id="Designe" transform="translate(1133 478.884)">
+      <g id="Rectangle_6-4" data-name="Rectangle 6" transform="translate(0 201.116)" fill="none" stroke="#fff" stroke-width="3">
+        <rect width="725" height="287" rx="25" stroke="none"/>
+        <rect x="1.5" y="1.5" width="722" height="284" rx="23.5" fill="none"/>
+      </g>
+      <g id="Rectangle_7-4" data-name="Rectangle 7" transform="translate(0 201.116)" fill="none" stroke="#fff" stroke-width="2">
+        <path d="M25,0H700a25,25,0,0,1,25,25V60a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V25A25,25,0,0,1,25,0Z" stroke="none"/>
+        <path d="M25,1H700a24,24,0,0,1,24,24V58a1,1,0,0,1-1,1H2a1,1,0,0,1-1-1V25A24,24,0,0,1,25,1Z" fill="none"/>
+      </g>
+      <text id="Google_App" data-name="Google App" transform="translate(300 242.116)" fill="#fff" stroke="#fff" stroke-width="1" font-size="25" font-family="SegoeUI-Light, Segoe UI" font-weight="300"><tspan x="0" y="0">Google App</tspan></text>
+    </g>
+    <g id="windows" transform="translate(27 -20)">
+      <g id="Rectangle_6-5" data-name="Rectangle 6" transform="translate(0 201)" fill="none" stroke="#fff" stroke-width="3">
+        <rect width="319" height="300" rx="25" stroke="none"/>
+        <rect x="1.5" y="1.5" width="316" height="297" rx="23.5" fill="none"/>
+      </g>
+      <g id="Rectangle_7-5" data-name="Rectangle 7" transform="translate(0 201)" fill="none" stroke="#fff" stroke-width="2">
+        <path d="M25,0H294a25,25,0,0,1,25,25V60a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V25A25,25,0,0,1,25,0Z" stroke="none"/>
+        <path d="M25,1H294a24,24,0,0,1,24,24V58a1,1,0,0,1-1,1H2a1,1,0,0,1-1-1V25A24,24,0,0,1,25,1Z" fill="none"/>
+      </g>
+      <text id="Windows-2" data-name="Windows" transform="translate(105 241.5)" fill="#fff" stroke="#fff" stroke-width="1" font-size="25" font-family="SegoeUI-Light, Segoe UI" font-weight="300"><tspan x="0" y="0">Windows</tspan></text>
+    </g>
+    <g id="files" transform="translate(425 -20)">
+      <g id="Group_21" data-name="Group 21" transform="translate(-49)">
+        <g id="Rectangle_6-6" data-name="Rectangle 6" transform="translate(0 201)" fill="none" stroke="#fff" stroke-width="3">
+          <rect width="319" height="300" rx="25" stroke="none"/>
+          <rect x="1.5" y="1.5" width="316" height="297" rx="23.5" fill="none"/>
+        </g>
+        <g id="Rectangle_7-6" data-name="Rectangle 7" transform="translate(0 201)" fill="none" stroke="#fff" stroke-width="2">
+          <path d="M25,0H294a25,25,0,0,1,25,25V60a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V25A25,25,0,0,1,25,0Z" stroke="none"/>
+          <path d="M25,1H294a24,24,0,0,1,24,24V58a1,1,0,0,1-1,1H2a1,1,0,0,1-1-1V25A24,24,0,0,1,25,1Z" fill="none"/>
+        </g>
+        <text id="Files-2" data-name="Files" transform="translate(134 241.5)" fill="#fff" stroke="#fff" stroke-width="1" font-size="25" font-family="SegoeUI-Light, Segoe UI" font-weight="300"><tspan x="0" y="0">Files</tspan></text>
+      </g>
+    </g>
+    <g id="Video" transform="translate(1133 -20)">
+      <g id="Rectangle_6-7" data-name="Rectangle 6" transform="translate(0 201)" fill="none" stroke="#fff" stroke-width="3">
+        <rect width="355" height="241" rx="25" stroke="none"/>
+        <rect x="1.5" y="1.5" width="352" height="238" rx="23.5" fill="none"/>
+      </g>
+      <g id="Rectangle_7-7" data-name="Rectangle 7" transform="translate(0 201)" fill="none" stroke="#fff" stroke-width="2">
+        <path d="M25,0H330a25,25,0,0,1,25,25V60a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V25A25,25,0,0,1,25,0Z" stroke="none"/>
+        <path d="M25,1H330a24,24,0,0,1,24,24V58a1,1,0,0,1-1,1H2a1,1,0,0,1-1-1V25A24,24,0,0,1,25,1Z" fill="none"/>
+      </g>
+      <text id="Tools" transform="translate(151.5 241.5)" fill="#fff" stroke="#fff" stroke-width="1" font-size="25" font-family="SegoeUI-Light, Segoe UI" font-weight="300"><tspan x="0" y="0">Tools</tspan></text>
+    </g>
+    <g id="Video-2" data-name="Video" transform="translate(1503 -20)">
+      <g id="Rectangle_6-8" data-name="Rectangle 6" transform="translate(0 201)" fill="none" stroke="#fff" stroke-width="3">
+        <rect width="355" height="241" rx="25" stroke="none"/>
+        <rect x="1.5" y="1.5" width="352" height="238" rx="23.5" fill="none"/>
+      </g>
+      <g id="Rectangle_7-8" data-name="Rectangle 7" transform="translate(0 201)" fill="none" stroke="#fff" stroke-width="2">
+        <path d="M25,0H330a25,25,0,0,1,25,25V60a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V25A25,25,0,0,1,25,0Z" stroke="none"/>
+        <path d="M25,1H330a24,24,0,0,1,24,24V58a1,1,0,0,1-1,1H2a1,1,0,0,1-1-1V25A24,24,0,0,1,25,1Z" fill="none"/>
+      </g>
+      <text id="Video-3" data-name="Video" transform="translate(138.166 242)" fill="#fff" stroke="#fff" stroke-width="1" font-size="25" font-family="SegoeUI-Light, Segoe UI" font-weight="300"><tspan x="0" y="0">Video</tspan></text>
+    </g>
+    <g id="Global" transform="translate(1133 241)">
+      <g id="Rectangle_6-9" data-name="Rectangle 6" transform="translate(0 201)" fill="none" stroke="#fff" stroke-width="3">
+        <rect width="355" height="200" rx="25" stroke="none"/>
+        <rect x="1.5" y="1.5" width="352" height="197" rx="23.5" fill="none"/>
+      </g>
+      <g id="Rectangle_7-9" data-name="Rectangle 7" transform="translate(0 201)" fill="none" stroke="#fff" stroke-width="2">
+        <path d="M25,0H330a25,25,0,0,1,25,25V60a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V25A25,25,0,0,1,25,0Z" stroke="none"/>
+        <path d="M25,1H330a24,24,0,0,1,24,24V58a1,1,0,0,1-1,1H2a1,1,0,0,1-1-1V25A24,24,0,0,1,25,1Z" fill="none"/>
+      </g>
+      <text id="Global-2" data-name="Global" transform="translate(136.61 242)" fill="#fff" stroke="#fff" stroke-width="1" font-size="25" font-family="SegoeUI-Light, Segoe UI" font-weight="300"><tspan x="0" y="0">Global</tspan></text>
+    </g>
+    <g id="Global-3" data-name="Global" transform="translate(1503 241)">
+      <g id="Rectangle_6-10" data-name="Rectangle 6" transform="translate(0 201)" fill="none" stroke="#fff" stroke-width="3">
+        <rect width="355" height="200" rx="25" stroke="none"/>
+        <rect x="1.5" y="1.5" width="352" height="197" rx="23.5" fill="none"/>
+      </g>
+      <g id="Rectangle_7-10" data-name="Rectangle 7" transform="translate(0 201)" fill="none" stroke="#fff" stroke-width="2">
+        <path d="M25,0H330a25,25,0,0,1,25,25V60a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V25A25,25,0,0,1,25,0Z" stroke="none"/>
+        <path d="M25,1H330a24,24,0,0,1,24,24V58a1,1,0,0,1-1,1H2a1,1,0,0,1-1-1V25A24,24,0,0,1,25,1Z" fill="none"/>
+      </g>
+      <text id="Designe-2" data-name="Designe" transform="translate(136.61 242)" fill="#fff" stroke="#fff" stroke-width="1" font-size="25" font-family="SegoeUI-Light, Segoe UI" font-weight="300"><tspan x="0" y="0">Designe</tspan></text>
+    </g>
+    <g id="Editors" transform="translate(871 -20)">
+      <g id="Rectangle_6-11" data-name="Rectangle 6" transform="translate(0 201)" fill="none" stroke="#fff" stroke-width="3">
+        <rect width="107" height="300" rx="25" stroke="none"/>
+        <rect x="1.5" y="1.5" width="104" height="297" rx="23.5" fill="none"/>
+      </g>
+      <g id="Rectangle_7-11" data-name="Rectangle 7" transform="translate(0 201)" fill="none" stroke="#fff" stroke-width="2">
+        <path d="M25,0H82a25,25,0,0,1,25,25V60a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V25A25,25,0,0,1,25,0Z" stroke="none"/>
+        <path d="M25,1H82a24,24,0,0,1,24,24V58a1,1,0,0,1-1,1H2a1,1,0,0,1-1-1V25A24,24,0,0,1,25,1Z" fill="none"/>
+      </g>
+      <text id="Cmd" transform="translate(29 242)" fill="#fff" stroke="#fff" stroke-width="1" font-size="25" font-family="SegoeUI-Light, Segoe UI" font-weight="300"><tspan x="0" y="0">Cmd</tspan></text>
+    </g>
+    <g id="Editors-2" data-name="Editors" transform="translate(993 -20)">
+      <g id="Rectangle_6-12" data-name="Rectangle 6" transform="translate(0 201)" fill="none" stroke="#fff" stroke-width="3">
+        <rect width="107" height="300" rx="25" stroke="none"/>
+        <rect x="1.5" y="1.5" width="104" height="297" rx="23.5" fill="none"/>
+      </g>
+      <g id="Rectangle_7-12" data-name="Rectangle 7" transform="translate(0 201)" fill="none" stroke="#fff" stroke-width="2">
+        <path d="M25,0H82a25,25,0,0,1,25,25V60a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V25A25,25,0,0,1,25,0Z" stroke="none"/>
+        <path d="M25,1H82a24,24,0,0,1,24,24V58a1,1,0,0,1-1,1H2a1,1,0,0,1-1-1V25A24,24,0,0,1,25,1Z" fill="none"/>
+      </g>
+      <text id="Github" transform="translate(16 242)" fill="#fff" stroke="#fff" stroke-width="1" font-size="25" font-family="SegoeUI-Light, Segoe UI" font-weight="300"><tspan x="0" y="0">Github</tspan></text>
+    </g>
+    <g id="Editors-3" data-name="Editors" transform="translate(871 326)">
+      <g id="Rectangle_6-13" data-name="Rectangle 6" transform="translate(0 201)" fill="none" stroke="#fff" stroke-width="3">
+        <rect width="107" height="440" rx="25" stroke="none"/>
+        <rect x="1.5" y="1.5" width="104" height="437" rx="23.5" fill="none"/>
+      </g>
+      <g id="Rectangle_7-13" data-name="Rectangle 7" transform="translate(0 201)" fill="none" stroke="#fff" stroke-width="2">
+        <path d="M25,0H82a25,25,0,0,1,25,25V60a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V25A25,25,0,0,1,25,0Z" stroke="none"/>
+        <path d="M25,1H82a24,24,0,0,1,24,24V58a1,1,0,0,1-1,1H2a1,1,0,0,1-1-1V25A24,24,0,0,1,25,1Z" fill="none"/>
+      </g>
+      <text id="Editors-4" data-name="Editors" transform="translate(16 242)" fill="#fff" stroke="#fff" stroke-width="1" font-size="25" font-family="SegoeUI-Light, Segoe UI" font-weight="300"><tspan x="0" y="0">Editors</tspan></text>
+    </g>
+    <g id="Group_24" data-name="Group 24">
+      <g id="Editors-5" data-name="Editors" transform="translate(741 181)">
+        <g id="Rectangle_6-14" data-name="Rectangle 6" fill="none" stroke="#fff" stroke-width="3">
+          <rect width="107" height="300" rx="25" stroke="none"/>
+          <rect x="1.5" y="1.5" width="104" height="297" rx="23.5" fill="none"/>
+        </g>
+        <g id="Rectangle_7-14" data-name="Rectangle 7" fill="none" stroke="#fff" stroke-width="2">
+          <path d="M25,0H82a25,25,0,0,1,25,25V60a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V25A25,25,0,0,1,25,0Z" stroke="none"/>
+          <path d="M25,1H82a24,24,0,0,1,24,24V58a1,1,0,0,1-1,1H2a1,1,0,0,1-1-1V25A24,24,0,0,1,25,1Z" fill="none"/>
+        </g>
+        <text id="Vue" transform="translate(34 41)" fill="#fff" stroke="#fff" stroke-width="1" font-size="25" font-family="SegoeUI-Light, Segoe UI" font-weight="300"><tspan x="0" y="0">Vue</tspan></text>
+      </g>
+    </g>
+    <g id="Group_25" data-name="Group 25" transform="translate(0 346)">
+      <g id="Editors-6" data-name="Editors" transform="translate(741 181)">
+        <g id="Rectangle_6-15" data-name="Rectangle 6" fill="none" stroke="#fff" stroke-width="3">
+          <rect width="107" height="440" rx="25" stroke="none"/>
+          <rect x="1.5" y="1.5" width="104" height="437" rx="23.5" fill="none"/>
+        </g>
+        <g id="Rectangle_7-15" data-name="Rectangle 7" fill="none" stroke="#fff" stroke-width="2">
+          <path d="M25,0H82a25,25,0,0,1,25,25V60a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V25A25,25,0,0,1,25,0Z" stroke="none"/>
+          <path d="M25,1H82a24,24,0,0,1,24,24V58a1,1,0,0,1-1,1H2a1,1,0,0,1-1-1V25A24,24,0,0,1,25,1Z" fill="none"/>
+        </g>
+        <text id="Json" transform="translate(34 41)" fill="#fff" stroke="#fff" stroke-width="1" font-size="25" font-family="SegoeUI-Light, Segoe UI" font-weight="300"><tspan x="0" y="0">Json</tspan></text>
+      </g>
+    </g>
+    <g id="Server" transform="translate(993 326)">
+      <g id="Rectangle_6-16" data-name="Rectangle 6" transform="translate(0 201)" fill="none" stroke="#fff" stroke-width="3">
+        <rect width="107" height="440" rx="25" stroke="none"/>
+        <rect x="1.5" y="1.5" width="104" height="437" rx="23.5" fill="none"/>
+      </g>
+      <g id="Rectangle_7-16" data-name="Rectangle 7" transform="translate(0 201)" fill="none" stroke="#fff" stroke-width="2">
+        <path d="M25,0H82a25,25,0,0,1,25,25V60a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V25A25,25,0,0,1,25,0Z" stroke="none"/>
+        <path d="M25,1H82a24,24,0,0,1,24,24V58a1,1,0,0,1-1,1H2a1,1,0,0,1-1-1V25A24,24,0,0,1,25,1Z" fill="none"/>
+      </g>
+      <text id="Server-2" data-name="Server" transform="translate(17 242)" fill="#fff" stroke="#fff" stroke-width="1" font-size="25" font-family="SegoeUI-Light, Segoe UI" font-weight="300"><tspan x="0" y="0">Server</tspan></text>
+    </g>
+  </g>
+</svg>
