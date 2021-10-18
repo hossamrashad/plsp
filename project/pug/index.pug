@@ -29,118 +29,168 @@ html(lang="en" data-theme="light")
         //- end head
 
         body 
+            //- start body
             div(class='container')
-                div(class='row')
-                    //- start body
-                    include header/header.pug
+                //- start header
+                header(class="header") 
+                    //- start logo
+                    div(class='logo')
+                        img(src="images/logo/logo-top.png", alt="")
+                    //- end logo
+                    //- start profile
+                    div(class='profile') 
+                        div(class='profile-disc')
+                            span(class='corporate') corporate
+                            span(class='company') company
+                            span(class='profile-single') profile
+                            span(class='line')
+                        div(class='profile-address')
+                            ul 
+                                li 
+                                    i(class="fas fa-globe fa-fw")
+                                    span(class='www') WWW
+                                    | .perfectlinesports.com
+                                li 
+                                    i(class="fas fa-map-marker-alt fa-fw")
+                                    span(class='location') dubai united arab emirates
+                                li 
+                                    i(class="fas fa-envelope fa-fw")
+                                    span(class='message') info@perfectlinesports.com
+                                li 
+                                    i(class="fas fa-phone-alt fa-fw")
+                                    span(class='phone') 009714254110
+                                    span(class='social') 
+                                        span(class='first-litter') W
+                                        | hatsapp - landine
+                                li 
+                                    i(class="fas fa-fax fa-fw")
+                                    span(class='fax') 0097142541130
+                    //- end profile
+                    //- start future
+                    div(class='future')
+                        div(class='text-img') 
+                            span(class='text') The future is 
+                            img(src="images/header/future.png", alt="")
+                    //- end future
+                //- end header
 
-                    div(class='grid-md-2 line-top line-bottom section-one')
-                        div(class='about-us')
-                            div(class='child-about-us')
-                                div(class='title')
-                                    span(class="back") about us 
-                                    h2(class="h1 front-back") about us 
-                                p(class='lead') 
-                                    span(class='font-bold') Perfect Line 
-                                    | is a continuously developing company that always pursues inno-vation; Perfect Line is a well-founded commercial establishment. "Perfect Line" is a strong commercial entity that was founded in 2014 and is based in the UAE launching base for the world providing all the products, accessories, and sports equipment required.
-                                p(class='lead') The company has selected trademarks and regional partners whose products align with international standards and speciﬁcations. That is to meet the needs of all who have those who have sports and athletic interests professionally and safely to ensure the To ensure highest of performance,
-                                p(class='lead main-color') perfect line is certiﬁed with the high SOO9001 2015 to provide to all customers with best services that align with highest international standards & measures.
+
+                //- start about message
+                section(class="section-about-message line-start-section-main-color") 
+                    div(class='inner-header')
+                        //- about
+                        div(class='about')
+                            div(class='title')
+                                div(class='face' data-text="about us") about us
+                            div(class='disc')
+                                div(class='line')
+                                p(class='single-head') 
+                                    span(class='font-bold') Perfect Line
+                                    |is a continuously developing company that always pursues inno-vation; Perfect Line is a well-founded commercial establishment. "Perfect Line" is a strong commercial entity that was founded in 2014 and is based in the UAE launching base for the world providing all the products, accessories, and sports equipment required.
+                                p(class='single-body') The company has selected trademarks and regional partners whose products align with international standards and speciﬁcations. That is to meet the needs of all who have those who have sports and athletic interests professionally and safely to ensure the To ensure highest of performance,
+                                p(class='single-footer') perfect line is certiﬁed with the high SOO9001 2015 to provide to all customers with best services that align with highest international standards & measures.
+                        //- message
                         div(class='message')
-                            div(class='child-message')
-                                div(class='title')
-                                    span(class="back") message
-                                    h2(class="h1 front-back") message
-                                p(class='lead') 
+                            div(class='title')
+                                div(class='face' data-text="message") message
+                            div(class='disc')
+                                p(class='single-head') 
                                     span(class='dot') •
-                                    | Many years of work and challenges, and in that period it has been subjected to many difﬁculties, obstacles, and failures. We didn’t give up but worked hard. We do not doubt that success is near. By working together as one team Perfect Line will achieve a quantum leap in the world of supplying, selling products, Sports equipment, and accessories according to modern methods following professional standards. With shared ideas and hard work, we will ensure fruitful outcomes for our customers and partners.
-
-                    div(class='grid-sm-1 who-we-are')
-                        div(class='child-who-we-are')
-                            div(class='content')
-                                img(src="images/who-we-are.jpg" alt="")
+                                    |Many years of work and challenges, and in that period it has been subjected to many difﬁculties, obstacles, and failures. We didn’t give up but worked hard. We do not doubt that success is near. By working together as one team Perfect Line will achieve a quantum leap in the world of supplying, selling products, Sports
+                                p(class='single-footer') equipment, and accessories according to modern methods following professional standards. With shared ideas and hard work, we will ensure fruitful outcomes for our customers and partners.
+                    div(class='inner-footer')
+                        div(class='content')
+                            img(src="images/section-about-message/who-we-are.jpg", alt="" class="img-fluid img-thumbnail")
+                            div(class='text')
                                 div(class='title')
-                                    span(class='back') Who WE ARE
+                                    div(class='face' data-text=" Who WE ARE") 
+                //- end about message
 
-                    //- perfect-line
-                    div(class='perfect-line line-top line-bottom ')
-                        div(class='title')
-                            span(class='back') PLSP Evolution
-                            h2(class="h3 front-back  ") prefect line journey since the foundation
-                        div(class='grid-lg-4 parent-box-top')
-                            div(class='') 
-                                div(class='box-one')
-                                    p(class='lead') The Company was established and opened the ﬁrst fair for retail selling and gets exclusive Portuguese 
-                                        span(class='font-bold') LACATONI brand.
-                                        span(class='number number-2014') 2014
-                            div(class='') 
-                                div(class='box-tow')
-                                    p(class='lead') Business growth and Network expansion
-                                        span(class='')
-                                        span(class='number number-2016') 2016
-                            div(class='') 
-                                div(class='box-three')
-                                    p(class='lead') The Company cooperated with Barsha Mall to open a second retail store at the 
-                                        span(class='font-bold') Barsha Mall in Dubai.
-                                        span(class='number number-2018') 2018
-                            div(class='') 
-                                div(class='box-four')
-                                    ul 
-                                        span(class='number number-2020') 2020
-                                        li the third exhibition opened 320 square meters in the Oud Metha area to incorporate the various global brands into a new form.
-                                        li We have relaunched our e-commerce platform in a completely different form and system and it is available inthe modern platform.
-                                        li will witness launching our sports brands specialist in clothing, accessories, and sports equipment according
-                        div(class='parent-icon')
-                            div(class='child-icon')
-                                p(class='icon-1')
-                                    span(class='back-icon right')
-                                    span(class='icon')
-                                        i(class="fas fa-box-open fa-fw")
-                                p(class='icon-2')
-                                    span(class='back-icon left')
-                                    span(class='icon')
-                                        i(class="fab fa-hubspot fa-fw")
-                                p(class='icon-3')
-                                    span(class='back-icon right')
-                                    span(class='icon')
-                                        i(class="fas fa-chart-bar fa-fw")
-                                p(class='icon-4')
-                                    span(class='back-icon left')
-                                    span(class='icon')
-                                        i(class="fas fa-chart-bar fa-fw")
-                                p(class='icon-5')
-                                    span(class='back-icon right')
-                                    span(class='icon')
-                                        i(class="fas fa-home  fa-fw")
-                                p(class='icon-6')
-                                    span(class='back-icon left')
-                                    span(class='icon')
-                                        i(class="fas fa-handshake  fa-fw")
-                                p(class='icon-7')
-                                    span(class='back-icon right top')
-                                    span(class='icon')
-                                        i(class="fas fa-clipboard-check  fa-fw")
-                        div(class='grid-lg-4 parent-box-bottom')
-                            div
-                            div(class='')
-                                div(class='box-1')
-                                    p(class='lead') The Company has witnessed the signing of an exclusive distribution agreement for long-standing 
-                                        span(class='font-bold') GRANDSPORT brand.
-                                        span(class='number') 2015
-                            div(class='')
-                                div(class='box-2')
-                                    p(class='lead') Business growth and the network expansion
-                                        span(class='') 
-                                        span(class='number') 2017
-                            div(class='')
-                                div(class='box-3')
-                                    p(class='lead') Perfect Line has signed several agreements with best European brands such as:
-                                        span(class='') 
-                                        span(class='number') 2019
-                                            br
-                                            | The year of achievements
-                                    img(src="images/box-bottom.png" alt="")
+                //- start section perfect line
+                section(class="section-perfect-line") 
+                        //- start perfect-line
+                        div(class='perfect-line line-start-section-main-color')
+                            div(class='title')
+                                span(class='face' data-text="plsp evolution") prefect line journey since the foundation
 
+                            div(class='grid-lg-4 parent-box-top')
+                                div(class='') 
+                                    div(class='box-one')
+                                        p(class='lead') The Company was established and opened the ﬁrst fair for retail selling and gets exclusive Portuguese 
+                                            span(class='font-bold') LACATONI brand.
+                                            span(class='number number-2014') 2014
+                                div(class='') 
+                                    div(class='box-tow')
+                                        p(class='lead') Business growth and Network expansion
+                                            span(class='')
+                                            span(class='number number-2016') 2016
+                                div(class='') 
+                                    div(class='box-three')
+                                        p(class='lead') The Company cooperated with Barsha Mall to open a second retail store at the 
+                                            span(class='font-bold') Barsha Mall in Dubai.
+                                            span(class='number number-2018') 2018
+                                div(class='') 
+                                    div(class='box-four')
+                                        ul 
+                                            span(class='number number-2020') 2020
+                                            li the third exhibition opened 320 square meters in the Oud Metha area to incorporate the various global brands into a new form.
+                                            li We have relaunched our e-commerce platform in a completely different form and system and it is available inthe modern platform.
+                                            li will witness launching our sports brands specialist in clothing, accessories, and sports equipment according
+                            div(class='parent-icon')
+                                div(class='child-icon')
+                                    p(class='icon-1')
+                                        span(class='back-icon right')
+                                        span(class='icon')
+                                            i(class="fas fa-box-open fa-fw")
+                                    p(class='icon-2')
+                                        span(class='back-icon left')
+                                        span(class='icon')
+                                            i(class="fab fa-hubspot fa-fw")
+                                    p(class='icon-3')
+                                        span(class='back-icon right')
+                                        span(class='icon')
+                                            i(class="fas fa-chart-bar fa-fw")
+                                    p(class='icon-4')
+                                        span(class='back-icon left')
+                                        span(class='icon')
+                                            i(class="fas fa-chart-bar fa-fw")
+                                    p(class='icon-5')
+                                        span(class='back-icon right')
+                                        span(class='icon')
+                                            i(class="fas fa-home  fa-fw")
+                                    p(class='icon-6')
+                                        span(class='back-icon left')
+                                        span(class='icon')
+                                            i(class="fas fa-handshake  fa-fw")
+                                    p(class='icon-7')
+                                        span(class='back-icon right top')
+                                        span(class='icon')
+                                            i(class="fas fa-clipboard-check  fa-fw")
+                            div(class='grid-lg-4 parent-box-bottom')
+                                div
+                                div(class='')
+                                    div(class='box-1')
+                                        p(class='lead') The Company has witnessed the signing of an exclusive distribution agreement for long-standing 
+                                            span(class='font-bold') GRANDSPORT brand.
+                                            span(class='number') 2015
+                                div(class='')
+                                    div(class='box-2')
+                                        p(class='lead') Business growth and the network expansion
+                                            span(class='') 
+                                            span(class='number') 2017
+                                div(class='')
+                                    div(class='box-3')
+                                        p(class='lead') Perfect Line has signed several agreements with best European brands such as:
+                                            span(class='') 
+                                            span(class='number') 2019
+                                                br
+                                                | The year of achievements
+                                        img(src="images/box-bottom.png" alt="")
+                        //- End perfect-line
+                //- end section perfect lin
 
+                //- start section is the future
+                section(class="section-is-the-future line-start-section-main-color") 
                     //- is-the-future
                     div(class='is-the-future grid-md-2')
                         div(class='left')
@@ -158,13 +208,19 @@ html(lang="en" data-theme="light")
                                     div(class='inner')
                                 img(src="images/img244.jpg" alt="" class="img-right")
                                 img(src="images/img238.jpg" alt="" class="img-left")
+                //- end section is the future
 
+
+                //- start section supporters-for-gov
+                section(class="section-supporters-for-gov line-start-section-fff-color") 
                     //- supporters-for-gov
+                    
                     div(class='supporters-for-gov grid-md-2')
                         div(class='left')
                             div(class='title')
-                                span(class='back') Supporters
-                                h2(class="front-back") Supporters for Gov. Procurement
+                                div(class='face' data-text="Supporters") Supporters for Gov.
+                                    br 
+                                    | Procurement
                             div(class='disc')
                                 p(class='lead') Based on the principles and values of social responsibility and the importance of supporting national projects for the youth, According to what our wise leadership always defends and conﬁrms, Perfect Line Sports Products made sure to be an active member in many governmental institutions hoping to beneﬁt from the high decisions by allocating support for purchases from all governmental and semi-governmental bodies to members of these bodies from various bodies & government & semi-governmental bodies and companies that the government contributes to. Most notable is the following (M. bin Rashid Establishment) for Small and Medium Enterprises Development the National Program for Small & Medium Enterprises Khalifa Fund for Enterprise Development.
                             div(class='parent-ul')
@@ -183,7 +239,7 @@ html(lang="en" data-theme="light")
                                         p(class='main-color') • Khalifa Fund for Enterprise Development.
                         div(class='right')
                             div(class='title')
-                                span(class='back') VALUE 
+                                span(class='face' data-text="VALUE")  
                             div(class='number')
                                 span(class='number-0') 0
                                 span(class='number-1') 1
@@ -195,38 +251,43 @@ html(lang="en" data-theme="light")
                                         | We focus on the smallest details to achieve the best results
                                     li 
                                         span(class='font-bold') Innovation:
-                                        | We create the most innovative and modern ideas.                                    li 
-                                        span(class='font-bold') Accuracy:
-                                        | We focus on the smallest details to achieve the best results
+                                        | We create the most innovative and modern ideas.                                    
+                                    //- li 
+                                    //-     span(class='font-bold') Accuracy:
+                                    //-     | We focus on the smallest details to achieve the best results
                                     li 
                                         span(class='font-bold') Dedication:
                                         | Take advantage of all the possibikities to reach the highest levels of success
                                     li 
                                         span(class='font-bold') The Challenge:
                                         | We seek to overcome and remove obstacles of any size in cooperation with our partners & customers.
+                //- end section supporters-for-gov
 
 
+
+                //- start section vision
+                section(class="section-vision-and-our-services line-start-section-fff-color") 
                     //- vision
                     div(class='vision grid-md-2')
                         div(class='left')
                             div(class='title')
-                                span(class='back') VISION
+                                div(class='face' data-text="VISION") 
                             div(class='number')
                                 span(class='number-0') 0
                                 span(class='number-1') 2
                             div(class='our-value') OUR VISION
                             div(class='disc')
                                 p(class='lead') To be the ﬁrst choice for all those searching for sporting products, accessories, and original and non-imitation equipment in its various ﬁelds and classiﬁcations, based on advanced strategies and unparalleled touches.
-
                         div(class='right')
                             div(class='title')
-                                span(class='back') VALUE 
+                                span(class='face' data-text="services")  
                             div(class='number')
                                 span(class='number-0') 0
                                 span(class='number-1') 3
                             div(class='our-value') OUR SERVICES
-                            p(class="lead") We provide you with a complete set of services that goes along with the values and the mission of the company, for example including, but not limited
-                            div(class='parent')
+                            div(class='disc')
+                                p(class="lead") We provide you with a complete set of services that goes along with the values and the mission of the company, for example including, but not limited
+                            div(class='ul-our-services')
                                 div(class="row") 
                                     div(class='col-md-3')
                                         i(class="fas fa-tshirt fa-fw float-md-end")
@@ -248,14 +309,15 @@ html(lang="en" data-theme="light")
                                     div(class='col-md-8')
                                         ul 
                                             li providing all requirements of sports organizations for various sporting bodies and sectors
+                //- start section vision
 
-
-
+                //- Start section-map
+                section(class="section-map line-start-section-fff-color") 
                     //- map
                     div(class='map grid-md-2')
                         div(class='left')
                             div(class='title')
-                                span(class='back') MARKET MAP
+                                span(class='face' data-text="MARKET MAP") 
                             div(class='number')
                                 span(class='number-0') 0
                                 span(class='number-1') 4
@@ -274,16 +336,18 @@ html(lang="en" data-theme="light")
                                     span(class=' Oman')  Oman    
                                 div(class='top-map')
                                     img(src="images/map-2.png" alt="")
+
                         div(class='right')
                             div(class='title')
-                                span(class='back') MAJOR Clients 
+                                //- span(class='back' data-text=" MAJOR Clients")
                             div(class='number')
                                 span(class='number-0') 0
                                 span(class='number-1') 5
                             div(class='our-value') MAJOR Clients
-                            p(class="lead") 
-                                span(class='font-bold') Perfect Line,
-                                | through its various services that are characterized by quality and creativity, target many sectors and authorities, including:
+                            div(class='disc') 
+                                p(class="lead") 
+                                    span(class='font-bold') Perfect Line,
+                                    | through its various services that are characterized by quality and creativity, target many sectors and authorities, including:
                             div(class='clients')
                                 div(class='inner grid-md-3')
                                     div(class='client') 
@@ -315,72 +379,87 @@ html(lang="en" data-theme="light")
                                                 li Wholesalers
                                                 li Retailers
                                                 li Distributors/agents
+                //- End section-map
 
 
+                //- start section Our-Partners
+                section(class="section-Our-Partners line-start-section-main-color") 
                     //- Our Partners
                     div(class='Our-Partners')
                         div(class='back-color')
                         div(class='title')
-                            span(class='back') Our Partners
-                            h2(class="front-back") Our Partners
-                        div(class='grid-md-3 inner')
+                            div(class="face" data-text="Our Partners") Our Partners
+                        div(class='grid-lg-3 inner')
                             div(class='img')
                                 img(src="images/img354.jpg" alt="")
                             div(class='text')
-                                img(src="images/img172.jpg" alt="")
+                                img(src="images/section-our-partners/liskl-no-back.png" alt="")
                                 p(class='lead')
                                     span(class='font-bold') "LISKI, Italy 
                                     | - An Italian company which has been operating in the market since the late 1970s and is active in many European countries and an ofﬁcial supplier of many championships and major events such as (World Cup for Football) (Russia) and the Italian, German and Spanish League and specializing in manufacturing training equipment needs, to ensure achieving the best performance while providing safe materials And distinctive, through wonderful compatibility between technology and athletes needs for the ﬁeldThe brand also provides, for example, match management tools, training equipment, protective platforms& many sports athletic products.
                             div(class='img')
                                 img(src="images/img357.jpg" alt="")
                             div(class='text')
-                                img(src="images/img178.jpg" alt="")
+                                img(src="images/section-our-partners/fitness.png" alt="")
                                 p(class='lead') 
                                     span(class='font-bold') TELJU, Spanish
                                     | - Spanish companies is a professional manufacturer and suppliers of high-quality sports equipment and devices, and has been working in this ﬁeld for more than 30 years and among its top clients are many government agencies, such as the Spanish Armed Forces and others such as hotels and large gyms.
                             div(class='img')
                                 img(src="images/img351.jpg" alt="")
                             div(class='text')
-                                img(src="images/img385.jpg" alt="")
+                                img(src="images/section-our-partners/beltona.png" alt="" class="img-beltona")
                                 p(class='lead')
                                     span(class='font-bold') Beltona, Netherlands
                                     | - A Dutch company specializing in the manufacture and design of sportswear and sports accessories. The brand is worn by many Dutch and other clubs in other European countries and many major sports academies.
+                //- end Our-Partners
 
 
+
+                //- start section Our-Partners
+                section(class="section-Our-Partners-2 line-start-section-main-color") 
                     //- Our-Partners
                     div(class='Our-Partners-2')
                         div(class='back-color')
                         div(class='title')
-                            span(class='back') Our Partners
-                            h2(class="front-back") Our Partners
+                            div(class='face' data-text="Our Partners") Our Partners
                         div(class='content')
                             div(class='grid-md-2 inner')
-                                div(class='img')
+                                div(class='img img-top')
                                     img(src="images/img368.jpg" alt="")
-                                div(class='text')
-                                    img(src="images/img220.jpg" alt="")
-                                    p(class='lead text-top')
-                                        span(class='font-bold') ATX / GYMFLOOR, Germany
-                                        | - A German company specialized in manufacturing, developing and designing equipment and also the equipping innovative ﬁtness halls according to the skills of German traditional engineering. This ﬁeld has been operating for more than 20 years and among its customers many German & European clubs, German medical rehabilitation centers, 5-star and 4-star hotels, and some of the clubs of other government agencies.
-                                div(class='text')
-                                    img(src="images/img184.jpg" alt="")
-                                    p(class='lead  text-bottom') 
+                                div(class='text text-top')
+                                    img(src="images/section-our-partners/atx.png" alt="")
+                                    p(class='lead')
+                                        span(class='font-bold') ATX / GYMFLOOR, Germany - 
+                                        span(class='a')  A 
+                                        |German company specialized in manufacturing, developing and designing equipment and also the equipping innovative ﬁtness halls according to the skills of German traditional engineering. This ﬁeld has been operating for more than 20 years and among its customers many German & European clubs, German medical rehabilitation centers, 5-star and 4-star hotels, and some of the clubs of other government agencies.
+                                div(class='text text-bottom')
+                                    img(src="images/section-our-partners/gyming.png" alt="")
+                                    p(class='lead ') 
                                         span(class='font-bold') GYMNIC, Italy
                                         | - An Italian company that designs and manufactures high-quality products to provide the perfect movement for people of all ages. It is a leading company in the ﬁelds of games, ﬁtness, and physiotherapy and has been operating for more than 20 years in this ﬁeld.
-                                div(class='img')
-                                    img(src="images/img371.jpg" alt="")
+                                div(class='img img-bottom')
+                                    img(src="images/section-our-partners/bottom.jpg" alt="")
 
+
+
+
+                //- start Retailer-Brands
+                section(class="section-Retailer-Brands line-start-section-main-color") 
                     //- Retailer Brands
                     div(class='Retailer-Brands')
-                        div(class='title')
-                            span(class='back') Retailer Brands
-                            h2(class="front-back") 
+                        div(class='line-color-left')
+                        div(class='title-face')
+                            div(class='face' data-text="Retailer Brands") 
+                        div(class='title-face-parent')
+                            div(class="face-parent") 
                                 span(class='first') Re
                                 | tailer Brands
-
-                        P(class="disc") We never ignore the necessity of providing international retail sales marks to serve our valued customers
-                        div(class='grid-md-5 grid-sm-2 col-xs-1 logo')
-                            div(class='empty')
+                        div(class="disc") 
+                            p(class='lead') We never ignore the necessity of providing international retail
+                                br     
+                                |sales marks to serve our valued customers
+                        div(class='grid-md-3 grid-sm-2 col-xs-1 brands')
+                            //- div(class='empty')
                                 span(class='')
                             div(class='img')
                                 img(src="images/img198.jpg" alt="")
@@ -388,9 +467,9 @@ html(lang="en" data-theme="light")
                                 img(src="images/img397.jpg" alt="")
                             div(class='img')
                                 img(src="images/img410.jpg" alt="")
-                            div(class='empty')
+                            //- div(class='empty')
                                 span(class='')
-                            div(class='empty')
+                            //- div(class='empty')
                                 span(class='')
                             div(class='img')
                                 img(src="images/img385.jpg" alt="")
@@ -398,24 +477,29 @@ html(lang="en" data-theme="light")
                                 img(src="images/img404.jpg" alt="")
                             div(class='img')
                                 img(src="images/img390.jpg" alt="")
-                            div(class='empty')
+                            //- div(class='empty')
                                 span(class='')
+                        div(class='line-border-main-color')
+                //- end Retailer-Brands
 
 
 
+                //- start Retailer-Brands
+                section(class="section-Advantages line-start-section-fff-color")
                     //- Retailer Brands
                     div(class='Advantages')
-                        div(class='title')
-                            span(class='back') 
-                                span(class='first') Ad
-                                |vantages
-                            h2(class="front-back") 
-                                span(class='first') Ad
+                        div(class='line-color-left')
+                        div(class='title-face')
+                            div(class='face' data-text="Advantages") 
+                        div(class='title-face-parent')
+                            div(class="face-parent") 
+                                span(class='first') ad
                                 | vantages
-
-                        P(class="disc") 
-                            span(class='font-bold') "Perfect Line"
-                            | has many special qualities, the most important of which are:
+                        div(class='line-border-fff-color')
+                        div(class="disc") 
+                            p(class='lead') 
+                                span(class='font-bold') "Perfect Line"
+                                | has many special qualities, the most important of which are:
                         div(class='grid-md-2 grid-sm-2 col-xs-1 ul')
                             div(class='ul-left')
                                 ul 
@@ -427,38 +511,47 @@ html(lang="en" data-theme="light")
                                 ul 
                                     li Providing after-sales services to serve and meet customers' requests all the time.
                                     li Keeping up-to-date on what's new in the world of designing products, accessories, and the sports equipment.
+                //- end Retailer-Brands
 
+
+
+
+                //- start Retailer-Brands
+                section(class="section-Ambition line-start-section-fff-color")
                     //- Ambition
                     div(class='Ambition')
-                        div(class='title')
-                            span(class='back') 
-                                span(class='first') Am
+                        div(class='line-color-left')
+                        div(class='title-face')
+                            div(class='face' data-text="Ambition") 
+                        div(class='title-face-parent')
+                            div(class="face-parent") 
+                                span(class='first') am
                                 | bition
-                            h2(class="front-back") 
-                                span(class='first') Am
-                                | bition
+                        div(class='line-border-fff-color center-border')
 
-
+                                
                         div(class='grid-md-2 grid-sm-2 col-xs-1 ul')
                             div(class='left')
-
                             div(class='right')
                                 p(class='text') Leading the world of sports products, equipment, accessories, supplies, and clothing. Added to this, Perfect Line aims at concluding cooperation agree- ments with various retailers and professional compa- nies in the GCC, Middle East, North and South Africa And from the company’s ambitions that it seeks for seriously with conﬁdence
+                        div(class='line-border-fff-color')
+                //- end Retailer-Brands
 
 
-
-
+                //- start Advantages-2
+                section(class="section-Advantages-2 line-start-section-fff-color")
                     //- Retailer Brands
                     div(class='Advantages-2')
-                        div(class='title')
-                            span(class='back') 
-                                span(class='first') Op
-                                | timal Use
-                            h2(class="front-back") 
-                                span(class='first') Our 
+                        div(class='line-color-left')
+                        div(class='title-face')
+                            div(class='face' data-text="Optimal Use") 
+                        div(class='title-face-parent')
+                            div(class="face-parent") 
+                                span(class='first') Our
                                 | Store Solutions for Optimal Use
-                        P(class="disc") 
-                            | Perfect line is proud to announce that it has just launched the ﬁrst specialized e-commerce platform from multiple vendors with high creativity and excellence. Our platform is the ﬁrst of its kind that is specialized in sports products, equipment, clothes, and accessories as the platform offers its customers many services including:
+                        div(class='line-border-fff-color center-border')
+                        div(class="disc") 
+                            p(class=' lead') Perfect line is proud to announce that it has just launched the ﬁrst specialized e-commerce platform from multiple vendors with high creativity and excellence. Our platform is the ﬁrst of its kind that is specialized in sports products, equipment, clothes, and accessories as the platform offers its customers many services including:
                         div(class='grid-md-2 grid-sm-2 col-xs-1 ul')
                             div(class='ul-left')
                                 div(class='row')
@@ -519,24 +612,27 @@ html(lang="en" data-theme="light")
                                         div(class='text')
                                             span(class='number') 6.
                                             | Retail trade and the market place of wholesaling
+                //- end Advantages-2
 
 
-                    //- Registration Process
 
+                //- start Retailer-Brands
+                section(class="section-Retailer-Brands line-start-section-fff-color")
                     //- Retailer Brands
                     div(class='Retailer-Brands')
-                        div(class='title')
-                            span(class='back') 
+                        div(class='line-color-left')
+                        div(class='title-face')
+                            div(class='face' data-text="registration Process") 
+                        div(class='title-face-parent')
+                            div(class="face-parent") 
                                 span(class='first') Reg
                                 | istration Process
-                            h2(class="front-back") 
-                                span(class='first') Reg 
-                                | istration Process
-                        P(class="disc") 
-                            | Easy and convenient registration process. It is not complicated and it is accessible anytime, anywhere, so easily.
-                        div(class='grid-md-2 grid-sm-2 col-xs-1 ul')
+                        div(class='line-border-fff-color center-border')
+                        div(class="disc") 
+                            p(class='lead') Easy and convenient registration process. It is not complicated and it is accessible anytime, anywhere, so easily.
+                        div(class='grid-md-2 grid-sm-2 col-xs-1 Retailer-single')
                             div(class='ul-left')
-                                div(class='header')
+                                div(class='header-Sellers')
                                     span(class='') Sellers Registration
                                 div(class='grid-md-2')
                                     div(class='empty')
@@ -550,14 +646,13 @@ html(lang="en" data-theme="light")
                                         span(class='first') B.
                                         | Get username & password
                                     div(class='empty left')
-
                                     div(class='empty')
                                     div(class='text left pb-30')
                                         span(class='first') c. 
                                         | Get your own store on the site, edit it from your control panel, and download your products and earn more.
 
                             div(class='ul-right')
-                                div(class='header')
+                                div(class='header-Sellers')
                                     span(class='') Sellers Registration
                                 div(class='grid-md-2')
                                     div(class='empty')
@@ -573,19 +668,26 @@ html(lang="en" data-theme="light")
                                     div(class='empty left')
                                     div(class='empty ') 
                                     div(class='empty left lest') 
+                //- End Retailer-Brands
 
 
+
+                //- start Retailer-Brands
+                section(class="section-INNOVATIVE-SOLUTIONS line-start-section-fff-color")
                     //- INNOVATIVE SOLUTIONS
                     div(class='INNOVATIVE-SOLUTIONS')
-                        div(class='title')
-                            span(class='back') 
-                                span(class='first') IN
+                        
+                        div(class='line-color-left')
+                        div(class='title-face')
+                            div(class='face' data-text="INNOVATIVE SOLUTIONS") 
+                        div(class='title-face-parent')
+                            div(class="face-parent") 
+                                span(class='first') in
                                 | NOVATIVE SOLUTIONS
-                            h2(class="front-back") 
-                                span(class='first') IN 
-                                | NOVATIVE SOLUTIONS
+                        div(class='line-border-fff-color center-border')
+
                         div(class='content')
-                            div(class='grid-md-2')
+                            div(class='grid-lg-2 content-top')
                                 div(class='left')
                                     p(class='lead top')
                                         span(class='font-bold') CHATBOT
@@ -599,72 +701,77 @@ html(lang="en" data-theme="light")
                                     div(class='row')
                                         div(class='col-sm-2')
                                             div(class='icon')
-                                                i(class="fas fa-home fa-fw ")
+                                                i(class="fas fa-shopping-cart fa-fw ")
                                         div(class='col-sm-10')
                                             p(class='lead text') Items purchased
                                         div(class='col-sm-2')
                                             div(class='icon')
-                                                i(class="fas fa-home fa-fw ")
+                                                i(class="fas fa-users fa-fw ")
                                         div(class='col-sm-10')
                                             p(class='lead text') Subsidiaries
                                         div(class='col-sm-2')
                                             div(class='icon')
-                                                i(class="fas fa-home fa-fw ")
+                                                i(class="fas fa-calendar-week fa-fw ")
                                         div(class='col-sm-10')
                                             p(class='lead text') Withdraws
 
                                         div(class='col-sm-2')
                                             div(class='icon')
-                                                i(class="fas fa-home fa-fw ")
+                                                i(class="fas fa-truck fa-fw ")
                                         div(class='col-sm-10')
                                             p(class='lead text') Track the shipment
 
                                         div(class='col-sm-2')
                                             div(class='icon')
-                                                i(class="fas fa-home fa-fw ")
+                                                i(class="fas fa-ticket-alt fa-fw ")
                                         div(class='col-sm-10')
                                             p(class='lead text') Tickets/ disputes
 
                                         div(class='col-sm-2')
                                             div(class='icon')
-                                                i(class="fas fa-home fa-fw ")
+                                                i(class="fas fa-sort-alpha-up-alt fa-fw ")
                                         div(class='col-sm-10')
                                             p(class='lead text') Loading products in bulk
 
                                         div(class='col-sm-2')
                                             div(class='icon')
-                                                i(class="fas fa-home fa-fw ")
+                                                i(class="fas fa-store fa-fw ")
                                         div(class='col-sm-10')
                                             p(class='lead text') Store Management
 
-                            div(class='head-bottom')
-                                div(class='grid-md-2')
-                                    div(class='left')
-                                        div(class='head first-head')
-                                            h2(class="h1")
-                                                span(class='first') Ho
-                                                |w could you
-                                        div(class='head')
-                                            h2(class="h1")
-                                                span(class='first') sta
-                                                |rt selling with us
-                                    div(class='right') 
-                                        span(class='number') 1. 
-                                        | Licensed Firms - To ensure high-quality products and services, only registered and licensed companies are allowed to sell on the market while ensuring that the products are original and non-copycat.
-                            div(class='bottom grid-md-1')
-                                div(class='inner')
-                                    p(class='lead')
-                                        span(class='number') 2.
-                                        | Licensed Firms - To ensure high-quality products and services, only registered and  licensed companies are allowed to sell on   the market while ensuring that the products are original and non-copycat.
+                            div(class='face-bottom-INNOVATIVE' data-text="How could you start selling with us RS?")
+                            
+                                div(class='head-bottom')
+                                    div(class='grid-md-2 head-bottom-content')
+                                        div(class='left')
+                                            div(class='head first-head')
+                                                h2(class="h1")
+                                                    span(class='first') Ho
+                                                    |w could you
+                                            div(class='head')
+                                                h2(class="h1")
+                                                    span(class='first') sta
+                                                    |rt selling with us
+                                        div(class='right') 
+                                            span(class='number') 1. 
+                                            | Licensed Firms - To ensure high-quality products and services, only registered and licensed companies are allowed to sell on the market while ensuring that the products are original and non-copycat.
+                                div(class='bottom-Licensed  grid-md-1')
+                                    div(class='inner')
+                                        p(class='lead')
+                                            span(class='number') 2.
+                                            | Licensed Firms - To ensure high-quality products and services, only registered and  licensed companies are allowed to sell on   the market while ensuring that the products are original and non-copycat.
 
+
+                //- start section-why-plsp
+                section(class="section-why-plsp line-start-section-main-color")
                     //- why-plsp
                     div(class='why-plsp')
                         div(class='content')
-                            div(class='header')
+                            div(class='header-why-plsp')
                                 div(class='ask')
                                     h2(class="h1")
                                         | WHY PLSP?
-                                div(class='grid-md-2')
+                                div(class='grid-md-2 answer ')
                                     div(class='left')
                                         p(class='lead')
                                             span(class='font-bold') Business Account Manager
@@ -675,13 +782,13 @@ html(lang="en" data-theme="light")
                                     div(class='right')
                                         p(class='lead') The diversity of products and offering them to customers easily and with unlimited
                                         p(class='lead bottom') competitive prices at the best international speciﬁcations and standards.
-                            div(class='footer') 
+                            div(class='footer-Health') 
                                 div(class='inner')
                                     div(class='disc') 
                                         h2(class="h1") Health and Safety
                                             br
                                             | Precautionary measures
-                                    div(class='grid-md-2')
+                                    div(class='grid-md-2 FRIENDLY ')
                                         div(class='left')
                                             div(class='row')
                                                 div(class='col-md-2')
@@ -702,12 +809,14 @@ html(lang="en" data-theme="light")
                                                         |   -our whole team is involved in global safety measures with specialist partners to ensure the delivery of the best products and security. 
                                                         br
                                                         | For the certiﬁed products that have been tested and proven safe
+                //- end section-why-plsp
 
+                section(class="section-footer") 
                     footer 
-                        div(class='footer') 
+                        div(class='footer-footer') 
                             div(class='logo')
-                                img(src="images/img178.jpg" alt="")
-                            div(class='content')
+                                img(src="images/logo/logo-top-no-back.png" alt="")
+                            div(class='content-footer')
                                 div(class='top')
                                     div(class='inner')
                                         span(class='head') CORPORATE
@@ -758,22 +867,56 @@ html(lang="en" data-theme="light")
 
                                 div(class='bottom')
                                     div(class='social') 
-                                        i(class="fas fa-home")
+                                        i(class="fab fa-facebook-square fa-fw ")
                                         span(class='facebook') @perfectlinesports
-                                        i(class="fas fa-home")
+                                        i(class="fab fa-linkedin fa-fw")
                                         span(class='facebook') Perfectlinesports
-                                        i(class="fas fa-home")
+                                        i(class="fab fa-twitter-square fa-fw")
                                         span(class='facebook') Plinesports
-                                        i(class="fas fa-home")
+                                        i(class="fab fa-instagram-square fa-fw")
                                         span(class='facebook') Perfect-line-sport-products
                                     div(class='website')
                                         div(class='text') w w w . p e r f e c t l i n e s p o r t s . c o m
                                     div(class='branch') 
                                         div(class='Branch') Branch
                                         div(class='phone') 
-                                            i(class="fas fa-home")
+                                            i(class="fas fa-phone-alt fa-fw")
                                             span(class='') +201129139666
                                         div(class='location') Cairo , Egypt
+
+
+
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+
+
+                div(class='row')
+                    
+                    include header/header.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    //- Registration Process
+
+
 
 
 

@@ -2,30 +2,28 @@
 // @import "./font/font-ar";
 // web safe fonts
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+// en
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+$font-plsp: "Roboto Condensed", sans-serif;
+// en w
+@import url("https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap");
+$font-plsp-w: "Xanh Mono", monospace;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Xanh+Mono:ital@0;1&display=swap");
+$font-plsp-w-2: "Raleway", sans-serif;
 // Ar Font Family
 // Font Name || Cairo
-$font-cairo: "Cairo",
-sans-serif;
-$cairo-Font: "Cairo",
-sans-serif;
+$font-cairo: "Cairo", sans-serif;
+$cairo-Font: "Cairo", sans-serif;
 $font-ar-0: "DroidKufi-regular";
 $font-ar-1: "Droid Arabic Kufi";
-$font-ar-2: "Short Stack",
-cursive;
-$font-ar-3: "Tajawal",
-sans-serif;
-$font-ar-4: "Markazi Text",
-serif;
-$font-ar-5: "El Messiri",
-sans-serif;
-$font-ar-6: "Changa",
-sans-serif;
-$font-ar-7: "Mirza",
-cursive;
-$font-ar-8: "Lateef",
-cursive;
-$font-ar-9: "Scheherazade",
-serif;
+$font-ar-2: "Short Stack", cursive;
+$font-ar-3: "Tajawal", sans-serif;
+$font-ar-4: "Markazi Text", serif;
+$font-ar-5: "El Messiri", sans-serif;
+$font-ar-6: "Changa", sans-serif;
+$font-ar-7: "Mirza", cursive;
+$font-ar-8: "Lateef", cursive;
+$font-ar-9: "Scheherazade", serif;
 $font-droid: "Droid Arabic Kufi";
 $droid-font: "Droid Arabic Kufi";
 // EN Font Family
@@ -37,24 +35,18 @@ $Tahoma-font: "Tahoma, Arial";
 $font-safe-1: "Arial, sans-serif";
 // Font Name || Times
 $font-safe-2: "Times";
-$font-safe-3: "Times New Roman",
-serif;
-$font-safe-4: "Courier New",
-Courier,
-monospace;
+$font-safe-3: "Times New Roman", serif;
+$font-safe-4: "Courier New", Courier, monospace;
 // Font Name || Courier
-$font-safe-5: "Courier Prime",
-monospace;
+$font-safe-5: "Courier Prime", monospace;
 // Font Name || Verdana
 $font-safe-6: "Verdana, Geneva, sans-serif";
 // Font Name || Georgia
 $font-safe-7: " Georgia, serif";
 // Font Name || Cormorant
-$font-safe-7: "Cormorant Garamond",
-serif;
+$font-safe-7: "Cormorant Garamond", serif;
 // Font Name || Garamond
-$font-safe-8: "EB Garamond",
-serif;
+$font-safe-8: "EB Garamond", serif;
 // Font Name || Tahoma
 $font-safe-10: "Tahoma";
 // Font Name || Arial
