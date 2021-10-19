@@ -3739,12 +3739,12 @@ a{color: $color-000;}
             /* Extra small devices (phones, 600px and down) */
             @media only screen and (max-width: 767px) {
               bottom: -50px;
-              right: 47%;
+              right: 45%;
               &::after {
                 content: "";
                 position: absolute;
                 bottom: 22%;
-                right: -18%;
+                left: -18%;
                 width: 1px;
                 height: 235px;
                 background-color: $main-color;
@@ -3753,12 +3753,12 @@ a{color: $color-000;}
             /* Medium devices (landscape tablets, 768px and up) */
             @media only screen and (min-width: 768px) {
               bottom: -50px;
-              right: 47%;
+              right: 40%;
               &::after {
                 content: "";
                 position: absolute;
                 bottom: 22%;
-                right: -18%;
+                left: -18%;
                 width: 1px;
                 height: 165px;
                 background-color: $main-color;
@@ -3768,12 +3768,12 @@ a{color: $color-000;}
             /* Large devices (laptops/desktops, 992px and up) */
             @media only screen and (min-width: 992px) {
               bottom: -50px;
-              right: 47%;
+              right: 43%;
               &::after {
                 content: "";
                 position: absolute;
                 bottom: 22%;
-                right: -18%;
+                left: -18%;
                 width: 1px;
                 height: 220px;
                 background-color: $main-color;
@@ -3783,12 +3783,12 @@ a{color: $color-000;}
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1200px) {
               bottom: -50px;
-              right: 47%;
+              right: 45%;
               &::after {
                 content: "";
                 position: absolute;
                 bottom: 22%;
-                right: -18%;
+                left: -18%;
                 width: 1px;
                 height: 250px;
                 background-color: $main-color;
@@ -3798,12 +3798,12 @@ a{color: $color-000;}
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1440px) {
               top: 120%;
-              right: 44%;
+              right: 43%;
               &::after {
                 content: "";
                 position: absolute;
                 bottom: 22%;
-                right: -18%;
+                left: -18%;
                 width: 1px;
                 height: 310px;
                 background-color: $main-color;
@@ -3813,12 +3813,12 @@ a{color: $color-000;}
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1566px) {
               top: 120%;
-              left: 44%;
+              right: 44%;
               &::after {
                 content: "";
                 position: absolute;
                 bottom: 22%;
-                right: -18%;
+                left: -18%;
                 width: 1px;
                 height: 310px;
                 background-color: $main-color;
@@ -3826,15 +3826,16 @@ a{color: $color-000;}
             }
           }
           span.Algeria {
+            
             /* Extra small devices (phones, 600px and down) */
             @media only screen and (max-width: 767px) {
               bottom: -30px;
-              right: 48%;
+              right: 45.5%;
               &::after {
                 content: "";
                 position: absolute;
                 bottom: 22%;
-                right: -18%;
+                left: -18%;
                 width: 1px;
                 height: 210px;
                 background-color: $main-color;
@@ -3843,12 +3844,12 @@ a{color: $color-000;}
             /* Medium devices (landscape tablets, 768px and up) */
             @media only screen and (min-width: 768px) {
               bottom: -30px;
-              right: 48%;
+              right: 41%;
               &::after {
                 content: "";
                 position: absolute;
                 bottom: 22%;
-                right: -18%;
+                left: -18%;
                 width: 1px;
                 height: 145px;
                 background-color: $main-color;
@@ -3858,12 +3859,12 @@ a{color: $color-000;}
             /* Large devices (laptops/desktops, 992px and up) */
             @media only screen and (min-width: 992px) {
               bottom: -30px;
-              right: 48%;
+              right: 44%;
               &::after {
                 content: "";
                 position: absolute;
                 bottom: 22%;
-                right: -18%;
+                left: -18%;
                 width: 1px;
                 height: 190px;
                 background-color: $main-color;
@@ -3873,12 +3874,12 @@ a{color: $color-000;}
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1200px) {
               bottom: -30px;
-              right: 48%;
+              right: 46%;
               &::after {
                 content: "";
                 position: absolute;
                 bottom: 22%;
-                right: -18%;
+                left: -18%;
                 width: 1px;
                 height: 220px;
                 background-color: $main-color;
@@ -3888,12 +3889,12 @@ a{color: $color-000;}
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1440px) {
               top: 116%;
-              right: 45%;
+              right: 43%;
               &::after {
                 content: "";
                 position: absolute;
                 bottom: 22%;
-                right: -18%;
+                left: -18%;
                 width: 1px;
                 height: 290px;
                 background-color: $main-color;
@@ -3903,12 +3904,12 @@ a{color: $color-000;}
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1566px) {
               top: 116%;
-              right: 45%;
+              right: 44%;
               &::after {
                 content: "";
                 position: absolute;
                 bottom: 22%;
-                right: -18%;
+                left: -18%;
                 width: 1px;
                 height: 290px;
                 background-color: $main-color;
@@ -3919,12 +3920,12 @@ a{color: $color-000;}
             /* Extra small devices (phones, 600px and down) */
             @media only screen and (max-width: 767px) {
               bottom: -10px;
-              right: 51%;
+              left: 51%;
               &::after {
                 content: "";
                 position: absolute;
                 bottom: 22%;
-                right: -18%;
+                left: -18%;
                 width: 1px;
                 height: 200px;
                 background-color: $main-color;
@@ -3933,12 +3934,12 @@ a{color: $color-000;}
             /* Medium devices (landscape tablets, 768px and up) */
             @media only screen and (min-width: 768px) {
               bottom: -10px;
-              right: 51.2%;
+              left: 51.2%;
               &::after {
                 content: "";
                 position: absolute;
                 bottom: 22%;
-                right: -18%;
+                left: -18%;
                 width: 1px;
                 height: 139px;
                 background-color: $main-color;
@@ -3948,12 +3949,12 @@ a{color: $color-000;}
             /* Large devices (laptops/desktops, 992px and up) */
             @media only screen and (min-width: 992px) {
               bottom: -10px;
-              right: 51%;
+              left: 51%;
               &::after {
                 content: "";
                 position: absolute;
                 bottom: 22%;
-                right: -18%;
+                left: -18%;
                 width: 1px;
                 height: 180px;
                 background-color: $main-color;
@@ -3963,14 +3964,14 @@ a{color: $color-000;}
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1200px) {
               bottom: -10px;
-              right: 51%;
+              left: 50%;
               &::after {
                 content: "";
                 position: absolute;
                 bottom: 22%;
-                right: -18%;
+                left: -18%;
                 width: 1px;
-                height: 220px;
+                height: 210px;
                 background-color: $main-color;
               }
             }
@@ -3978,12 +3979,12 @@ a{color: $color-000;}
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1440px) {
               top: 112%;
-              right: 48%;
+              left: 53%;
               &::after {
                 content: "";
                 position: absolute;
                 bottom: 22%;
-                right: -18%;
+                left: -18%;
                 width: 1px;
                 height: 280px;
                 background-color: $main-color;
@@ -3993,12 +3994,12 @@ a{color: $color-000;}
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1566px) {
               top: 112%;
-              right: 48%;
+              left: 53%;
               &::after {
                 content: "";
                 position: absolute;
                 bottom: 22%;
-                right: -18%;
+                left: -18%;
                 width: 1px;
                 height: 280px;
                 background-color: $main-color;
@@ -4068,7 +4069,7 @@ a{color: $color-000;}
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1440px) {
               top: 108%;
-              left: 53%;
+              left: 58%;
               &::after {
                 content: "";
                 position: absolute;
@@ -4083,7 +4084,7 @@ a{color: $color-000;}
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1566px) {
               top: 108%;
-              left: 53%;
+              left: 58%;
               &::after {
                 content: "";
                 position: absolute;
@@ -4158,7 +4159,7 @@ a{color: $color-000;}
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1440px) {
               top: 105%;
-              left: 55%;
+              left: 60%;
               &::after {
                 content: "";
                 position: absolute;
@@ -4173,7 +4174,7 @@ a{color: $color-000;}
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1566px) {
               top: 105%;
-              left: 55%;
+              left: 60%;
               &::after {
                 content: "";
                 position: absolute;
@@ -4248,7 +4249,7 @@ a{color: $color-000;}
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1440px) {
               top: 100%;
-              left: 56%;
+              left: 61%;
               &::after {
                 content: "";
                 position: absolute;
@@ -4263,7 +4264,7 @@ a{color: $color-000;}
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1566px) {
               top: 100%;
-              left: 56%;
+              left: 61%;
               &::after {
                 content: "";
                 position: absolute;
@@ -4338,7 +4339,7 @@ a{color: $color-000;}
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1440px) {
               top: 95%;
-              left: 56.2%;
+              left: 61.5%;
               &::after {
                 content: "";
                 position: absolute;
@@ -4353,7 +4354,7 @@ a{color: $color-000;}
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1566px) {
               top: 95%;
-              left: 56.2%;
+              left: 61.5%;
               &::after {
                 content: "";
                 position: absolute;
@@ -4368,7 +4369,7 @@ a{color: $color-000;}
           span.kuwait {
             /* Extra small devices (phones, 600px and down) */
             @media only screen and (max-width: 767px) {
-              bottom: 70px;
+              bottom: 75px;
               left: 61%;
               &::after {
                 content: "";
@@ -4428,7 +4429,7 @@ a{color: $color-000;}
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1440px) {
               top: 85%;
-              left: 57%;
+              left: 62.7%;
               &::after {
                 content: "";
                 position: absolute;
@@ -4443,7 +4444,7 @@ a{color: $color-000;}
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1566px) {
               top: 85%;
-              left: 57.2%;
+              left: 62.2%;
               &::after {
                 content: "";
                 position: absolute;
@@ -4518,7 +4519,7 @@ a{color: $color-000;}
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1440px) {
               top: 75%;
-              left: 59%;
+              left: 63%;
               &::after {
                 content: "";
                 position: absolute;
@@ -4533,7 +4534,7 @@ a{color: $color-000;}
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1566px) {
               top: 75%;
-              left: 58.9%;
+              left: 63%;
               &::after {
                 content: "";
                 position: absolute;
@@ -4583,7 +4584,7 @@ a{color: $color-000;}
         content: "";
         position: absolute;
         bottom: 2%;
-        right: 0;
+        left: 0;
         width: 50%;
         height: 10px;
         background-color: $main-color;
@@ -4637,7 +4638,7 @@ a{color: $color-000;}
         content: "";
         position: absolute;
         bottom: 2%;
-        left: 0;
+        right: 0;
         width: 50%;
         height: 10px;
         background-color: #fff;
@@ -4679,7 +4680,7 @@ a{color: $color-000;}
           position: absolute;
           height: 250px;
           width: 60px;
-          left: 50px;
+          right: 55px;
           background-color: #fff;
           z-index: 1;
           top: -5px;
@@ -4691,6 +4692,7 @@ a{color: $color-000;}
           margin-left: 55px;
           position: absolute;
           z-index: 2;
+          right: 55px;
         }
         .number-1 {
           font-size: 100px;
@@ -4706,7 +4708,7 @@ a{color: $color-000;}
         position: absolute;
         top: 125px;
         font-weight: bold;
-        margin-left: 125px;
+        margin-right: 125px;
         width: 50px;
         // font-family: $font-plsp-w;
       }
