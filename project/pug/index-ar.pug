@@ -2,7 +2,7 @@ include variables/variables.pug
 include mixin/mixin.pug
 doctype 
 html(lang="ar" dir="rtl" data-theme="light") 
-    //- html(lang="en") 
+    //- html(lang="en" data-theme="light")
     //- html(lang='ar' dir="rtl") 
 
     head 
@@ -10,47 +10,960 @@ html(lang="ar" dir="rtl" data-theme="light")
         include head/head.pug
 
         block pageTitle
-            title HomePage
+            title الصفحة الرئيسية ar
 
-    //- end head
+        block Bootstrap
+            //- Bootstrap 5.0.1 ar
+            // Bootstrap 5.0.1 ar
+            //- link(rel="stylesheet" href="https://hossamrashad.github.io/libraries/css/bootstrap/bootstrap.rtl.min.css")
+            link(rel="stylesheet" href="css/libs/bootstrap/bootstrap.rtl.min.css")
 
-    body 
-        //- start body
-        nav.nav.fixed-top
-            li.nav-item
-                a.nav-link.active(href='#') Item 1
-            li.nav-item
-                a.nav-link.disabled(href='#', tabindex='-1', aria-disabled='true') Item 2
+        //- global framework
+        block Framework
+            link(rel="stylesheet" href="css/style-ar.css")
+
+        //- Babel
+        //- script(src="https://unpkg.com/babel-standalone@6/babel.min.js")
+        //- script(src="https://babeljs.io/docs/setup/#babel_in_browser") 
+        //- script(src="js/libs/babel/browser.js") 
+        //- end head
+
+        body 
+            //- start body
+            div(class='container')
+                //- start header
+                header(class="header") 
+                    //- start logo
+                    div(class='logo')
+                        img(src="images/logo/logo-top.png" alt="")
+                    //- end logo
+                    //- start profile
+                    div(class='profile') 
+                        div(class='profile-disc')
+                            span(class='corporate') شركة كبرى
+                            span(class='company') ملف
+                            span(class='profile-single') الشركة 
+                            span(class='line')
+                        div(class='profile-address')
+                            ul 
+                                li 
+                                    i(class="fas fa-globe fa-fw")
+                                    a(class='www' target='_blank' href='https://perfectlinesports.com/') WWW
+                                    | .perfectlinesports.com
+                                li 
+                                    i(class="fas fa-map-marker-alt fa-fw")
+                                    span(class='location') dubai united arab emirates
+                                li 
+                                    i(class="fas fa-envelope fa-fw")
+                                    a(class='message' target='_blank' href='mailto:info@perfectlinesports.com') info@perfectlinesports.com
+                                li 
+                                    i(class="fas fa-phone-alt fa-fw")
+                                    a(class='phone' href='tel:009714254110' target='_blank') 009714254110
+                                    span(class='social') 
+                                        span(class='first-litter') W
+                                        | hatsapp - landine
+                                li 
+                                    i(class="fas fa-fax fa-fw")
+                                    span(class='fax') 0097142541130
+                    //- end profile
+                    //- start future
+                    div(class='future')
+                        div(class='text-img') 
+                            span(class='text') هى المستقبل
+                            img(src="images/header/future.png" alt="")
+                    //- end future
+                    //- end header
 
 
-        //- btn one
-        div(class="container")
-            div(class="row")
-                div(class="col-sm-6")
-                    p(class="lead") Hossam
-                div(class="col-sm-6")
-                    p(class="lead") Rashad
-                    <i class="fab fa-accessible-icon"></i>
+                    //- start about message
 
+                section(class="section-about-message line-start-section-main-color") 
+                    div(class='inner-header')
+                        //- about
+                        div(class='about')
+                            div(class='title')
+                                div(class='face' data-text="من نحن ") من نحن
+                            div(class='disc')
+                                div(class='line')
+                                p(class='single-head') 
+                                    span(class='font-bold') بيرفكت لاين
+                                    | ليست مجرد شركة جامدة في تطورها ولا هي عمل دون إبداع, إنما "بيرفكت لاين" كيان تجاری متين اتخذ عام ۲۰۱۶ من أرض الإمارات العربية المتحدة قاعدة انطلاق نحو العالم مقدما كل ما يلزم من منتجات وإكسسوارات ومعدات رياضية
 
-        //- Start Btn
-        include button/button.pug
-        //- End Btn
-
-        .Element-Parent 
-            //- a(href="javascript:history.go(1)" class="btnTest") go back now
-
-        //- +btnTow('read')
+                                p(class='single-body') قامت بأختيار علامات تجارية وشركاء أقليميين تتوافق منتجاتهم مع المعايير الدولية و لديهم شهادات مطابقة للمواصفات الدولية ، لتكون في تلبية احتياجات المهتمين من عالم الرياضة والرياضيين بطريقة آمنة و محترفة
 
 
 
-        //- Start Global
-        include global/global.pug
-        //- End Global
-        div(class='' id="Element")
+                                p(class='single-footer')  الضمان جودة العمل قامت بيرفكت لاين بالحصول على شهادة 9001:2015 ISO لتقدم أفضل الخدمات و المنتجات لعملائها وفقا لأفضل المعايير والجودة العالمية
 
-        include script/script.pug
-        script(src="../js/tools.js") 
-        script(src="../js/tools-test.js") 
-        script(src="http://localhost:35729/livereload.js")
-        //- end body
+                        //- message
+                        div(class='message')
+                            div(class='title')
+                                div(class='face' data-text="الرسالة") الرسالة
+                            div(class='disc')
+                                p(class='single-head') 
+                                    span(class='dot') •
+                                    |سنوات عديدة من العمل و التحديات , و بتلك الفترة تعرضت لكثير من الصعوبات والمصاعب والفشل. لم استسلم و عملت بجد ولا يساورنا شك بأن النجاح قريب بتكاتف فريق العمل جميعا ستحقق بيرفكت لاين قفزة نوعية في عالم توريد و بيع المنتجات والمعدات الرياضية والاكسسوارات
+                                p(class='single-footer')  وفقا للأساليب الحديثة مع أتباع المعايير المهنية بالأفكار المشتركة والعمل الجاد سنضمن نتائج مثمرة العملائنا و شركاؤنا
+                    div(class='inner-footer')
+                        div(class='content')
+                            img(src="images/section-about-message/who-we-are.jpg" alt="" class="img-fluid img-thumbnail")
+                            div(class='text')
+                                div(class='title')
+                                    div(class='face' data-text=" من نحن") 
+                    //- end about message
+
+                    //- start section perfect line
+
+                section(class="section-perfect-line") 
+                    //- start perfect-line
+                    div(class='perfect-line line-start-section-main-color')
+                        div(class='title')
+                            span(class='face' data-text="التطور") مسيرة بيرفكت لاين منذ التأسيس
+
+
+                        div(class='grid-lg-4 parent-box-top')
+                            div(class='') 
+                                div(class='box-one')
+                                    p(class='lead') تأسيس الشركة وأفتتاح أول معرض بيع بالتجزئة والحصول على الحقوق الحصرية لماركة 
+                                        span(class='font-bold') LACATONI البرتغالية
+                                        span(class='number number-2014') 2014
+                            div(class='') 
+                                div(class='box-tow')
+                                    p(class='lead') نمو الأعمال و توسيع الشبكة
+                                        span(class='')
+                                        span(class='number number-2016') 2016
+                            div(class='') 
+                                div(class='box-three')
+                                    p(class='lead') تم التعاون مع البرشاء مول الافتتاح ثانی متجر بيع بالتجزئة 
+                                        span(class='font-bold') بالبرشاء مول ، دبي
+                                        span(class='number number-2018') 2018
+                            div(class='') 
+                                div(class='box-four')
+                                    ul 
+                                        span(class='number number-2020') 2020
+                                        li تم أفتتاح ثالث معرض بمساحة 320 متر مربع بمنطقة عود ميثاء ليضم مختلف العلامات العالمية بشكل ونموذج جديد
+                                        li وقد قمنا بإعادة إطلاق منصتنا للتجارة الإلكترونية بشكل و نظام مختلف تماما و تتوفر بالمنصة الحديثة خدمة متعددة اللبائعين و يضم العديد من الشركات العالمية بآلاف المنتجات الرياضية
+                                        li كما سيشهد 2020 إطلاق علامتنا الرياضية (4) المتخصصة بالملابس و الاكسسوارات وأيضا الأدوات الرياضية وفقا لأفضل المعايير والجودة و التصاميم
+                        div(class='parent-icon')
+                            div(class='child-icon')
+                                p(class='icon-1')
+                                    span(class='back-icon right')
+                                    span(class='icon')
+                                        i(class="fas fa-box-open fa-fw")
+                                p(class='icon-2')
+                                    span(class='back-icon left')
+                                    span(class='icon')
+                                        i(class="fab fa-hubspot fa-fw")
+                                p(class='icon-3')
+                                    span(class='back-icon right')
+                                    span(class='icon')
+                                        i(class="fas fa-chart-bar fa-fw")
+                                p(class='icon-4')
+                                    span(class='back-icon left')
+                                    span(class='icon')
+                                        i(class="fas fa-chart-bar fa-fw")
+                                p(class='icon-5')
+                                    span(class='back-icon right')
+                                    span(class='icon')
+                                        i(class="fas fa-home  fa-fw")
+                                p(class='icon-6')
+                                    span(class='back-icon left')
+                                    span(class='icon')
+                                        i(class="fas fa-handshake  fa-fw")
+                                p(class='icon-7')
+                                    span(class='back-icon right top')
+                                    span(class='icon')
+                                        i(class="fas fa-clipboard-check  fa-fw")
+                        div(class='grid-lg-4 parent-box-bottom')
+                            div
+                            div(class='')
+                                div(class='box-1')
+                                    p(class='lead') شهد توقيع اتفاقية توزيع حصري لماركة 
+                                        span(class='font-bold') GRANDSPORT العريقة
+                                        span(class='number') 2015
+                            div(class='')
+                                div(class='box-2')
+                                    p(class='lead') نمو الأعمال و توسيع الشبكة
+                                        span(class='') 
+                                        span(class='number') 2017
+                            div(class='')
+                                div(class='box-3')
+                                    p(class='lead') قامت بيرفكت لاين بتوقيع العديد من الاتفاقيات مع أفضل العلامات الاوربية:
+                                        span(class='') 
+                                        span(class='number') 2019
+                                            br
+                                            | عام الإنجازات
+                                    img(src="images/box-bottom.png" alt="")
+                    //- End perfect-line
+                    //- end section perfect lin
+
+                    //- start section is the future
+
+                section(class="section-is-the-future line-start-section-main-color") 
+                    //- is-the-future
+                    div(class='is-the-future grid-md-2')
+                        div(class='left')
+                            div(class='row')
+                                div(class='col-md-2')
+                                    img(src="images/4.png" alt="")
+                                div(class='col-md-10')
+                                    h2(class="") هي المستقبل
+                                    p(class='lead main-color') تماشيا مع رؤية دولة الإمارات التي تسعى إلى التقدم والازدهار وفي ضوء بلد الإبداع والتميز، وبعد دراسة طويلة , أطلقت بيرفكت لاين للمنتجات الرياضية العلامة التجارية وستكون خطوط انتاجها لجميع المنتجات والمستلزمات والاكسسورات والملابس الرياضية للرجال والنساء والاطفال وللفرق الرياضية والالعاب الفردية والجماعية.
+                                    p(class='lead') وفقا لأعلى معايير الجودة العالمية لجميع أنواع الممارسين الرياضيين وسعيا وراء التميز وأفضل المنتجات أبرمت الشركة اتفاقيات مع العديد من المصممين حول العالم لتوفير تصميمات حديثة من قبل فريق من التقنيين والمتخصصين التقديم منتجات مبتكرة للرياضين ونطمح أن تصبح العلامة رقم (1) عربية ودوليا.
+
+                        div(class='right')
+                            div(class='content')
+                                div(class='border')
+                                    div(class='inner')
+                                img(src="images/img244.jpg" alt="" class="img-right")
+                                img(src="images/img238.jpg" alt="" class="img-left")
+                    //- end section is the future
+
+
+                    //- start section supporters-for-gov
+
+                section(class="section-supporters-for-gov line-start-section-fff-color") 
+                    //- supporters-for-gov
+
+                    div(class='supporters-for-gov grid-md-2')
+                        div(class='left')
+                            div(class='title')
+                                div(class='face' data-text="المؤيدين") عضويتنا بالمؤسسات الحكومية.
+                                    br 
+                                    | المشتريات الحكومية
+                            div(class='disc')
+                                p(class='lead') بناء على مبادئ وقيم المسؤولية الاجتماعية وأهمية دعم المشاريع الوطنية للشباب و وفقا لما تدافع عنه وتؤكده دائها قيادتنا الحكيمة حرصت شركة بيرفكت لاين للمنتجات الرياضية على أن تكون عضوا نشطا وداعها في العديد من المؤسسات الحكومية أملا للاستفادة من القرارت السامية بتخصيص نسب للمشتريات من كافة الجهات الحكومية و الشبه حكومية و أبرزها ما يلي:
+                            div(class='parent-ul')
+                                div(class='row')
+                                    div(class='col-md-2')
+                                        img(src="images/img262.jpg" alt="")
+                                    div(class='col-md-10')
+                                        p(class='main-color') • مؤسسة محمد بن راشد لتنمية المشروعات الصغيرة والمتوسطة.
+                                    div(class='col-md-2')
+                                        img(src="images/img260.jpg" alt="")
+                                    div(class='col-md-10')
+                                        p(class='main-color') • البرنامج الوطني للمشروعات الصغيرة والمتوسطة.
+                                    div(class='col-md-2')
+                                        img(src="images/img265.jpg" alt="")
+                                    div(class='col-md-10')
+                                        p(class='main-color') • صندوق خليفة لتطوير المشاريع.
+                        div(class='right')
+                            div(class='title')
+                                span(class='face' data-text="قيمنا")  
+                            div(class='number')
+                                span(class='number-0') 0
+                                span(class='number-1') 1
+                            div(class='our-value') قيمنا
+                            div(class='parent-ul')
+                                ul 
+                                    li 
+                                        span(class='font-bold') الدقة:
+                                        | نحن نركز على أدق التفاصيل لتحقيق أفضل النتائج
+                                    li 
+                                        span(class='font-bold') الابتكار :
+                                        | نحن نبتكر أكثر الأفكار ابتكارا وحداثة.                                    
+                                    //- li 
+                                    //-     span(class='font-bold') Accuracy:
+                                    //-     | We focus on the smallest details to achieve the best results
+                                    li 
+                                        span(class='font-bold') التفاني:
+                                        | الاستفادة من كل الاحتمالات للوصول إلى أعلى مستويات النجاح
+                                    li 
+                                        span(class='font-bold') التحدي:
+                                        | نسعى لتذليل و إزالة العوائق مهما كانت حجمها بالتعاون مع شركائنا و عملائنا.
+                    //- end section supporters-for-gov
+
+
+
+                    //- start section vision
+
+                section(class="section-vision-and-our-services line-start-section-fff-color") 
+                    //- vision
+                    div(class='vision grid-md-2')
+                        div(class='left')
+                            div(class='title')
+                                div(class='face' data-text="رؤية") 
+                            div(class='number')
+                                span(class='number-0') 0
+                                span(class='number-1') 2
+                            div(class='our-value') رؤيتنا
+                            div(class='disc')
+                                p(class='lead') أن نكون الاختيار الأول لكل أولئك الذين يبحثون عن المنتجات الرياضية والإكسسوارات والمعدات الأصلية وغير المقلدة في مختلف مجالاتها وتصنيفاتها ، بناءً على استراتيجيات متقدمة ولمسات لا مثيل لها.
+                        div(class='right')
+                            div(class='title')
+                                span(class='face' data-text="خدمات")  
+                            div(class='number')
+                                span(class='number-0') 0
+                                span(class='number-1') 3
+                            div(class='our-value') خدماتنا
+                            div(class='disc')
+                                p(class="lead") نقدم لك مجموعة كاملة من الخدمات التي تتماشى مع قيم ورسالة الشركة ، على سبيل المثال لا الحصر.
+                            div(class='ul-our-services')
+                                div(class="row") 
+                                    div(class='col-md-3')
+                                        i(class="fas fa-tshirt fa-fw float-md-end")
+                                    div(class='col-md-8')
+                                        ul 
+                                            li ملابس رياضية، تصنيع وتسويق
+                                    div(class='col-md-3')
+                                        i(class="fas fa-headphones-alt fa-fw  float-md-end")
+                                    div(class='col-md-8')
+                                        ul 
+                                            li توفير الملحقات اللياقة البدنية ومعدات التدريب
+                                    div(class='col-md-3')
+                                        i(class="fas fa-tshirt fa-fw float-md-end")
+                                    div(class='col-md-8')
+                                        ul 
+                                            li تصميم وتركيب صالات رياضية احترافية لجميع القطاع الرياضي
+                                    div(class='col-md-3')
+                                        i(class="fas fa-praying-hands fa-fw  float-md-end")
+                                    div(class='col-md-8')
+                                        ul 
+                                            li توفير جميع متطلبات المنظمات الرياضية لمختلف الأجسام الرياضية والقطاعات
+                    //- start section vision
+
+                    //- Start section-map
+
+                section(class="section-map line-start-section-fff-color") 
+                    //- map
+                    div(class='map grid-md-2')
+                        div(class='left')
+                            div(class='title')
+                                span(class='face' data-text="خريطة الموقع") 
+                            div(class='number')
+                                span(class='number-0') 0
+                                span(class='number-1') 4
+                            div(class='our-value') خريطة الموقع
+                            div(class='map-box')
+                                div(class='child-map')
+                                    img(src="images/map.jpg" alt="")
+                                    span(class=' Morocco')  Morocco 
+                                    span(class=' Algeria')  Algeria 
+                                    span(class=' Tunisia')  Tunisia 
+                                    span(class=' Egypt')  Egypt   
+                                    span(class=' KSA')  KSA     
+                                    span(class=' Bahrian')  Bahrian 
+                                    span(class=' UAE')  UAE     
+                                    span(class=' kuwait')  kuwait  
+                                    span(class=' Oman')  Oman    
+                                div(class='top-map')
+                                    img(src="images/map-2.png" alt="")
+
+                        div(class='right')
+                            div(class='title')
+                                //- span(class='back' data-text=" MAJOR Clients")
+                            div(class='number')
+                                span(class='number-0') 0
+                                span(class='number-1') 5
+                            div(class='our-value')  كبار العملاء
+                            div(class='disc') 
+                                p(class="lead") 
+                                    span(class='font-bold') تستهدف بيرفكت لاين ،
+                                    |  من خلال خدماتها المتنوعة التي تتميز بالجودة والإبداع العديد من القطاعات والهيئات على سبيل الذكر:
+                            div(class='clients')
+                                div(class='inner grid-md-3')
+                                    div(class='client') 
+                                        div(class='icon') 
+                                            i(class="fas fa-users fa-fw") 
+                                        div(class='ul')
+                                            ul(class="ul-1") 
+                                                li اللجان الرياضية الأولمبية
+                                                li الاتحادات الرياضية
+                                                li الأندية الرياضية
+                                                li الأكاديميات الرياضية
+                                                li صالة اللياقة البدنية
+                                    div(class='client') 
+                                        div(class='icon')
+                                            i(class="fas fa-school fa-fw")
+                                        div(class='ul')
+                                            ul(class="ul-2") 
+                                                li الجهات الحكومية
+                                                li الجهات شبه الحكومية
+                                                li تجهيز مرافق السلامة الرياضية و صالات اللياقة البدنية للفنادق والمنشآت السكنية والتجارية والأبراج و أيضا المجمعات السكنية
+                                                li اللجان الأولمبية الرياضية الاتحادات الرياضية الأندية الرياضية الأكاديميات الرياضية صالات اللياقة البدنية
+                                    div(class='client') 
+                                        div(class='icon')
+                                            i(class="fas fa-cart-arrow-down fa-fw")
+                                            span(class='') تجار الجملة
+                                        div(class='ul')
+                                            ul(class="ul-3") 
+                                                li تجار الجملة
+                                                li تجار التجزئة
+                                                li الموزعين / الوكلاء
+                    //- End section-map
+
+
+                    //- start section Our-Partners
+
+                section(class="section-Our-Partners line-start-section-main-color") 
+                    //- Our Partners
+                    div(class='Our-Partners')
+                        div(class='back-color')
+                        div(class='title')
+                            div(class="face" data-text="شركائنا") شركائنا
+                        div(class='grid-lg-3 inner')
+                            div(class='img')
+                                img(src="images/img354.jpg" alt="")
+                            div(class='text')
+                                img(src="images/section-our-partners/liskl-no-back.png" alt="")
+                                p(class='lead')
+                                    span(class='font-bold') "LISKI, Italy 
+                                    | - شركة إيطالية وتعمل بالسوق منذ أواخر السبعينيات وتنشط بالعديد من الدول الاوروبية وموردة رسمية للعديد من البطولات والاحداث الكبرى كمثال ( كأس العالم لكرة القدم)و روسيا والدوري الايطالي والالماني والاسباني على سبيل الذكر ومتخصصة في تصنيع احتياجات " المعدات التدريبية الرياضية لضمان تحقيق أفضل أداء مع توفير مواد أمنة ومميزة ، من خلال التوافق الرائع بين التكنولوجيا واحتياجات الرياضيين للمجال. كما توفر العلامة التجارية على سبيل المثال أدوات إدارة المباريات ومعدات التدريب ومنصات الحماية والعديد من المنتجات المرتبطة بالرياضة و الرياضيين.
+                            div(class='img')
+                                img(src="images/img357.jpg" alt="")
+                            div(class='text')
+                                img(src="images/section-our-partners/fitness.png" alt="")
+                                p(class='lead') 
+                                    span(class='font-bold') TELJU, Spanish
+                                    | - شركة أسبانية مصنعة وموردة محترفة للمعدات الرياضية عالية الجودة ، وقد ظلت في هذا المجال لأكثر من 30 عاما، ومن ضمن كبار عملائها العديد من الجهات الحكومية مثل القوات المسلحة الاسبانية وغيرها من الجهات كالفنادق وصالات الجيم الكبيرة.
+                            div(class='img')
+                                img(src="images/img351.jpg" alt="")
+                            div(class='text')
+                                img(src="images/section-our-partners/beltona.png" alt="" class="img-beltona")
+                                p(class='lead')
+                                    span(class='font-bold') Beltona, Netherlands
+                                    | - شركة هولندية متخصصة في تصنيع وتصميم الملابس الرياضية والاكسسوارات الرياضية، ويرتدي العلامة العديد من الاندية الهولندية وغيرها من الاندية بدول اوروبية أخرى والعديد من الاكاديميات الرياضية الكبرى.
+                    //- end Our-Partners
+
+
+
+                    //- start section Our-Partners
+
+                section(class="section-Our-Partners-2 line-start-section-main-color") 
+                    //- Our-Partners
+                    div(class='Our-Partners-2')
+                        div(class='back-color')
+                        div(class='title')
+                            div(class='face' data-text="شركائنا") شركائنا
+                        div(class='content')
+                            div(class='grid-md-2 inner')
+                                div(class='img img-top')
+                                    img(src="images/img368.jpg" alt="")
+                                div(class='text text-top')
+                                    img(src="images/section-our-partners/atx.png" alt="")
+                                    p(class='lead')
+                                        span(class='font-bold') ATX / GYMFLOOR, Germany - 
+                                        span(class='a')  A 
+                                        | شركة ألمانية متخصصة في تصنيع وتطوير وتصميم معدات و تجهيز صالات اللياقة البدنية المبتكرة وفقا لمهارات الهندسة التقليدية الألمانية. و تعمل في هذا المجال منذ أكثر من 20 عاقا وضمن عملائها العديد من الأندية الألمانية و الأوروبية و مراكز التأهيل الطبي الالماني والفنادق ذات 5 نجوم و با نجوم و بعض من أندية الجهات الحكومية الأخرى.
+                                div(class='text text-bottom')
+                                    img(src="images/section-our-partners/gyming.png" alt="")
+                                    p(class='lead ') 
+                                        span(class='font-bold') GYMNIC, Italy
+                                        | - شركة إيطالية تصمم و تصنع منتجات عالية الجودة لتوفير الحركة المثالية للأشخاص من جميع الأعمار. وهي شركة رائدة في مجالات الألعاب واللياقة البدنية والعلاج الطبيعي وتعمل منذ أكثر من 20 عاقا في هذا المجال.
+                                div(class='img img-bottom')
+                                    img(src="images/section-our-partners/bottom.jpg" alt="")
+
+
+
+
+                    //- start Retailer-Brands
+
+                section(class="section-Retailer-Brands line-start-section-main-color") 
+                    //- Retailer Brands
+                    div(class='Retailer-Brands')
+                        div(class='line-color-left')
+                        div(class='title-face')
+                            div(class='face' data-text="Retailer Brands") 
+                        div(class='title-face-parent')
+                            div(class="face-parent") 
+                                span(class='first') علاما
+                                | ت التجزئة
+                        div(class="disc") 
+                            p(class='lead') الم نغفل عن ضرورة توفير علامات عالمية
+                                br     
+                                |  المبيعات التجزئة لنخدم بها عملائنا الكرام
+                        div(class='grid-md-3 grid-sm-2 col-xs-1 brands')
+                            //- div(class='empty')
+                                span(class='')
+                            div(class='img')
+                                img(src="images/img198.jpg" alt="")
+                            div(class='img')
+                                img(src="images/img397.jpg" alt="")
+                            div(class='img')
+                                img(src="images/img410.jpg" alt="")
+                            //- div(class='empty')
+                                span(class='')
+                            //- div(class='empty')
+                                span(class='')
+                            div(class='img')
+                                img(src="images/img385.jpg" alt="")
+                            div(class='img')
+                                img(src="images/img404.jpg" alt="")
+                            div(class='img')
+                                img(src="images/img390.jpg" alt="")
+                            //- div(class='empty')
+                                span(class='')
+                        div(class='line-border-main-color')
+                    //- end Retailer-Brands
+
+
+
+                    //- start Retailer-Brands
+
+                section(class="section-Advantages line-start-section-fff-color")
+                    //- Retailer Brands
+                    div(class='Advantages')
+                        div(class='line-color-left')
+                        div(class='title-face')
+                            div(class='face' data-text="مميزاتنا") 
+                        div(class='title-face-parent')
+                            div(class="face-parent") 
+                                span(class='first') مم
+                                | يزاتنا
+                        div(class='line-border-fff-color')
+                        div(class="disc") 
+                            p(class='lead') 
+                                span(class='font-bold') "بيرفكت لاين"
+                                | لديها العديد من الخصائص النوعية وأهمها :
+                        div(class='grid-md-2 grid-sm-2 col-xs-1 ul')
+                            div(class='ul-left')
+                                ul 
+                                    li خدمات تتماشى مع معايير الجودة الإماراتية المتوافقة مع المبادئ الدولية
+                                    li أسعار تنافسية لمنتجات رياضية متنوعة.
+                                    li إرضاء رغبات العملاء بتصميمات خاصة.
+                                    //- li Implementing the work on time with the high-quality required.
+                            div(class='ul-right')
+                                ul 
+                                    li تنفيذ الأعمال في الوقت المحدد وأيضا بالجودة العالية المطلوبة.
+                                    li تقديم خدمات ما بعد البيع لرعاية وتلبية طلبات العملاء طوال الوقت.
+                                    li مواكبة كل ما هو جديد في عالم تصميمات المنتجات و الملحقات و المعدات الرياضية
+                    //- end Retailer-Brands
+
+                //- start Retailer-Brands
+                section(class="section-Ambition line-start-section-fff-color")
+                    //- Ambition
+                    div(class='Ambition')
+                        div(class='line-color-left')
+                        div(class='title-face')
+                            div(class='face' data-text="طموحنا") 
+                        div(class='title-face-parent')
+                            div(class="face-parent") 
+                                span(class='first') طم
+                                | وحنا
+                        div(class='line-border-fff-color center-border')
+
+
+                        div(class='grid-lg-2 grid-sm-1 pl-15 pr-15 col-xs-1 ul')
+                            div(class='left')
+                            div(class='right')
+                                p(class='text') الريادة في عالم المنتجات والمعدات والاكسسورات والمستلزمات و الملابس الرياضية , تهدف بيرفكت لاين الي ابرام اتفاقيات تعاون مع مختلف متاجر التجزئة و الشركات المهنية بدول مجلس التعاون الخليجي و الشرق الاوسط و دول شمال و جنوب افريقيا
+                                div(class='ul-Ambition')
+                                    p(class='titel-Ambition') ومن طموحات الشركة التي تسير إليها بثقة:
+                                    ul 
+                                        li 
+                                            span(class='number-1') 1.
+                                            | زيادة البصمة الجغرافية
+                                        li 
+                                            span(class='number-2') 2.
+                                            | توسيع خطوط الإنتاج
+                                        li 
+                                            span(class='number-3') 3.
+                                            | تطوير علاقات تعاون جديدة مع مختلف القطاعات المنتجات الشركة
+
+                        div(class='line-border-fff-color')
+                    //- end Retailer-Brands
+
+                //- start Advantages-2
+                section(class="section-Advantages-2 line-start-section-fff-color")
+                    //- Retailer Brands
+                    div(class='Advantages-2')
+                        div(class='line-color-left')
+                        div(class='title-face')
+                            div(class='face' data-text="الاستخدام الأمثل") 
+                        div(class='title-face-parent')
+                            div(class="face-parent") 
+                                span(class='first') حلول
+                                |  متجرنا للاستخدام الأمثل
+                        div(class='line-border-fff-color center-border')
+                        div(class="disc") 
+                            p(class=' lead') بكل فخر واعتزاز أطلقت بيرفكت لاين للمنتجات الرياضية أول منصة متخصصة للتجارة الإلكترونية متعدد البائعين بدولة الإبداع والتميز ليصبح أول منصة تجارة الكترونية متخصص لكافة المنتجات والمعدات والملابس والاكسسورات الرياضية بحيث توفر المنصة العملائها العديد من الخدمات ومنها :
+                        div(class='grid-md-2 grid-sm-1 col-xs-1 ul')
+                            div(class='ul-left')
+                                div(class='row')
+                                    div(class='col-md-3')
+                                        span(class='icon')
+                                            i(class="fas fa-globe fa-fw fa-2x")
+                                    div(class='col-md-9') 
+                                        div(class='text')
+                                            span(class='number') 1.
+                                            |  البائعون المرخصون للرياضات المتعددة تفتح الشركة الباب أمام الشركات المرخصة داخل وخارج دولة الإمارات العرض منتجاتها وبيعها عبر الموقع الإلكتروني.
+
+                                    div(class='col-md-3')
+                                        span(class='icon')
+                                            i(class="fas fa-question fa-fw fa-2x")
+                                    div(class='col-md-9') 
+                                        div(class='text')
+                                            span(class='number') 3.
+                                            | المساعدة والدعم.
+
+                                    div(class='col-md-3')
+                                        span(class='icon')
+                                            i(class="fas fa-award fa-fw fa-2x")
+                                    div(class='col-md-9') 
+                                        div(class='text')
+                                            span(class='number') 5.
+                                            | العوائد والتبادل والضمان.
+
+                                    div(class='col-md-3')
+                                        span(class='icon')
+                                            i(class="fas fa-project-diagram fa-fw fa-2x")
+                                    div(class='col-md-9') 
+                                        div(class='text')
+                                            span(class='number') 7.
+                                            | . المنتجات التابعة
+
+                            div(class='ul-right')
+                                div(class='row')
+                                    div(class='col-md-3')
+                                        span(class='icon')
+                                            i(class="fas fa-store fa-fw fa-2x")
+                                    div(class='col-md-9') 
+                                        div(class='text')
+                                            span(class='number') 2.
+                                            | متجر و سوق واحد للمشترين - حيث يمكن للمشترين رؤية مجموعة واسعة من المنتجات التي تناسب احتياجاتهم.
+
+                                    div(class='col-md-3')
+                                        span(class='icon')
+                                            i(class="fas fa-barcode fa-fw fa-2x")
+                                    div(class='col-md-9') 
+                                        div(class='text')
+                                            span(class='number') 4.
+                                            |  طرق الدفع المتقدمة - نحن نقدم الدفع انقذا عند التسليم , وبطاقات الائتمان أو بطاقات الخصم , والخدمات المصرفية عبر الإنترنت، والمحافظ الإلكترونية لتتماشى مع راحة العملاء. لا تقلق إنها مؤمنة.
+
+                                    div(class='col-md-3')
+                                        span(class='icon')
+                                            i(class="fas fa-dolly fa-fw fa-2x")
+                                    div(class='col-md-9') 
+                                        div(class='text')
+                                            span(class='number') 6.
+                                            | . تجارة التجزئة وسوق الجملة
+                    //- end Advantages-2
+
+                //- start Retailer-Brands
+                section(class="section-Retailer-Brands line-start-section-fff-color")
+                    //- Retailer Brands
+                    div(class='Retailer-Brands')
+                        div(class='line-color-left')
+                        div(class='title-face')
+                            div(class='face' data-text="مرحلة التسجيل") 
+                        div(class='title-face-parent')
+                            div(class="face-parent") 
+                                span(class='first') مرحلة
+                                |  التسجيل
+                        div(class='line-border-fff-color center-border')
+                        div(class="disc") 
+                            p(class='lead') عملية تسجيل سهلة ومريحة. ليست معقدة ويمكن الوصول إليها في أي وقت ومن أي مكان.
+                        div(class='grid-md-2 grid-sm-2 col-xs-1 Retailer-single')
+                            div(class='ul-left')
+                                div(class='header-Sellers')
+                                    span(class='') تسجيل البائعين 
+                                div(class='grid-md-2')
+                                    div(class='empty')
+                                    div(class='text left')
+                                        span(class='first') A.
+                                        | سجل في الموقع :
+                                        span(class='link') 
+                                            a(href="www.perfectline sports.com" target="_blank")  “www.perfectline sports.com”
+                                        | يقوم فريق العمل بتصفية جميع البائعين التنافسيين والمرخصين مثل الشركات بمختلف دول العالم
+                                    div(class='text pb-30') 
+                                        span(class='first') B.
+                                        |  احصل على اسم المستخدم وكلمة المرور الخاصة بك
+                                    div(class='empty left')
+                                    div(class='empty')
+                                    div(class='text left pb-30')
+                                        span(class='first') c. 
+                                        |  احصل على متجرك الخاص في الموقع . وقم بتعديله من لوحة التحكم الخاصة بك وقم بتحميل منتجاتك و اكسب المزيد.
+
+                            div(class='ul-right')
+                                div(class='header-Sellers')
+                                    span(class='') تسجيل المشتري
+                                div(class='grid-md-2')
+                                    div(class='empty')
+                                    div(class='text bottom left')
+                                        span(class='first') A.
+                                        | سجل في الموقع :
+                                        span(class='link') 
+                                            a(href="www.perfectline sports.com" target="_blank")  “www.perfectline sports.com”
+                                        | سيرسل الفريق المختص للتحقق عبر البريد الإلكتروني لتفعيل حسابك ..
+                                    div(class='text bottom') 
+                                        span(class='first') B.
+                                        | اختر من أحدث المنتجات التجربة تسوق فريدة من نوعها عبر الإنترنت.
+                                    div(class='empty left')
+                                    div(class='empty ') 
+                                    div(class='empty left lest') 
+                    //- End Retailer-Brands
+
+                //- start Retailer-Brands
+                section(class="section-INNOVATIVE-SOLUTIONS line-start-section-fff-color")
+                    //- INNOVATIVE SOLUTIONS
+                    div(class='INNOVATIVE-SOLUTIONS')
+
+                        div(class='line-color-left')
+                        div(class='title-face')
+                            div(class='face' data-text="حل مبتكر") 
+                        div(class='title-face-parent')
+                            div(class="face-parent") 
+                                span(class='first') حل
+                                |  مبتكر
+                        div(class='line-border-fff-color center-border')
+
+                        div(class='content')
+                            div(class='grid-lg-2 content-top')
+                                div(class='left')
+                                    p(class='lead top')
+                                        span(class='font-bold') CHATBOT
+                                        | - To ensure rapid response, Perfect Line has provided CHATBOT service ,Since you are at the forefront of attention, we have provided a quick and accurate response service to ensure you that we value your time. We interact with our customers 24/7 using software to make sure that you are well supported.
+                                    p(class='lead bottom')
+                                        span(class='font-bold') GADGET RESPONSIVE
+                                        | - A response whether you're using computers, tablets, or mobile phones, the website will be convenient and easy to use.
+                                div(class='right')
+                                    div(class='title') 
+                                        p(class='lead') لوحات البائع
+                                    div(class='row')
+                                        div(class='col-sm-2')
+                                            div(class='icon')
+                                                i(class="fas fa-shopping-cart fa-fw ")
+                                        div(class='col-sm-10')
+                                            p(class='lead text') البنود التي تم شراؤها
+                                        div(class='col-sm-2')
+                                            div(class='icon')
+                                                i(class="fas fa-users fa-fw ")
+                                        div(class='col-sm-10')
+                                            p(class='lead text') الشركات التابعة
+                                        div(class='col-sm-2')
+                                            div(class='icon')
+                                                i(class="fas fa-calendar-week fa-fw ")
+                                        div(class='col-sm-10')
+                                            p(class='lead text') ينسحب
+
+                                        div(class='col-sm-2')
+                                            div(class='icon')
+                                                i(class="fas fa-truck fa-fw ")
+                                        div(class='col-sm-10')
+                                            p(class='lead text') تتبع الشحنة
+
+                                        div(class='col-sm-2')
+                                            div(class='icon')
+                                                i(class="fas fa-ticket-alt fa-fw ")
+                                        div(class='col-sm-10')
+                                            p(class='lead text')  تذاكر / نزاعات
+
+                                        div(class='col-sm-2')
+                                            div(class='icon')
+                                                i(class="fas fa-sort-alpha-up-alt fa-fw ")
+                                        div(class='col-sm-10')
+                                            p(class='lead text') تحميل المنتجات بالجملة
+
+                                        div(class='col-sm-2')
+                                            div(class='icon')
+                                                i(class="fas fa-store fa-fw ")
+                                        div(class='col-sm-10')
+                                            p(class='lead text') إدارة المخزن
+
+                            div(class='face-bottom-INNOVATIVE' data-text="How could you start selling with us RS?")
+
+                                div(class='head-bottom')
+                                    div(class='grid-md-2 head-bottom-content')
+                                        div(class='left')
+                                            div(class='head first-head')
+                                                h2(class="h1")
+                                                    span(class='first') Ho
+                                                    |w could you
+                                            div(class='head')
+                                                h2(class="h1")
+                                                    span(class='first') sta
+                                                    |rt selling with us
+                                        div(class='right') 
+                                            span(class='number') 1. 
+                                            | Licensed Firms - To ensure high-quality products and services, only registered and licensed companies are allowed to sell on the market while ensuring that the products are original and non-copycat.
+                                div(class='bottom-Licensed  grid-md-1')
+                                    div(class='inner')
+                                        p(class='lead')
+                                            span(class='number') 2.
+                                            | Licensed Firms - To ensure high-quality products and services, only registered and  licensed companies are allowed to sell on   the market while ensuring that the products are original and non-copycat.
+
+                //- start section-why-plsp
+                section(class="section-why-plsp line-start-section-main-color")
+                    //- why-plsp
+                    div(class='why-plsp')
+                        div(class='content')
+                            div(class='header-why-plsp')
+                                div(class='ask')
+                                    h2(class="h1")
+                                        | WHY PLSP?
+                                div(class='grid-md-2 answer ')
+                                    div(class='left')
+                                        p(class='lead')
+                                            span(class='font-bold') Business Account Manager
+                                            | - the main accounts, especially for wholesale buyers, are handled by professional members of Perfect Line to guide you through the order till receiving them.
+                                        p(class='lead')
+                                            span(class='font-bold') BEST PRICES
+                                            | - We are always keen on maintaining long-term friendly relationships with our customers, by providing reasona- ble prices while ensuring to receive an original, flawless, and knockoff product.
+                                    div(class='right')
+                                        p(class='lead') The diversity of products and offering them to customers easily and with unlimited
+                                        p(class='lead bottom') competitive prices at the best international speciﬁcations and standards.
+                            div(class='footer-Health') 
+                                div(class='inner')
+                                    div(class='disc') 
+                                        h2(class="h1") Health and Safety
+                                            br
+                                            | Precautionary measures
+                                    div(class='grid-md-2 FRIENDLY ')
+                                        div(class='left')
+                                            div(class='row')
+                                                div(class='col-md-2')
+                                                    span(class='icon')
+                                                        i(class="fab fa-gripfire")
+                                                div(class='col-md-10')
+                                                    div(class='text')
+                                                        span(class='font-bold') ECO-FRIENDLY
+                                                        |  -We make sure that the special products that are offered by Perfect Line comply with the international standards regulating quality models, and in line with the internationally recognized speciﬁcations that are considered environmentally friendly and made out of recycled safe materials.
+                                        div(class='right')
+                                            div(class='row')
+                                                div(class='col-md-2')
+                                                    span(class='icon')
+                                                        i(class="far fa-check-square")
+                                                div(class='col-md-10')
+                                                    div(class='text')
+                                                        span(class='font-bold') OUR ASSURANCE
+                                                        |   -our whole team is involved in global safety measures with specialist partners to ensure the delivery of the best products and security. 
+                                                        br
+                                                        | For the certiﬁed products that have been tested and proven safe
+                //- end section-why-plsp
+
+                section(class="section-footer") 
+                    footer 
+                        div(class='footer-footer') 
+                            div(class='logo')
+                                img(src="images/logo/logo-top-no-back.png" alt="")
+                            div(class='content-footer')
+                                div(class='top')
+                                    div(class='inner')
+                                        span(class='head') CORPORATE
+                                        span(class='body') Company
+                                        span(class='footer')  Profile
+
+                                div(class='address')
+                                    h2(class="h1") Headquarters
+                                    div(class='row')
+                                        div(class='col-sm-1')
+                                            div(class='icon')
+                                                i(class="fas fa-envelope")
+                                        div(class='col-sm-11')
+                                            div(class='mail text')
+                                                //- p(class='lead') info@perfectlinesports.com
+                                                a(href="mailto:info@perfectlinesports.com" class="") info@perfectlinesports.com
+                                        div(class='col-sm-1')
+                                            div(class='icon')
+                                                i(class="fas fa-phone-alt")
+                                        div(class='col-sm-11')
+                                            div(class='phone text')
+                                                a(class='' href="https://wa.me/0097142541110" target="_blank") 0097142541110
+                                                    br
+                                                    span(class='w') W
+                                                    | hatsapp - landline
+                                        div(class='col-sm-1')
+                                            div(class='icon')
+                                                i(class="fas fa-fax")
+                                        div(class='col-sm-11')
+                                            div(class='fix text')
+                                                p(class='lead') 0097142541130
+                                        div(class='col-sm-1')
+                                            div(class='icon')
+                                                i(class="fas fa-map-marker-alt")
+                                        div(class='col-sm-11')
+                                            div(class='address text')
+                                                p(class='lead') Dubai United Arab Emirates
+                                        div(class='col-sm-1')
+                                            div(class='icon')
+                                                i(class="fas fa-globe")
+                                        div(class='col-sm-11')
+                                            div(class='websites text')
+                                                a(class='' href="https://perfectlinesports.com/" target="_blank") 
+                                                    span(class='www') www
+                                                    |.perfectlinesports.com
+                                        div(class='col-sm-1')
+                                            div(class='icon')
+                                                i(class="fas fa-box-tissue")
+                                        div(class='col-sm-11')
+                                            div(class='box text')
+                                                p(class='lead') P. O. Box: 89332- Dubai, UAE
+
+                                div(class='bottom')
+                                    div(class='social') 
+                                        i(class="fab fa-facebook-square fa-fw ")
+                                        span(class='facebook') @perfectlinesports
+                                        i(class="fab fa-linkedin fa-fw")
+                                        span(class='facebook') Perfectlinesports
+                                        i(class="fab fa-twitter-square fa-fw")
+                                        span(class='facebook') Plinesports
+                                        i(class="fab fa-instagram-square fa-fw")
+                                        span(class='facebook') Perfect-line-sport-products
+                                    div(class='website')
+                                        div(class='text') w w w . p e r f e c t l i n e s p o r t s . c o m
+                                    div(class='branch') 
+                                        div(class='Branch') Branch
+                                        div(class='phone') 
+                                            i(class="fas fa-phone-alt fa-fw")
+                                            a(class='' href='tel:+201129139666' target='_blank') +201129139666
+                                        div(class='location') Cairo , Egypt
+
+
+
+                    include header/header.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    //- Registration Process
+
+
+
+
+
+                    //- 
+                    //- +btnTow('read')
+                    include footer/footer.pug
+
+
+
+
+    //- Start Global
+    include global/global.pug
+    //- End Global
+
+    //- Start Explain Jquery 
+    //- progress Bar
+    include progressBar/progressBar.pug
+
+
+
+
+
+
+
+
+    //- include fixedMenu/fixedMenu.pug
+    include script/script.pug
+
+    //- Javascript
+    script(src="js/js/js.js")
+    //- Jquery Tools
+    //- Es6
+    //- script(src="js/es6/main.js" type="module")
+    //- script(src="js/es6/app.js" type="module")
+    //- script(src="js/React/React-Tool.js" type="text/babel")
+    //- Vue App
+    //- Live Reload
+    script(src="http://localhost:35729/livereload.js")
+
+    //- end body
