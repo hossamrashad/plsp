@@ -48,17 +48,17 @@ html(lang="en" data-theme="light")
                             ul 
                                 li 
                                     i(class="fas fa-globe fa-fw")
-                                    span(class='www') WWW
+                                    a(class='www' target='_blank' href='https://perfectlinesports.com/') WWW
                                     | .perfectlinesports.com
                                 li 
                                     i(class="fas fa-map-marker-alt fa-fw")
                                     span(class='location') dubai united arab emirates
                                 li 
                                     i(class="fas fa-envelope fa-fw")
-                                    span(class='message') info@perfectlinesports.com
+                                    a(class='message' target='_blank' href='mailto:info@perfectlinesports.com') info@perfectlinesports.com
                                 li 
                                     i(class="fas fa-phone-alt fa-fw")
-                                    span(class='phone') 009714254110
+                                    a(class='phone' href='tel:009714254110' target='_blank') 009714254110
                                     span(class='social') 
                                         span(class='first-litter') W
                                         | hatsapp - landine
@@ -530,7 +530,7 @@ html(lang="en" data-theme="light")
                         div(class='line-border-fff-color center-border')
 
                                 
-                        div(class='grid-md-2 grid-sm-2 col-xs-1 ul')
+                        div(class='grid-lg-2 grid-sm-1 pl-15 pr-15 col-xs-1 ul')
                             div(class='left')
                             div(class='right')
                                 p(class='text') Leading the world of sports products, equipment, accessories, supplies, and clothing. Added to this, Perfect Line aims at concluding cooperation agree- ments with various retailers and professional compa- nies in the GCC, Middle East, North and South Africa And from the company’s ambitions that it seeks for seriously with conﬁdence
@@ -552,7 +552,7 @@ html(lang="en" data-theme="light")
                         div(class='line-border-fff-color center-border')
                         div(class="disc") 
                             p(class=' lead') Perfect line is proud to announce that it has just launched the ﬁrst specialized e-commerce platform from multiple vendors with high creativity and excellence. Our platform is the ﬁrst of its kind that is specialized in sports products, equipment, clothes, and accessories as the platform offers its customers many services including:
-                        div(class='grid-md-2 grid-sm-2 col-xs-1 ul')
+                        div(class='grid-md-2 grid-sm-1 col-xs-1 ul')
                             div(class='ul-left')
                                 div(class='row')
                                     div(class='col-md-3')
@@ -831,15 +831,17 @@ html(lang="en" data-theme="light")
                                                 i(class="fas fa-envelope")
                                         div(class='col-sm-11')
                                             div(class='mail text')
-                                                p(class='lead') info@perfectlinesports.com
+                                                //- p(class='lead') info@perfectlinesports.com
+                                                a(href="mailto:info@perfectlinesports.com" class="") info@perfectlinesports.com
                                         div(class='col-sm-1')
                                             div(class='icon')
                                                 i(class="fas fa-phone-alt")
                                         div(class='col-sm-11')
                                             div(class='phone text')
-                                                p(class='lead') 0097142541110
+                                                a(class='' href="https://wa.me/0097142541110" target="_blank") 0097142541110
                                                     br
-                                                    | Whatsapp - landline
+                                                    span(class='w') W
+                                                    | hatsapp - landline
                                         div(class='col-sm-1')
                                             div(class='icon')
                                                 i(class="fas fa-fax")
@@ -857,7 +859,9 @@ html(lang="en" data-theme="light")
                                                 i(class="fas fa-globe")
                                         div(class='col-sm-11')
                                             div(class='websites text')
-                                                p(class='lead') www.perfectlinesports.com
+                                                a(class='' href="https://perfectlinesports.com/" target="_blank") 
+                                                    span(class='www') www
+                                                    |.perfectlinesports.com
                                         div(class='col-sm-1')
                                             div(class='icon')
                                                 i(class="fas fa-box-tissue")
@@ -881,24 +885,10 @@ html(lang="en" data-theme="light")
                                         div(class='Branch') Branch
                                         div(class='phone') 
                                             i(class="fas fa-phone-alt fa-fw")
-                                            span(class='') +201129139666
+                                            a(class='' href='tel:+201129139666' target='_blank') +201129139666
                                         div(class='location') Cairo , Egypt
 
 
-
-                br
-                br
-                br
-                br
-                br
-                br
-                br
-                br
-                br
-                br
-
-
-                div(class='row')
                     
                     include header/header.pug
 

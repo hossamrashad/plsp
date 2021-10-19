@@ -299,11 +299,11 @@ header.header {
   .profile {
     padding: 20px 10px;
     /* Extra small devices (phones, 600px and down) */
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 767px) {
       background-color: $main-color;
-      height: 450px;
+      min-height: 450px;
     }
-
+a{color: $color-000;}
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) {
       position: absolute;
@@ -637,7 +637,7 @@ header.header {
             top: 65px;
             color: $five-color;
             z-index: -1;
-            font-size: 6vw;
+            font-size: 5vw;
             text-transform: uppercase;
             font-weight: bold;
             font-family: $font-plsp;
@@ -893,7 +893,7 @@ header.header {
         .face {
           color: $main-color;
           z-index: 2;
-          font-size: 5vw;
+          font-size: 4vw;
           text-transform: uppercase;
           font-weight: bold;
           display: block;
@@ -5981,6 +5981,32 @@ header.header {
     padding-bottom: 100px;
     .line-color-left {
       @extend %back-000-color;
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 767px) {
+        @include opacity(0);
+      }
+      
+      /* Small devices (portrait tablets and large phones, 625px and up) */
+      @media only screen and (min-width: 625px) {}
+      
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (min-width: 768px) {
+        @include opacity(0);
+      }
+      
+      /* Large devices (laptops/desktops, 992px and up) */
+      @media only screen and (min-width: 992px) {
+        @include opacity(1);
+      }
+      
+      /* Extra large devices (large laptops and desktops, 1200px and up) */
+      @media only screen and (min-width: 1280px) {}
+      
+      /* Extra large devices (large desktops, 1440px and up) */
+      @media only screen and (min-width: 1440px) {}
+      
+      /* Extra large devices (large desktops, 1566px and up) */
+      @media only screen and (min-width: 1566px) {}
     }
     .line-border-fff-color {
       @extend %line-border-fff-color;
@@ -6129,6 +6155,28 @@ header.header {
     padding-bottom: 100px;
     .line-color-left {
       @extend %back-fff-color;
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 767px) {
+        @include opacity(0);
+      }
+      
+      /* Small devices (portrait tablets and large phones, 625px and up) */
+      @media only screen and (min-width: 625px) {}
+      
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (min-width: 768px) {}
+      
+      /* Large devices (laptops/desktops, 992px and up) */
+      @media only screen and (min-width: 992px) {}
+      
+      /* Extra large devices (large laptops and desktops, 1200px and up) */
+      @media only screen and (min-width: 1280px) {}
+      
+      /* Extra large devices (large desktops, 1440px and up) */
+      @media only screen and (min-width: 1440px) {}
+      
+      /* Extra large devices (large desktops, 1566px and up) */
+      @media only screen and (min-width: 1566px) {}
     }
     .line-border-fff-color {
       @extend %line-border-fff-color;
@@ -6195,7 +6243,7 @@ header.header {
         .first {
           /* Extra small devices (phones, 600px and down) */
           @media only screen and (max-width: 767px) {
-            color: $main-color;
+            color: $color-fff;
           }
 
           /* Small devices (portrait tablets and large phones, 625px and up) */
@@ -6226,6 +6274,7 @@ header.header {
       font-weight: bold;
       /* Extra small devices (phones, 600px and down) */
       @media only screen and (max-width: 767px) {
+        padding: 15px;
       }
 
       /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -6253,6 +6302,10 @@ header.header {
     }
     .ul {
       /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (min-width: 767px) {
+        padding: 15px;
+      }
+      /* Medium devices (landscape tablets, 768px and up) */
       @media only screen and (min-width: 768px) {
         width: 75%;
         margin-left: auto;
@@ -6260,8 +6313,9 @@ header.header {
       }
       .ul-left {
         /* Extra small devices (phones, 600px and down) */
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 767px) {
           position: relative;
+          padding: 15px;
         }
 
         /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -6294,8 +6348,9 @@ header.header {
       }
       .ul-right {
         /* Extra small devices (phones, 600px and down) */
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 767px) {
           position: relative;
+          padding: 15px;
         }
 
         /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -7356,6 +7411,13 @@ header.header {
           }
           .text {
             color: $color-fff;
+            a{
+              color:$color-fff;
+              font-size: $page-font;
+              .www,.w{
+                font-family: $font-plsp-w-2;
+              }
+            }
           }
           .address {
             margin-top: 0;
@@ -7417,6 +7479,9 @@ header.header {
               i {
                 color: $main-color;
                 padding-right: 10px;
+              }
+              a{
+                color: $color-fff;
               }
             }
             .location {

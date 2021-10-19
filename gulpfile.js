@@ -21,7 +21,7 @@ gulp.task("html", function () {
 
 gulp.task("scss", function () {
   return gulp
-    .src("project/scss/*.scss")
+    .src(["project/scss/*.scss", "!project/scss/style-rtl.scss"])
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(autoprefixer("last 20 versions"))
@@ -30,6 +30,18 @@ gulp.task("scss", function () {
     .pipe(gulp.dest("dist/css"))
     .pipe(livereload())
     .pipe(notify("Scss Task Is Done"));
+});
+gulp.task("scss-ar", function () {
+  return gulp
+    .src(["project/scss/*.scss", "!project/scss/Framework.scss"])
+    .pipe(sourcemaps.init())
+    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+    .pipe(autoprefixer("last 20 versions"))
+    .pipe(concat("style-ar.css"))
+    .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(livereload())
+    .pipe(notify("Scss ar Task Is Done"));
 });
 
 gulp.task("js", function () {
@@ -83,7 +95,14 @@ gulp.task("watch", function () {
   // = Html
   gulp.watch("project/pug/**/*.pug", gulp.series("html"));
   // = Css
-  gulp.watch("project/scss/**/*.scss", gulp.series("scss"));
+  gulp.watch(
+    ["project/scss/*.scss", "!project/scss/style-rtl.scss"],
+    gulp.series("scss")
+  );
+  gulp.watch(
+    ["project/scss/*.scss", "!project/scss/Framework.scss"],
+    gulp.series("scss-ar")
+  );
   gulp.watch("project/libs-css/**/*", gulp.series("libs-css"));
   // = Javascript
   gulp.watch("project/js/js/**/*.js", gulp.series("js"));
